@@ -1,0 +1,16 @@
+c:\users\paul\documents\visual studio 2015\Projects\MemoryBox\MemoryBox\bin\Debug\MemoryBox.dll
+c:\users\paul\documents\visual studio 2015\Projects\MemoryBox\MemoryBox\bin\Debug\MemoryBox.pdb
+c:\users\paul\documents\visual studio 2015\Projects\MemoryBox\MemoryBox\bin\Debug\MemoryBox.MemoryBox.apk
+c:\users\paul\documents\visual studio 2015\Projects\MemoryBox\MemoryBox\bin\Debug\MemoryBox.MemoryBox-Signed.apk
+c:\users\paul\documents\visual studio 2015\Projects\MemoryBox\MemoryBox\obj\Debug\res\drawable\monoandroidsplash.png
+c:\users\paul\documents\visual studio 2015\Projects\MemoryBox\MemoryBox\obj\Debug\res\values\styles.xml
+c:\users\paul\documents\visual studio 2015\Projects\MemoryBox\MemoryBox\obj\Debug\MemoryBox.dll
+c:\users\paul\documents\visual studio 2015\Projects\MemoryBox\MemoryBox\obj\Debug\MemoryBox.pdb
+c:\users\paul\documents\visual studio 2015\Projects\MemoryBox\MemoryBox\obj\Debug\android\bin\MemoryBox.MemoryBox.apk
+c:\users\paul\documents\visual studio 2015\Projects\MemoryBox\MemoryBox\obj\Debug\res\layout\main.xml
+c:\users\paul\documents\visual studio 2015\Projects\MemoryBox\MemoryBox\obj\Debug\res\values\strings.xml
+c:\users\paul\documents\visual studio 2015\Projects\MemoryBox\MemoryBox\obj\Debug\res\drawable\membox.png
+c:\users\paul\documents\visual studio 2015\Projects\MemoryBox\MemoryBox\obj\Debug\R.cs.flag
+c:\users\paul\documents\visual studio 2015\Projects\MemoryBox\MemoryBox\obj\Debug\uploadflags.txt
+C:\Users\Paul\Documents\Visual Studio 2015\Projects\MemoryBox\MemoryBox\obj\Debug\MemoryBox.dll.mdb
+C:\Users\Paul\Documents\Visual Studio 2015\Projects\MemoryBox\MemoryBox\bin\Debug\MemoryBox.dll.mdb
