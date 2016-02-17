@@ -1,24 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="MemoryBox.MemoryBox" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
-  <!--suppress UsesMinSdkAttributes-->
-  <uses-sdk android:minSdkVersion="11" />
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="Test1.Test1" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
+  <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="21" />
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-  <application android:label="MemoryBox" android:icon="@drawable/membox" android:name="mono.android.app.Application" android:allowBackup="true" android:debuggable="true">
-    <activity android:icon="@drawable/membox" android:label="MemoryBox" android:name="md50f6ca6832a6d4b2672d7eb3467d6554b.MainActivity" />
-    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="MemoryBox.MemoryBox.mono.MonoRuntimeProvider.__mono_init__" />
-    <!--suppress ExportedReceiver-->
-    <receiver android:name="mono.android.Seppuku">
-      <intent-filter>
-        <action android:name="mono.android.intent.action.SEPPUKU" />
-        <category android:name="mono.android.intent.category.SEPPUKU.MemoryBox.MemoryBox" />
-      </intent-filter>
-    </receiver>
-    <activity android:icon="@drawable/membox" android:label="MemoryBox" android:name="memorybox.memorybox.TrialSplashScreen" android:theme="@style/Mono.Android.Theme.Splash" android:noHistory="true">
+  <application android:label="MemoryBox" android:icon="@drawable/memboxps" android:name="mono.android.app.Application" android:allowBackup="true" android:debuggable="true">
+    <activity android:name="MainActivity" android:label="Test1" />
+    <activity android:name="Login" android:label="Test1" />
+    <activity android:name="Boxes" android:label="Test1" />
+    <activity android:name="Memories" android:label="Test1" />
+    <activity android:name="md50f6ca6832a6d4b2672d7eb3467d6554b.Login" />
+    <activity android:name="md50f6ca6832a6d4b2672d7eb3467d6554b.Boxes" />
+    <activity android:name="md50f6ca6832a6d4b2672d7eb3467d6554b.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+    <activity android:name="md50f6ca6832a6d4b2672d7eb3467d6554b.Memories" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="Test1.Test1.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--suppress ExportedReceiver-->
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.Test1.Test1" />
+      </intent-filter>
+    </receiver>
   </application>
 </manifest>

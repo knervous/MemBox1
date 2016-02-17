@@ -4,14 +4,13 @@ package md50f6ca6832a6d4b2672d7eb3467d6554b;
 public class MainActivity
 	extends android.app.Activity
 	implements
-		mono.android.IGCUserPeer,
-		android.view.View.OnTouchListener
+		mono.android.IGCUserPeer
 {
 	static final String __md_methods;
 	static {
 		__md_methods = 
 			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
-			"n_onTouch:(Landroid/view/View;Landroid/view/MotionEvent;)Z:GetOnTouch_Landroid_view_View_Landroid_view_MotionEvent_Handler:Android.Views.View/IOnTouchListenerInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\n" +
+			"n_onBackPressed:()V:GetOnBackPressedHandler\n" +
 			"";
 		mono.android.Runtime.register ("MemoryBox.MainActivity, MemoryBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", MainActivity.class, __md_methods);
 	}
@@ -33,12 +32,12 @@ public class MainActivity
 	private native void n_onCreate (android.os.Bundle p0);
 
 
-	public boolean onTouch (android.view.View p0, android.view.MotionEvent p1)
+	public void onBackPressed ()
 	{
-		return n_onTouch (p0, p1);
+		n_onBackPressed ();
 	}
 
-	private native boolean n_onTouch (android.view.View p0, android.view.MotionEvent p1);
+	private native void n_onBackPressed ();
 
 	java.util.ArrayList refList;
 	public void monodroidAddReference (java.lang.Object obj)

@@ -1,5 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="MemoryBox.MemoryBox" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
-	<uses-sdk />
-	<application android:label="MemoryBox" android:icon="@drawable/memBox"></application>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="Test1.Test1" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
+	<uses-sdk android:minSdkVersion="19" android:targetSdkVersion="21" />
+	<application android:label="MemoryBox" android:icon="@drawable/memBoxPS">
+		<activity android:name="MainActivity" android:label="Test1" />
+		<activity android:name="Login" android:label="Test1" />
+		<activity android:name="Boxes" android:label="Test1" />
+		<activity android:name="Memories" android:label="Test1" />
+	</application>
 </manifest>

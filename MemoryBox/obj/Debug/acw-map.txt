@@ -1,4 +1,20 @@
+MemoryBox.Login, MemoryBox;md50f6ca6832a6d4b2672d7eb3467d6554b.Login
+MemoryBox.Login, MemoryBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50f6ca6832a6d4b2672d7eb3467d6554b.Login
+MemoryBox.Login;md50f6ca6832a6d4b2672d7eb3467d6554b.Login
+memorybox.Login;md50f6ca6832a6d4b2672d7eb3467d6554b.Login
+MemoryBox.Boxes, MemoryBox;md50f6ca6832a6d4b2672d7eb3467d6554b.Boxes
+MemoryBox.Boxes, MemoryBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50f6ca6832a6d4b2672d7eb3467d6554b.Boxes
+MemoryBox.Boxes;md50f6ca6832a6d4b2672d7eb3467d6554b.Boxes
+memorybox.Boxes;md50f6ca6832a6d4b2672d7eb3467d6554b.Boxes
+MemoryBox.BoxList, MemoryBox;md50f6ca6832a6d4b2672d7eb3467d6554b.BoxList
+MemoryBox.BoxList, MemoryBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50f6ca6832a6d4b2672d7eb3467d6554b.BoxList
+MemoryBox.BoxList;md50f6ca6832a6d4b2672d7eb3467d6554b.BoxList
+memorybox.BoxList;md50f6ca6832a6d4b2672d7eb3467d6554b.BoxList
 MemoryBox.MainActivity, MemoryBox;md50f6ca6832a6d4b2672d7eb3467d6554b.MainActivity
 MemoryBox.MainActivity, MemoryBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50f6ca6832a6d4b2672d7eb3467d6554b.MainActivity
 MemoryBox.MainActivity;md50f6ca6832a6d4b2672d7eb3467d6554b.MainActivity
 memorybox.MainActivity;md50f6ca6832a6d4b2672d7eb3467d6554b.MainActivity
+MemoryBox.Memories, MemoryBox;md50f6ca6832a6d4b2672d7eb3467d6554b.Memories
+MemoryBox.Memories, MemoryBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50f6ca6832a6d4b2672d7eb3467d6554b.Memories
+MemoryBox.Memories;md50f6ca6832a6d4b2672d7eb3467d6554b.Memories
+memorybox.Memories;md50f6ca6832a6d4b2672d7eb3467d6554b.Memories

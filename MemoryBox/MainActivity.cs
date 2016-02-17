@@ -1,85 +1,80 @@
-﻿using System;
-using Android.App;
-using Android.Content;
-using Android.Runtime;
-using Android.Views;
+﻿using Android.App;
 using Android.Widget;
 using Android.OS;
+using Android.Media;
 
 namespace MemoryBox
 {
-    [Activity(Label = "MemoryBox", MainLauncher = true, Icon = "@drawable/memBox")]
-    public class MainActivity : Activity, View.IOnTouchListener
+    [Activity(MainLauncher = true)]
+    public class MainActivity : Activity
     {
-        
-        private Button myButton;
-        private float _viewX;
-        private float _viewY;
 
+        private RelativeLayout cover;
+        private ToggleButton toggleMusic;
+        private MediaPlayer player;
 
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-
-
+            ActionBar.Hide();
             SetContentView(Resource.Layout.Main);
-            
-            myButton = FindViewById<Button>(Resource.Id.MyButton);
-            myButton.SetOnTouchListener(this);
+            cover = FindViewById<RelativeLayout>(Resource.Id.titleScreen);
+            player = MediaPlayer.Create(this, Resource.Raw.avril_14th);
+            toggleMusic = FindViewById<ToggleButton>(Resource.Id.toggleMusic);
+            player.Start();
+            player.Looping = true;
+
+            cover.Click += delegate
+            {
+                StartActivity(typeof(Login));
+            };
+
+
+            toggleMusic.Click += (o, s) =>
+
+            {
+                if (toggleMusic.Checked)
+                {
+                    player.Start();
+                    toggleMusic.SetBackgroundResource(Android.Resource.Drawable.IcMediaPause);
+
+                }
+                else
+                {
+                    toggleMusic.SetBackgroundResource(Android.Resource.Drawable.IcMediaPlay);
+                    player.Pause();
+                }
+            };
+
+
         }
 
-        //public bool OnTouch(View v, MotionEvent e)
-        //{
-        //    switch (e.Action)
-        //    {
-        //        case MotionEventActions.Down:
-        //            _viewX = e.GetX();
-        //            _viewY = e.GetY();
-        //            v.Visibility = ViewStates.Visible;
-        //            break;
-
-        //        case MotionEventActions.Move:
-        //            var left = (int)(e.RawX - _viewX);
-        //            var right = (int)(left + v.Width);
-        //            var top = (int)(e.RawY - _viewY);
-        //            var bottom = (int)(top - v.Height);
-        //            v.Layout(left, top, right, bottom);
-        //            v.Visibility = ViewStates.Visible;
-        //            break;
-
-        //        case MotionEventActions.Up:
-        //            v.Visibility = ViewStates.Visible;
-        //            break;
-        //    }
-        //    v.Visibility = ViewStates.Visible;
-        //    return true;
-        //}
-
-        public bool OnTouch(View v, MotionEvent e)
+        private void ToggleMusic_Click(object sender, System.EventArgs e)
         {
-            switch (e.Action)
+            if (toggleMusic.Checked)
             {
-                case MotionEventActions.Down:
-                    _viewX = v.GetX() - e.RawX;
-                    _viewY = v.GetY() - e.RawY;
-
-                    break;
-                case MotionEventActions.Move:
-                    //var left = (int)(e.RawX - _viewX);
-                    //var right = (int)(left + v.Width);
-                    //v.Layout(left, v.Top, right, v.Bottom);
-                    //break;
-                    v.Animate()
-                        .X(e.RawX + _viewX)
-                       .Y(e.RawY + _viewY)
-                       .SetDuration(0)
-                       .Start();
-                    break;
-                default: return false;
+                player.Release();
+                player = MediaPlayer.Create(this, Resource.Raw.avril_14th);
+                player.Start();
+                player.Looping = true;
+                toggleMusic.SetBackgroundResource(Android.Resource.Drawable.IcMediaPause);
 
             }
-            return true;
+            else
+                toggleMusic.SetBackgroundResource(Android.Resource.Drawable.IcMediaPlay);
+                player.Stop();
         }
+
+        public override void OnBackPressed()
+        {
+            Finish();
+            Process.KillProcess(Process.MyPid());
+        }
+
+
+
+
+
     }
 }
 

@@ -1,9 +1,9 @@
-C:\Users\Paul\Documents\Visual Studio 2015\Projects\MemoryBox\MemoryBox\obj\Debug\assemblies\MemoryBox.dll
-C:\Users\Paul\Documents\Visual Studio 2015\Projects\MemoryBox\MemoryBox\obj\Debug\assemblies\Mono.Android.dll
-C:\Users\Paul\Documents\Visual Studio 2015\Projects\MemoryBox\MemoryBox\obj\Debug\assemblies\mscorlib.dll
-C:\Users\Paul\Documents\Visual Studio 2015\Projects\MemoryBox\MemoryBox\obj\Debug\assemblies\System.Core.dll
-C:\Users\Paul\Documents\Visual Studio 2015\Projects\MemoryBox\MemoryBox\obj\Debug\assemblies\System.dll
-C:\Users\Paul\Documents\Visual Studio 2015\Projects\MemoryBox\MemoryBox\obj\Debug\assemblies\System.Xml.dll
-C:\Users\Paul\Documents\Visual Studio 2015\Projects\MemoryBox\MemoryBox\obj\Debug\assemblies\System.Xml.Linq.dll
-C:\Users\Paul\Documents\Visual Studio 2015\Projects\MemoryBox\MemoryBox\obj\Debug\assemblies\System.Runtime.Serialization.dll
-C:\Users\Paul\Documents\Visual Studio 2015\Projects\MemoryBox\MemoryBox\obj\Debug\assemblies\System.ServiceModel.Internals.dll
+C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\android\assets\MemoryBox.dll
+C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\android\assets\Mono.Android.dll
+C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\android\assets\mscorlib.dll
+C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\android\assets\System.Core.dll
+C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\android\assets\System.dll
+C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\android\assets\System.Xml.dll
+C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\android\assets\System.Xml.Linq.dll
+C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\android\assets\System.Runtime.Serialization.dll
+C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\android\assets\System.ServiceModel.Internals.dll
