@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="400dp"
+    android:minHeight="400dp"
+    android:background="@drawable/coverblank">
+    <TextView
+        android:text="Memory Title"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/callTextTitle"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp" />
+    <ScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/callTextTitle"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:text="This is a test. This is a test. This is a test.              This is a test. This is a test. This is a test.              This is a test. This is a test. This is a test.              This is a test. This is a test. This is a test.              This is a test. This is a test. This is a test.              This is a test. This is a test. This is a test.              This is a test. This is a test. This is a test.              This is a test. This is a test. This is a test.              This is a test. This is a test. This is a test.              This is a test. This is a test. This is a test.              This is a test. This is a test. This is a test.              This is a test. This is a test. This is a test.              This is a test. This is a test. This is a test.              This is a test. This is a test. This is a test.              This is a test. This is a test. This is a test.              This is a test. This is a test. This is a test.              This is a test. This is a test. This is a test.     This is a test. This is a test. This is a test.              This is a test. This is a test. This is a test.              This is a test. This is a test. This is a test.              This is a test. This is a test. This is a test.              This is a test. This is a test. This is a test.              This is a test. This is a test. This is a test.                       This is a test. This is a test. This is a test.              This is a test. This is a test.              This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/callText"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp" />
+    </ScrollView>
+</RelativeLayout>

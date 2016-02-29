@@ -2,6 +2,7 @@
 using Android.Widget;
 using Android.OS;
 using Android.Media;
+using System;
 
 namespace MemoryBox
 {
@@ -12,6 +13,7 @@ namespace MemoryBox
         private RelativeLayout cover;
         private ToggleButton toggleMusic;
         private MediaPlayer player;
+        private Button infoButton;
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -19,10 +21,18 @@ namespace MemoryBox
             ActionBar.Hide();
             SetContentView(Resource.Layout.Main);
             cover = FindViewById<RelativeLayout>(Resource.Id.titleScreen);
+            infoButton = FindViewById<Button>(Resource.Id.infoButton);
             player = MediaPlayer.Create(this, Resource.Raw.avril_14th);
             toggleMusic = FindViewById<ToggleButton>(Resource.Id.toggleMusic);
             player.Start();
             player.Looping = true;
+
+            infoButton.Click += (object sender, EventArgs args) =>
+            {
+                InfoFragment dialogInfo = new InfoFragment();
+                FragmentTransaction transaction = FragmentManager.BeginTransaction();
+                dialogInfo.Show(transaction,"info fragment");
+            };
 
             cover.Click += delegate
             {

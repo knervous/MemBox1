@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/coverblank"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="75dp"
+            android:id="@+id/enterPicText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="62.5dp"
+            android:background="@android:drawable/edit_text"
+            android:textColor="#000000"
+            android:textColorHint="#AAAAAA"
+            android:hint="Describe your photo!"
+            android:gravity="center"
+            android:includeFontPadding="true" />
+        <Button
+            android:text="Choose Photo"
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            android:id="@+id/enterPicButton"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/enterPicText"
+            android:layout_marginTop="20dp"
+            android:textColor="#000000"
+            android:background="@android:drawable/btn_default" />
+    </RelativeLayout>
+</FrameLayout>

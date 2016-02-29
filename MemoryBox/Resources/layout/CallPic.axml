@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="400dp"
+    android:minHeight="400dp"
+    android:background="@drawable/coverblank">
+    <ImageView
+        android:src="@drawable/couple"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:id="@+id/viewPic"
+        android:scaleType="centerInside"
+        android:cropToPadding="true"
+        android:adjustViewBounds="false"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true" />
+    <TextView
+        android:text="Hanging out in the yard :)"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/callPicText"
+        android:layout_below="@+id/viewPic"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp" />
+</RelativeLayout>
