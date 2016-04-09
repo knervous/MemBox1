@@ -84,15 +84,7 @@ namespace MemoryBox
             return view;
         }
 
-        private void GoToGallery_Click(object sender, EventArgs e)
-        {
-
-            Intent intent = new Intent();
-            intent.SetType("image/*");
-            intent.SetAction(Intent.ActionGetContent);
-            this.StartActivityForResult(Intent.CreateChooser(intent, "Select a Photo"), 0);
-
-        }
+        
 
         public override void OnActivityCreated(Bundle savedInstanceState)
         {
@@ -111,7 +103,7 @@ namespace MemoryBox
                      .Load(data.Data)
                   .MemoryPolicy(MemoryPolicy.NoCache, MemoryPolicy.NoStore)
 
-                   .Resize(300, 300)
+                  // .Resize(300, 300)
 
                  .Into(picture);
 
@@ -137,11 +129,11 @@ namespace MemoryBox
                 //bitmap.Dispose();
 
 
-                Bitmap bm = DecodeBitmapFromStream(data.Data, 300, 300);
+                //Bitmap bm = DecodeBitmapFromStream(data.Data, 300, 300);
 
-                ExportBitmapAsPNG(bm);
+                //ExportBitmapAsPNG(bm);
 
-                bm.Dispose();
+                //bm.Dispose();
 
 
 

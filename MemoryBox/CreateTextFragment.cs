@@ -61,16 +61,15 @@ namespace MemoryBox
             inputText = view.FindViewById<EditText>(Resource.Id.enterTextText);
             createMem = view.FindViewById<Button>(Resource.Id.submitTextMemory);
 
-            createMem.Click += CreateMem_Click;
+            createMem.Click += delegate
+            {
+                onSubmitText.Invoke(this, new SubmitTextEventArgs(inputTitle.Text, inputText.Text));
+                this.Dismiss();
+            };
 
             return view;
         }
 
-        private void CreateMem_Click(object sender, EventArgs e)
-        {
-            onSubmitText.Invoke(this, new SubmitTextEventArgs(inputTitle.Text, inputText.Text));
-            this.Dismiss();
-        }
 
         public override void OnActivityCreated(Bundle savedInstanceState)
         {
