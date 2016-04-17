@@ -1,120 +1,171 @@
 using Android.App;
 using Android.Widget;
 using Android.OS;
-using Android.Media;
 using System;
 using Microsoft.WindowsAzure.MobileServices;
-using Android.Content.PM;
-using Java.Security;
 using Xamarin.Facebook.Login;
 using Xamarin.Facebook;
 using Android.Support.V4.App;
-using Xamarin.Facebook.Login.Widget;
-using Java.Lang;
 using Android.Content;
+using System.Collections.Generic;
+using SupportFragment = Android.Support.V4.App.Fragment;
 using Android.Runtime;
 
 namespace MemoryBox
 {
-	[Activity (MainLauncher = true)]
-	public class MainActivity : Activity, IDisposable, IFacebookCallback
+    [Activity (MainLauncher = true)]
+	public class MainActivity : FragmentActivity, IDisposable, IFacebookCallback
 
 
 	{
-
-		private RelativeLayout cover;
-
-		private ToggleButton toggleMusic;
-
-		private MediaPlayer player;
-
-		private Button infoButton;
-
-        LoginResult loginResult;
-
+        private Boxes boxFragment;
+        private HomeScreen homeScreenFragment;
+        private SupportFragment currentFragment;
+        private Stack<SupportFragment> stack;
         const string applicationURL = @"https://testapppaul.azurewebsites.net";
         const string localDbFilename = "localstore.db";
-
         private ICallbackManager callBackManager;
-
         public static MobileServiceClient client = new MobileServiceClient(applicationURL);      
-
 
 
         protected override void OnCreate (Bundle bundle)
 		{
-			Xamarin.Insights.Initialize (XamarinInsights.ApiKey, this);
+            base.OnCreate(bundle);
+            Xamarin.Insights.Initialize (XamarinInsights.ApiKey, this);
             FacebookSdk.SdkInitialize(this.ApplicationContext);
             CurrentPlatform.Init();
-            ActionBar.Hide ();
-            base.OnCreate(bundle);
+            ActionBar.Hide();
             SetContentView (Resource.Layout.Main);
-			cover =  FindViewById<RelativeLayout> (Resource.Id.titleScreen);
-			infoButton = FindViewById<Button> (Resource.Id.infoButton);
-			player = MediaPlayer.Create (this, Resource.Raw.avril_14th);
-			toggleMusic = FindViewById<ToggleButton> (Resource.Id.toggleMusic);
-			player.Start ();
-			player.Looping = true;
-            
-            LoginButton button = FindViewById<LoginButton>(Resource.Id.login_button);
+            homeScreenFragment = new HomeScreen();
+            boxFragment = new Boxes();
+            currentFragment = homeScreenFragment;
+            stack = new Stack<SupportFragment>();
 
-            button.SetReadPermissions("user_friends");
+            homeScreenFragment.facebookLogin += delegate {
+
+                if(isLoggedIn())
+                ShowFragment(boxFragment);
+                else
+                LoginManager.Instance.LogInWithReadPermissions(this, new List<string> { "public_profile", "user_friends", "email" });
+            };
+
+            boxFragment.createMemoryBox += delegate
+            {
+                Console.WriteLine("USER ID: " + AccessToken.CurrentAccessToken.UserId);
+            };
+
 
             callBackManager = CallbackManagerFactory.Create();
-
-            button.RegisterCallback(callBackManager, this);
-            
-			//cover.Click += delegate {
-                
-   //             StartActivity (typeof(Login));
-   //             Finish();
-			//};
-			toggleMusic.Click += (o, s) => {
-
-
-                Console.WriteLine("USER ID: " + loginResult.AccessToken.UserId);
-                if (toggleMusic.Checked) {
-					player.Start ();
-					toggleMusic.SetBackgroundResource (Android.Resource.Drawable.IcMediaPause);
-				} else {
-					toggleMusic.SetBackgroundResource (Android.Resource.Drawable.IcMediaPlay);
-					player.Pause ();
-				}
-			};
-
-
-		}
+            ShowFragment(homeScreenFragment);
+        }
 
 
         public override void OnBackPressed ()
 		{
-			Finish ();
-			Android.OS.Process.KillProcess (Android.OS.Process.MyPid ());
+            if(currentFragment == homeScreenFragment)
+            {
+                Finish();
+                Android.OS.Process.KillProcess(Android.OS.Process.MyPid());
+            }
+
+            if (SupportFragmentManager.BackStackEntryCount > 0)
+            {
+                SupportFragmentManager.PopBackStack();
+                currentFragment = stack.Pop();
+            }
+            else
+            {
+                Finish();
+                Android.OS.Process.KillProcess(Android.OS.Process.MyPid());
+            }
             
 		}
 
+
         public void OnCancel()
         {
-           // Toast.MakeText(this.ApplicationContext, "You need to sign in to continue", 5);
+            Console.WriteLine("cancelled");
         }
 
         public void OnError(FacebookException p0)
         {
-            //throw new NotImplementedException();
+            p0.PrintStackTrace();
+            Console.WriteLine("FAILED");
         }
 
         public void OnSuccess(Java.Lang.Object result)
         {
-            loginResult = result as LoginResult;
-            Console.WriteLine("USER ID: "+loginResult.AccessToken.UserId);
+            LoginResult loginResult = result as LoginResult;
+            ShowFragment(boxFragment);
+            Console.WriteLine("SUCCESS OPENING NEW");
         }
 
-        protected override void OnActivityResult(int requestCode, [GeneratedEnum] Result resultCode, Intent data)
+        private void ShowFragment(SupportFragment fragment)
+        {
+            var trans = SupportFragmentManager.BeginTransaction();
+            trans.SetCustomAnimations(Resource.Animation.slide_in, Resource.Animation.slide_out, Resource.Animation.abc_popup_enter, Resource.Animation.abc_popup_exit);
+            trans.Add(Resource.Id.titleScreen1, fragment, "BoxesFragment");
+            trans.Hide(currentFragment);
+            trans.Show(fragment);
+            trans.AddToBackStack(null);
+            trans.Commit();
+            stack.Push(currentFragment);
+            currentFragment = fragment;
+        }
+
+
+        protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
         {
             base.OnActivityResult(requestCode, resultCode, data);
-            callBackManager.OnActivityResult(requestCode, (int)requestCode, data);
-            
+            callBackManager.OnActivityResult(requestCode, (int)resultCode, data);
+
+        }
+
+
+        public bool isLoggedIn()
+        {
+            return (AccessToken.CurrentAccessToken != null && Profile.CurrentProfile != null);
+        }
+
+    }
+
+
+
+    public class MyProfileTracker : ProfileTracker
+    {
+
+        public EventHandler<OnProfileChangedEventArgs> mOnProfileChanged;
+
+        protected override void OnCurrentProfileChanged(Profile oldProfile, Profile newProfile)
+        {
+            if( mOnProfileChanged != null )
+            {
+                mOnProfileChanged.Invoke(this, new OnProfileChangedEventArgs(newProfile));
+            }
         }
     }
-    
+
+    public class OnProfileChangedEventArgs : EventArgs
+    {
+        public Profile mProfile;
+
+        public OnProfileChangedEventArgs(Profile profile)
+        {
+            mProfile = profile;
+        }
+        
+    }
+
+
+    public class LoginEventArgs : EventArgs
+    {
+
+        public LoginEventArgs() : base()
+        {
+        }
+
+    }
+
+
+
 }

@@ -179,13 +179,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccountFragment.cs" />
     <Compile Include="ButtonPicMemories.cs" />
     <Compile Include="CreateVoiceFragment.cs" />
     <Compile Include="CreateTextFragment.cs" />
     <Compile Include="CreatePicFragment.cs" />
+    <Compile Include="CreateMemBoxFragment.cs" />
+    <Compile Include="HomeScreen.cs" />
     <Compile Include="InfoFragment.cs" />
-    <Compile Include="Login.cs" />
     <Compile Include="Boxes.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Memories.cs" />
@@ -232,6 +232,12 @@
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\CreateVoiceMemory.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\HomeScreen.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\createMemBox.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -340,6 +346,12 @@
       <Visible>False</Visible>
       <Version>4.10.1.0</Version>
     </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\anim\slide_in.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\anim\slide_out.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Insights.1.11.3\build\MonoAndroid10\Xamarin.Insights.targets" Condition="Exists('..\packages\Xamarin.Insights.1.11.3\build\MonoAndroid10\Xamarin.Insights.targets')" />

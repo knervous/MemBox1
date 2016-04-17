@@ -14,8 +14,6 @@
     <activity android:name="Memories" android:label="MemoryBox" />
     <activity android:name="com.facebook.FacebookActivity" android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:label="@string/ApplicationName" />
     <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
-    <activity android:name="md50f6ca6832a6d4b2672d7eb3467d6554b.Login" />
-    <activity android:name="md50f6ca6832a6d4b2672d7eb3467d6554b.Boxes" />
     <activity android:name="md50f6ca6832a6d4b2672d7eb3467d6554b.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />

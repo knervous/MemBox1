@@ -2,7 +2,7 @@ package md50f6ca6832a6d4b2672d7eb3467d6554b;
 
 
 public class MainActivity
-	extends android.app.Activity
+	extends android.support.v4.app.FragmentActivity
 	implements
 		mono.android.IGCUserPeer,
 		com.facebook.FacebookCallback
