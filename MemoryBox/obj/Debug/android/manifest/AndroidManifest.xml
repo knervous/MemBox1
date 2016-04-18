@@ -20,7 +20,6 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-    <activity android:name="md50f6ca6832a6d4b2672d7eb3467d6554b.Memories" />
     <activity android:label="Web Authenticator" android:name="md56fe4ce61dba0ba6ccd099078d75ab71d.FormAuthenticatorActivity" />
     <activity android:label="Web Authenticator" android:name="md56fe4ce61dba0ba6ccd099078d75ab71d.WebAuthenticatorActivity" />
     <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.facebook.ads.InterstitialAdActivity" />

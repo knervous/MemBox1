@@ -10,49 +10,98 @@ using Android.Content;
 using System.Collections.Generic;
 using SupportFragment = Android.Support.V4.App.Fragment;
 using Android.Runtime;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+using Newtonsoft.Json.Bson;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 
 namespace MemoryBox
 {
-    [Activity (MainLauncher = true)]
-	public class MainActivity : FragmentActivity, IDisposable, IFacebookCallback
 
 
-	{
-        private Boxes boxFragment;
-        private HomeScreen homeScreenFragment;
+
+    [Activity(MainLauncher = true)]
+    public class MainActivity : FragmentActivity, IDisposable, IFacebookCallback
+
+
+    {
+        private BoxesFragment boxFragment;
+        private HomeScreenFragment homeScreenFragment;
         private SupportFragment currentFragment;
+        private MemoriesFragment memoriesFragment;
+        private CreateMemBoxFragment createMemBoxFragment;
         private Stack<SupportFragment> stack;
         const string applicationURL = @"https://testapppaul.azurewebsites.net";
         const string localDbFilename = "localstore.db";
         private ICallbackManager callBackManager;
-        public static MobileServiceClient client = new MobileServiceClient(applicationURL);      
+        public static MobileServiceClient client = new MobileServiceClient(applicationURL);
 
 
-        protected override void OnCreate (Bundle bundle)
-		{
+        protected override void OnCreate(Bundle bundle)
+        {
             base.OnCreate(bundle);
-            Xamarin.Insights.Initialize (XamarinInsights.ApiKey, this);
+            Xamarin.Insights.Initialize(XamarinInsights.ApiKey, this);
             FacebookSdk.SdkInitialize(this.ApplicationContext);
             CurrentPlatform.Init();
             ActionBar.Hide();
-            SetContentView (Resource.Layout.Main);
-            homeScreenFragment = new HomeScreen();
-            boxFragment = new Boxes();
+            SetContentView(Resource.Layout.Main);
+            homeScreenFragment = new HomeScreenFragment();
+            boxFragment = new BoxesFragment();
+            memoriesFragment = new MemoriesFragment();
             currentFragment = homeScreenFragment;
             stack = new Stack<SupportFragment>();
 
-            homeScreenFragment.facebookLogin += delegate {
+            homeScreenFragment.facebookLogin += delegate
+            {
 
-                if(isLoggedIn())
-                ShowFragment(boxFragment);
+                if (isLoggedIn())
+                    ShowFragment(boxFragment);
                 else
-                LoginManager.Instance.LogInWithReadPermissions(this, new List<string> { "public_profile", "user_friends", "email" });
+                    LoginManager.Instance.LogInWithReadPermissions(this, new List<string> { "public_profile", "user_friends", "email" });
             };
 
             boxFragment.createMemoryBox += delegate
             {
-                Console.WriteLine("USER ID: " + AccessToken.CurrentAccessToken.UserId);
+                Android.App.FragmentTransaction transaction = FragmentManager.BeginTransaction();
+                createMemBoxFragment = new CreateMemBoxFragment();
+                createMemBoxFragment.Show(transaction, "signup fragment");
+                createMemBoxFragment.CreateMemBox += delegate (object sender, CreateNewMemBoxArgs args)
+
+                {
+                    var name = args.Text;
+                    ShowFragment(memoriesFragment);
+                    createMemBoxFragment.Dismiss();
+
+
+                    MemoryStream ms = new MemoryStream();
+                    //using(BsonWriter writer = new BsonWriter(ms))
+                    //{ 
+                    //        JsonSerializer serializer = new JsonSerializer();
+                    //        serializer.Serialize(writer, boxFragment);
+                    //        string data = Convert.ToBase64String(ms.ToArray());
+                    //        Console.WriteLine("DATA: "+data);
+                    //}
+
+                    Newtonsoft.Json.JsonSerializerSettings jss = new Newtonsoft.Json.JsonSerializerSettings();
+
+
+                    Newtonsoft.Json.Serialization.DefaultContractResolver dcr = new Newtonsoft.Json.Serialization.DefaultContractResolver();
+                    dcr.DefaultMembersSearchFlags |= System.Reflection.BindingFlags.NonPublic;
+                    jss.ContractResolver = dcr;
+
+                    var test = JsonConvert.SerializeObject(new MemoriesFragment());
+
+                    Console.WriteLine("DATA: " + test.Length);
+                    Console.WriteLine("PARSED: " + test);
+
+
+                };
+
+
             };
+
+
 
 
             callBackManager = CallbackManagerFactory.Create();
@@ -60,12 +109,18 @@ namespace MemoryBox
         }
 
 
-        public override void OnBackPressed ()
-		{
-            if(currentFragment == homeScreenFragment)
+        public override void OnBackPressed()
+        {
+            if (currentFragment == homeScreenFragment)
             {
                 Finish();
                 Android.OS.Process.KillProcess(Android.OS.Process.MyPid());
+            }
+
+            if (currentFragment == memoriesFragment)
+            {
+                var trans = SupportFragmentManager.BeginTransaction();
+                trans.Detach(memoriesFragment);
             }
 
             if (SupportFragmentManager.BackStackEntryCount > 0)
@@ -78,8 +133,8 @@ namespace MemoryBox
                 Finish();
                 Android.OS.Process.KillProcess(Android.OS.Process.MyPid());
             }
-            
-		}
+
+        }
 
 
         public void OnCancel()
@@ -138,7 +193,7 @@ namespace MemoryBox
 
         protected override void OnCurrentProfileChanged(Profile oldProfile, Profile newProfile)
         {
-            if( mOnProfileChanged != null )
+            if (mOnProfileChanged != null)
             {
                 mOnProfileChanged.Invoke(this, new OnProfileChangedEventArgs(newProfile));
             }
@@ -153,7 +208,7 @@ namespace MemoryBox
         {
             mProfile = profile;
         }
-        
+
     }
 
 

@@ -18,18 +18,18 @@ MemoryBox.CreateMemBoxFragment, MemoryBox;md50f6ca6832a6d4b2672d7eb3467d6554b.Cr
 MemoryBox.CreateMemBoxFragment, MemoryBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50f6ca6832a6d4b2672d7eb3467d6554b.CreateMemBoxFragment
 MemoryBox.CreateMemBoxFragment;md50f6ca6832a6d4b2672d7eb3467d6554b.CreateMemBoxFragment
 memorybox.CreateMemBoxFragment;md50f6ca6832a6d4b2672d7eb3467d6554b.CreateMemBoxFragment
-MemoryBox.HomeScreen, MemoryBox;md50f6ca6832a6d4b2672d7eb3467d6554b.HomeScreen
-MemoryBox.HomeScreen, MemoryBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50f6ca6832a6d4b2672d7eb3467d6554b.HomeScreen
-MemoryBox.HomeScreen;md50f6ca6832a6d4b2672d7eb3467d6554b.HomeScreen
-memorybox.HomeScreen;md50f6ca6832a6d4b2672d7eb3467d6554b.HomeScreen
+MemoryBox.HomeScreenFragment, MemoryBox;md50f6ca6832a6d4b2672d7eb3467d6554b.HomeScreenFragment
+MemoryBox.HomeScreenFragment, MemoryBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50f6ca6832a6d4b2672d7eb3467d6554b.HomeScreenFragment
+MemoryBox.HomeScreenFragment;md50f6ca6832a6d4b2672d7eb3467d6554b.HomeScreenFragment
+memorybox.HomeScreenFragment;md50f6ca6832a6d4b2672d7eb3467d6554b.HomeScreenFragment
 MemoryBox.InfoFragment, MemoryBox;md50f6ca6832a6d4b2672d7eb3467d6554b.InfoFragment
 MemoryBox.InfoFragment, MemoryBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50f6ca6832a6d4b2672d7eb3467d6554b.InfoFragment
 MemoryBox.InfoFragment;md50f6ca6832a6d4b2672d7eb3467d6554b.InfoFragment
 memorybox.InfoFragment;md50f6ca6832a6d4b2672d7eb3467d6554b.InfoFragment
-MemoryBox.Boxes, MemoryBox;md50f6ca6832a6d4b2672d7eb3467d6554b.Boxes
-MemoryBox.Boxes, MemoryBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50f6ca6832a6d4b2672d7eb3467d6554b.Boxes
-MemoryBox.Boxes;md50f6ca6832a6d4b2672d7eb3467d6554b.Boxes
-memorybox.Boxes;md50f6ca6832a6d4b2672d7eb3467d6554b.Boxes
+MemoryBox.BoxesFragment, MemoryBox;md50f6ca6832a6d4b2672d7eb3467d6554b.BoxesFragment
+MemoryBox.BoxesFragment, MemoryBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50f6ca6832a6d4b2672d7eb3467d6554b.BoxesFragment
+MemoryBox.BoxesFragment;md50f6ca6832a6d4b2672d7eb3467d6554b.BoxesFragment
+memorybox.BoxesFragment;md50f6ca6832a6d4b2672d7eb3467d6554b.BoxesFragment
 MemoryBox.BoxList, MemoryBox;md50f6ca6832a6d4b2672d7eb3467d6554b.BoxList
 MemoryBox.BoxList, MemoryBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50f6ca6832a6d4b2672d7eb3467d6554b.BoxList
 MemoryBox.BoxList;md50f6ca6832a6d4b2672d7eb3467d6554b.BoxList
@@ -42,10 +42,10 @@ MemoryBox.MyProfileTracker, MemoryBox;md50f6ca6832a6d4b2672d7eb3467d6554b.MyProf
 MemoryBox.MyProfileTracker, MemoryBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50f6ca6832a6d4b2672d7eb3467d6554b.MyProfileTracker
 MemoryBox.MyProfileTracker;md50f6ca6832a6d4b2672d7eb3467d6554b.MyProfileTracker
 memorybox.MyProfileTracker;md50f6ca6832a6d4b2672d7eb3467d6554b.MyProfileTracker
-MemoryBox.Memories, MemoryBox;md50f6ca6832a6d4b2672d7eb3467d6554b.Memories
-MemoryBox.Memories, MemoryBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50f6ca6832a6d4b2672d7eb3467d6554b.Memories
-MemoryBox.Memories;md50f6ca6832a6d4b2672d7eb3467d6554b.Memories
-memorybox.Memories;md50f6ca6832a6d4b2672d7eb3467d6554b.Memories
+MemoryBox.MemoriesFragment, MemoryBox;md50f6ca6832a6d4b2672d7eb3467d6554b.MemoriesFragment
+MemoryBox.MemoriesFragment, MemoryBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50f6ca6832a6d4b2672d7eb3467d6554b.MemoriesFragment
+MemoryBox.MemoriesFragment;md50f6ca6832a6d4b2672d7eb3467d6554b.MemoriesFragment
+memorybox.MemoriesFragment;md50f6ca6832a6d4b2672d7eb3467d6554b.MemoriesFragment
 MemoryBox.PicFragment, MemoryBox;md50f6ca6832a6d4b2672d7eb3467d6554b.PicFragment
 MemoryBox.PicFragment, MemoryBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50f6ca6832a6d4b2672d7eb3467d6554b.PicFragment
 MemoryBox.PicFragment;md50f6ca6832a6d4b2672d7eb3467d6554b.PicFragment

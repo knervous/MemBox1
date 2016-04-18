@@ -35,8 +35,6 @@ C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\android\assets\System.Ser
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\android\assets\System.Threading.Timer.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\android\assets\System.Runtime.Serialization.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\android\assets\System.ServiceModel.Internals.dll
-C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\android\assets\Microsoft.CSharp.dll
-C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\android\assets\Mono.CSharp.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\android\assets\System.ComponentModel.DataAnnotations.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\android\assets\System.ComponentModel.Composition.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\android\assets\System.Numerics.dll

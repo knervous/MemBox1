@@ -108,8 +108,8 @@
     </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />
-    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Square.Picasso, Version=2.5.2.0, Culture=neutral, processorArchitecture=MSIL">
@@ -184,11 +184,11 @@
     <Compile Include="CreateTextFragment.cs" />
     <Compile Include="CreatePicFragment.cs" />
     <Compile Include="CreateMemBoxFragment.cs" />
-    <Compile Include="HomeScreen.cs" />
+    <Compile Include="HomeScreenFragment.cs" />
     <Compile Include="InfoFragment.cs" />
-    <Compile Include="Boxes.cs" />
+    <Compile Include="BoxesFragment.cs" />
     <Compile Include="MainActivity.cs" />
-    <Compile Include="Memories.cs" />
+    <Compile Include="MemoriesFragment.cs" />
     <Compile Include="PicFragment.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
