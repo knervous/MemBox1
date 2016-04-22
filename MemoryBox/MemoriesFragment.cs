@@ -1,24 +1,12 @@
 using System.Collections.Generic;
-
-using Android.App;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
 using System;
-using Android.Support.V4.App;
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
-using Newtonsoft.Json;
 
 namespace MemoryBox
 {
 
-    [Activity()]
-    [Serializable]
     public class MemoriesFragment : Android.Support.V4.App.Fragment, View.IOnTouchListener
     {
 
@@ -40,227 +28,23 @@ namespace MemoryBox
         private Button createVoice;
         private PicFragment invokePic = new PicFragment();
         private View mView;
+        private MemoryModel mMemoryModel;
 
-        public FrameLayout Fl
+        public override void OnSaveInstanceState(Bundle outState)
         {
-            get
-            {
-                return fl;
-            }
-
-            set
-            {
-                fl = value;
-            }
+            base.OnSaveInstanceState(outState);
+            outState.PutFloat("viewX", _viewX);
         }
 
-        public float ViewX
+        public MemoriesFragment()
         {
-            get
-            {
-                return _viewX;
-            }
 
-            set
-            {
-                _viewX = value;
-            }
+        }
+        public MemoriesFragment(MemoryModel memoryModel)
+        {
+            mMemoryModel = memoryModel;
         }
 
-        public float ViewY
-        {
-            get
-            {
-                return _viewY;
-            }
-
-            set
-            {
-                _viewY = value;
-            }
-        }
-
-        public float InitialX
-        {
-            get
-            {
-                return initialX;
-            }
-
-            set
-            {
-                initialX = value;
-            }
-        }
-
-        public float InitialY
-        {
-            get
-            {
-                return initialY;
-            }
-
-            set
-            {
-                initialY = value;
-            }
-        }
-
-        public float EndX
-        {
-            get
-            {
-                return endX;
-            }
-
-            set
-            {
-                endX = value;
-            }
-        }
-
-        public float EndY
-        {
-            get
-            {
-                return endY;
-            }
-
-            set
-            {
-                endY = value;
-            }
-        }
-
-        public ImageView BaseImage
-        {
-            get
-            {
-                return baseImage;
-            }
-
-            set
-            {
-                baseImage = value;
-            }
-        }
-
-        public List<Button> VoiceButtons
-        {
-            get
-            {
-                return voiceButtons;
-            }
-
-            set
-            {
-                voiceButtons = value;
-            }
-        }
-
-        public List<Button> TextButtons
-        {
-            get
-            {
-                return textButtons;
-            }
-
-            set
-            {
-                textButtons = value;
-            }
-        }
-
-        public List<Button> PicButtons
-        {
-            get
-            {
-                return picButtons;
-            }
-
-            set
-            {
-                picButtons = value;
-            }
-        }
-
-        public List<FrameLayout.LayoutParams> PrmList
-        {
-            get
-            {
-                return prmList;
-            }
-
-            set
-            {
-                prmList = value;
-            }
-        }
-
-        public Button CreateText
-        {
-            get
-            {
-                return createText;
-            }
-
-            set
-            {
-                createText = value;
-            }
-        }
-
-        public Button CreatePic
-        {
-            get
-            {
-                return createPic;
-            }
-
-            set
-            {
-                createPic = value;
-            }
-        }
-
-        public Button CreateVoice
-        {
-            get
-            {
-                return createVoice;
-            }
-
-            set
-            {
-                createVoice = value;
-            }
-        }
-
-        internal PicFragment InvokePic
-        {
-            get
-            {
-                return invokePic;
-            }
-
-            set
-            {
-                invokePic = value;
-            }
-        }
-
-        public View MView
-        {
-            get
-            {
-                return mView;
-            }
-
-            set
-            {
-                mView = value;
-            }
-        }
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
@@ -269,8 +53,11 @@ namespace MemoryBox
 
             prmList = new List<FrameLayout.LayoutParams>();
             fl = view.FindViewById<FrameLayout>(Resource.Id.memFrame);
+            
+
 
             baseImage = (ImageView)view.FindViewById<ImageView>(Resource.Id.viewPic);
+            
 
             voiceButtons = new List<Button>();
             textButtons = new List<Button>();
@@ -294,38 +81,18 @@ namespace MemoryBox
                 CreatePicFragment dialogInfo = new CreatePicFragment();
                 Android.App.FragmentManager transaction = Activity.FragmentManager;
                 dialogInfo.Show(transaction, "signup fragment");
-                dialogInfo.onSubmitPic += delegate (object sender2, SubmitPicEventArgs e2)
-                {
-                    var prms = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WrapContent, FrameLayout.LayoutParams.WrapContent);
-                    ButtonPicMemories picButtonOne = new ButtonPicMemories(view.Context, e2.Picture, e2.PictureText);
-                    picButtonOne.SetBackgroundResource(Resource.Drawable.vidMem);
-                    var dimensionRand = RandomNumber(100, 200);
-                    prms.Height = dimensionRand;
-                    prms.Width = dimensionRand;
-                    fl.AddView(picButtonOne, prms);
-                    picButtonOne.LongClick += (sender1, e1) =>
-                    {
-                        if (Math.Abs(picButtonOne.InitialX - picButtonOne.EndX) < 50 && Math.Abs(picButtonOne.InitialY - picButtonOne.EndY) < 50)
-                        {
-
-                            invokePic.Dispose();
-
-                            invokePic = new PicFragment(picButtonOne.Picture, picButtonOne.TextMemory);
-                            Android.App.FragmentManager transaction1 = Activity.FragmentManager;
-                            invokePic.Show(transaction1, "signup fragment");
-                        }
-                    };
-                };
+                dialogInfo.onSubmitPic += CreatePicMemory;
             };
 
             createVoice.Click += (sender, e) =>
             {
-                CreateVoiceFragment dialogInfo = new CreateVoiceFragment();
-                Android.App.FragmentManager transaction = Activity.FragmentManager;
-                dialogInfo.Show(transaction, "signup fragment");
+                //CreateVoiceFragment dialogInfo = new CreateVoiceFragment();
+                //Android.App.FragmentManager transaction = Activity.FragmentManager;
+                //dialogInfo.Show(transaction, "signup fragment");
+                Toast.MakeText(view.Context, "Coming soon!", ToastLength.Short);
             };
 
-            CreateButtons(view);
+            CreateButtons(mMemoryModel);
 
             return view;
         }
@@ -342,17 +109,20 @@ namespace MemoryBox
         private void CreateTextMemory(object sender, SubmitTextEventArgs e)
         {
             var prms = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WrapContent, FrameLayout.LayoutParams.WrapContent);
-            ButtonTextMemories textButtonOne = new ButtonTextMemories(mView.Context, e.Title, e.Text);
-            textButtonOne.SetBackgroundResource(Resource.Drawable.textMem);
             var dimensionRand = RandomNumber(100, 200);
+            mMemoryModel.TextMemTitle.Add(e.Title);
+            mMemoryModel.TextMemText.Add(e.Text);
+            textButtons.Add(new Button(mView.Context));
+            textButtons[textButtons.Count-1].SetBackgroundResource(Resource.Drawable.textMem);
             prms.Height = dimensionRand;
             prms.Width = dimensionRand;
-            fl.AddView(textButtonOne, prms);
-            textButtonOne.LongClick += (sender1, e1) =>
+            textButtons[textButtons.Count - 1].SetOnTouchListener(this);
+            fl.AddView(textButtons[textButtons.Count - 1], prms);
+            textButtons[textButtons.Count - 1].LongClick += (sender1, e1) =>
             {
-                if (Math.Abs(textButtonOne.InitialX - textButtonOne.EndX) < 50 && Math.Abs(textButtonOne.InitialY - textButtonOne.EndY) < 50)
+                if (Math.Abs(initialX - endX) < 50 && Math.Abs(initialX - endX) < 50)
                 {
-                    TextFragment dialogInfo = new TextFragment(textButtonOne.Title, textButtonOne.TextMemory);
+                    TextFragment dialogInfo = new TextFragment(e.Title, e.Text, e.Created);
                     Android.App.FragmentManager transaction = Activity.FragmentManager;
                     dialogInfo.Show(transaction, "signup fragment");
                 }
@@ -363,20 +133,23 @@ namespace MemoryBox
         private void CreatePicMemory(object sender, SubmitPicEventArgs e)
         {
             var prms = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WrapContent, FrameLayout.LayoutParams.WrapContent);
-            ButtonPicMemories picButtonOne = new ButtonPicMemories(mView.Context, e.Picture, e.PictureText);
-            picButtonOne.SetBackgroundResource(Resource.Drawable.vidMem);
+            mMemoryModel.PicMemTitle.Add(e.PictureText);
+            mMemoryModel.PicMemUrl.Add(e.Url);
+            picButtons.Add(new Button(mView.Context));
+            picButtons[picButtons.Count - 1].SetBackgroundResource(Resource.Drawable.vidMem);
+            picButtons[picButtons.Count - 1].SetOnTouchListener(this);
+
             var dimensionRand = RandomNumber(100, 200);
             prms.Height = dimensionRand;
             prms.Width = dimensionRand;
-            fl.AddView(picButtonOne, prms);
-            picButtonOne.LongClick += (sender1, e1) =>
+            fl.AddView(picButtons[picButtons.Count - 1], prms);
+            picButtons[picButtons.Count - 1].LongClick += (sender1, e1) =>
             {
-                if (Math.Abs(picButtonOne.InitialX - picButtonOne.EndX) < 50 && Math.Abs(picButtonOne.InitialY - picButtonOne.EndY) < 50)
+                if (Math.Abs(initialX - endX) < 50 && Math.Abs(initialX - endX) < 50)
                 {
 
                     invokePic.Dispose();
-
-                    invokePic = new PicFragment(picButtonOne.Picture, picButtonOne.TextMemory);
+                    invokePic = new PicFragment(e.PictureText, e.Url, e.PictureCreated);
                     Android.App.FragmentManager transaction = Activity.FragmentManager;
                     invokePic.Show(transaction, "signup fragment");
                 }
@@ -386,7 +159,11 @@ namespace MemoryBox
 
         public bool OnTouch(View v, MotionEvent e)
         {
-            
+
+            initialX = v.GetX();
+            initialY = v.GetY();
+
+
             switch (e.Action)
             {
                 case MotionEventActions.Down:
@@ -430,80 +207,62 @@ namespace MemoryBox
 
 
 
-        public void CreateButtons(View view)
+        public void CreateButtons(MemoryModel model)
         {
             int dimensionRand = 0;
-            for (int i = 0; i < 1; i++)
+
+
+            //ADD TEXT MEMORIES
+            for (int i = 0; i < model.TextMemTitle.Count; i++)
             {
-                prmList.Add(new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WrapContent, FrameLayout.LayoutParams.WrapContent));
-
-                voiceButtons.Add(new Button(view.Context));
-                textButtons.Add(new Button(view.Context));
-                picButtons.Add(new Button(view.Context));
-
+               
+                prmList.Add(new FrameLayout.LayoutParams(ViewGroup.LayoutParams.WrapContent, ViewGroup.LayoutParams.WrapContent));
+                textButtons.Add(new Button(mView.Context));
                 dimensionRand = RandomNumber(100, 200);
-
+                var index = textButtons.IndexOf(textButtons[i]);
                 prmList[i].Height = dimensionRand;
                 prmList[i].Width = dimensionRand;
-
-                fl.AddView(voiceButtons[i], prmList[i]);
                 fl.AddView(textButtons[i], prmList[i]);
-                fl.AddView(picButtons[i], prmList[i]);
-
-                voiceButtons[i].SetBackgroundResource(Resource.Drawable.voiceMem);
                 textButtons[i].SetBackgroundResource(Resource.Drawable.textMem);
-                picButtons[i].SetBackgroundResource(Resource.Drawable.vidMem);
-
-
-
-                voiceButtons[i].SetOnTouchListener(this);
                 textButtons[i].SetOnTouchListener(this);
-                picButtons[i].SetOnTouchListener(this);
-
-
-
-
-                picButtons[i].LongClick += (o, s) =>
-                {
-                    if (Math.Abs(initialX - endX) < 50 && Math.Abs(initialX - endX) < 50)
-                    {
-                        PicFragment dialogInfo = new PicFragment();
-                        Android.App.FragmentManager transaction = Activity.FragmentManager;
-                        dialogInfo.Show(transaction, "signup fragment");
-                    }
-
-                };
                 textButtons[i].LongClick += (o, s) =>
                 {
                     if (Math.Abs(initialX - endX) < 50 && Math.Abs(initialX - endX) < 50)
                     {
-                        TextFragment dialogInfo = new TextFragment("A Tale of Two Cities", "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way--in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only.");
+                        TextFragment dialogInfo = new TextFragment(model.TextMemTitle[index], model.TextMemText[index], model.TextCreatedBy[index]);
                         Android.App.FragmentManager transaction = Activity.FragmentManager;
-                        dialogInfo.Show(transaction, "signup fragment");
+                        dialogInfo.Show(transaction, "text button " + i);
                     }
                 };
+            }
 
-                voiceButtons[i].LongClick += (o, s) =>
+            //ADD PIC MEMORIES
+
+            for (int i = 0; i < model.PicMemTitle.Count; i++)
+            {
+                prmList.Add(new FrameLayout.LayoutParams(ViewGroup.LayoutParams.WrapContent, ViewGroup.LayoutParams.WrapContent));
+                picButtons.Add(new Button(mView.Context));
+                dimensionRand = RandomNumber(100, 200);
+                var index = textButtons.IndexOf(textButtons[i]);
+                prmList[i].Height = dimensionRand;
+                prmList[i].Width = dimensionRand;
+                fl.AddView(picButtons[i], prmList[i]);
+                picButtons[i].SetBackgroundResource(Resource.Drawable.vidMem);
+                picButtons[i].SetOnTouchListener(this);
+                picButtons[i].LongClick += (o, s) =>
                 {
-
                     if (Math.Abs(initialX - endX) < 50 && Math.Abs(initialX - endX) < 50)
                     {
-                        VoiceFragment dialogInfo = new VoiceFragment();
+                        PicFragment dialogInfo = new PicFragment(model.PicMemTitle[index], model.PicMemUrl[index], model.PicCreatedBy[index]);
                         Android.App.FragmentManager transaction = Activity.FragmentManager;
-                        dialogInfo.Show(transaction, "signup fragment");
+                        dialogInfo.Show(transaction, "pic button " + i);
                     }
+
                 };
-
-
-
-
-
             }
+
+
         }
-
-
-
-
     }
 
 }

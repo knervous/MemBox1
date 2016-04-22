@@ -18,12 +18,15 @@ namespace MemoryBox
     public class BoxesFragment : Android.Support.V4.App.Fragment
     {
         public Button createMem;
-        public List<string> boxes;
+        public List<MemoryModel> boxes;
+        public MemoryModel currentModel;
         public ListView boxListView;
         public CreateMemBoxFragment createMemFragment;
         public ArrayAdapter<string> listAdapter;
         public MyProfileTracker profileTracker;
+        private MemoryListViewAdapter memoryListViewAdapter;
         public event EventHandler<CreateMemoryBoxEventArgs> createMemoryBox;
+        public event EventHandler<EnterMemoryBoxEventArgs> enterMemoryBox;
 
 
         public override void OnCreate(Bundle savedInstanceState)
@@ -47,29 +50,47 @@ namespace MemoryBox
             createMem.Click += delegate
             {
                 createMemoryBox.Invoke(this, new CreateMemoryBoxEventArgs());
-
-                //Android.App.FragmentManager fm = Activity.FragmentManager;
-                //createMemFragment = new CreateMemBoxFragment();
-                //createMemFragment.Show(fm, "signup fragment");
-                //createMemFragment.CreateMemBox += delegate (object sender, CreateNewMemBoxArgs args) 
-                
-                //{
-                //    var name = args.Text;
-                //};
                 
             };
 
-            boxes = new List<string>();
+
+            boxes = new List<MemoryModel>();
             boxListView = view.FindViewById<ListView>(Resource.Id.memListView);
 
-            boxes.Add("Box 1");
-            boxes.Add("Box 2");
-            boxes.Add("Box 3");
+            boxes.Add(new MemoryModel());
+            boxes.Add(new MemoryModel());
+            boxes.Add(new MemoryModel());
+            boxes[0].Name = "Mem Box 1";
+            boxes[1].Name = "Mem Box 2";
+            boxes[2].Name = "Mem Box 3";
 
-            listAdapter = new ArrayAdapter<string>(view.Context, Android.Resource.Layout.SimpleListItem1, boxes);
-            boxListView.Adapter = listAdapter;
+
+            memoryListViewAdapter = new MemoryListViewAdapter(view.Context, boxes);
+            boxListView.Adapter = memoryListViewAdapter;
+
+            boxListView.ItemClick += BoxListView_ItemClick;
 
             return view;
+        }
+
+        private void BoxListView_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
+        {
+            if(currentModel==null)
+                currentModel = boxes[e.Position];
+            
+            enterMemoryBox.Invoke(this, new EnterMemoryBoxEventArgs());
+        }
+
+        public List<MemoryModel> Boxes
+        {
+            get { return boxes;  }
+            set { boxes = value;  }
+        }
+
+        public MemoryModel CurrentBox
+        {
+            get { return currentModel; }
+            set { currentModel = value; }
         }
 
         public override void OnPause()
@@ -101,14 +122,12 @@ namespace MemoryBox
         }
 
     }
-
-    public class BoxList : ListActivity
+    public class EnterMemoryBoxEventArgs : EventArgs
     {
-        protected override void OnCreate(Bundle savedInstanceState)
+        public EnterMemoryBoxEventArgs() : base()
         {
-            base.OnCreate(savedInstanceState);
-            ActionBar.Hide();
 
         }
+
     }
-}
+    }

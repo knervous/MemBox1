@@ -1,6 +1,7 @@
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\android\assets\MemoryBox.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\android\assets\Bolts.AppLinks.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\android\assets\Bolts.Tasks.dll
+C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\android\assets\Imgur.API.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\android\assets\Microsoft.WindowsAzure.Mobile.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\android\assets\Microsoft.WindowsAzure.Mobile.Ext.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\android\assets\Mono.Android.dll

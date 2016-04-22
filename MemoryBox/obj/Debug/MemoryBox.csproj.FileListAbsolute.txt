@@ -44,6 +44,7 @@ C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Debug\MemoryBox.MemoryBox.apk
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Debug\MemoryBox.MemoryBox-Signed.apk
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Debug\Bolts.AppLinks.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Debug\Bolts.Tasks.dll
+C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Debug\Imgur.API.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Debug\Microsoft.WindowsAzure.Mobile.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Debug\Microsoft.WindowsAzure.Mobile.Ext.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Debug\Newtonsoft.Json.dll
@@ -63,6 +64,7 @@ C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Debug\Xamarin.GooglePlayService
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Debug\Xamarin.GooglePlayServices.AppIndexing.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Debug\Xamarin.GooglePlayServices.Basement.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Debug\Xamarin.Insights.dll
+C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Debug\Imgur.API.xml
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Debug\Microsoft.WindowsAzure.Mobile.xml
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Debug\Microsoft.WindowsAzure.Mobile.Ext.xml
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Debug\Newtonsoft.Json.xml
@@ -85,6 +87,7 @@ C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\res\layout\createpicmemor
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\res\layout\createvoicememory.xml
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\res\layout\homescreen.xml
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\res\layout\createmembox.xml
+C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\res\layout\memorylistview.xml
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\res\layout\main.xml
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\res\values\strings.xml
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\res\drawable-v21\voice_mem.xml
@@ -120,6 +123,6 @@ C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\res\anim\slide_in.xml
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\res\anim\slide_out.xml
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\R.cs.flag
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\uploadflags.txt
-C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\MemoryBox.csprojResolveAssemblyReference.cache
+C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\res\drawable\edit_text_style.xml
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\MemoryBox.dll.mdb
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Debug\MemoryBox.dll.mdb

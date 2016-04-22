@@ -1,41 +1,40 @@
 
 
+using System;
 using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
-using Android.Graphics;
-using Android.Graphics.Drawables;
+using Square.Picasso;
+
 
 namespace MemoryBox
 {
     class PicFragment : DialogFragment
     {
-        private ImageView picture;
-        private ImageView inputPicture;
-        private TextView text;
-        private string inputText;
-        private Context context;
-        
-        private bool isNew = false;
 
-        public PicFragment(ImageView infPicture, string infText)
+
+        private ImageView picture;
+        private TextView text;
+        private TextView link;
+        private TextView createdBy;
+        private ScrollView scrollView;
+        private string title;
+        private string url;
+        private string created;
+        private Context context;
+
+        public PicFragment(string infTitle, string infUrl, string infCreated)
         {
-            inputPicture = infPicture;
-            inputText = infText;
-            isNew = true;
+            title = infTitle;
+            url = infUrl;
+            created = infCreated;
         }
 
         public PicFragment()
         { }
         
-        public PicFragment(ButtonPicMemories button)
-        {
-            inputPicture = button.Picture;
-            inputText = button.TextMemory;
-            isNew = true;
-        }
 
         public override void OnAttach(Activity activity)
         {
@@ -48,16 +47,15 @@ namespace MemoryBox
             base.OnCreateView(inflater, container, savedInstanceState);
             
             var view = inflater.Inflate(Resource.Layout.CallPic, container, false);
-
+            scrollView = view.FindViewById<ScrollView>(Resource.Id.picZoom);
             picture = view.FindViewById<ImageView>(Resource.Id.viewPic);
             text = view.FindViewById <TextView>(Resource.Id.callPicText);
+            link = view.FindViewById<TextView>(Resource.Id.callPicURL);
+            createdBy = view.FindViewById<TextView>(Resource.Id.callPicCreated);
             Dialog.SetCancelable(true);
             Dialog.SetCanceledOnTouchOutside(true);
 
-            if (isNew)
-            {
-                setPic();
-            }
+            setPic(view);
             return view;
         }
 
@@ -67,19 +65,19 @@ namespace MemoryBox
             base.OnActivityCreated(savedInstanceState);
         }
 
-        public void setPic()
+
+        public void setPic(View view)
         {
-            text.SetText(inputText, TextView.BufferType.Normal);
-            BitmapDrawable drawable = new BitmapDrawable();
-            drawable = (BitmapDrawable)inputPicture.Drawable;
-            if (drawable != null)
-            { 
-            Bitmap bitmap = drawable.Bitmap;
-            picture.SetImageBitmap(bitmap);
-                bitmap.Dispose();
-            }
-            
+            text.SetText(title, TextView.BufferType.Normal);
+            link.SetText("Link: "+url, TextView.BufferType.Normal);
+            createdBy.SetText("Created By: "+created, TextView.BufferType.Normal);
+            Picasso.With(view.Context)
+                .Load(url)
+                .Into(picture);
         }
 
     }
+
+   
+    
 }

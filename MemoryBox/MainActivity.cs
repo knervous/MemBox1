@@ -1,5 +1,4 @@
 using Android.App;
-using Android.Widget;
 using Android.OS;
 using System;
 using Microsoft.WindowsAzure.MobileServices;
@@ -9,12 +8,8 @@ using Android.Support.V4.App;
 using Android.Content;
 using System.Collections.Generic;
 using SupportFragment = Android.Support.V4.App.Fragment;
-using Android.Runtime;
-using System.IO;
-using System.Runtime.Serialization.Formatters.Binary;
-using Newtonsoft.Json.Bson;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Serialization;
+using Microsoft.WindowsAzure.MobileServices.Sync;
 
 namespace MemoryBox
 {
@@ -29,13 +24,15 @@ namespace MemoryBox
         private BoxesFragment boxFragment;
         private HomeScreenFragment homeScreenFragment;
         private SupportFragment currentFragment;
-        private MemoriesFragment memoriesFragment;
+        private MemoriesFragment mMemoriesFragment;
         private CreateMemBoxFragment createMemBoxFragment;
         private Stack<SupportFragment> stack;
         const string applicationURL = @"https://testapppaul.azurewebsites.net";
         const string localDbFilename = "localstore.db";
         private ICallbackManager callBackManager;
         public static MobileServiceClient client = new MobileServiceClient(applicationURL);
+        private MemoryModel memoryModel;
+        private IMobileServiceSyncTable<MemoryModel> syncMemModel;
 
 
         protected override void OnCreate(Bundle bundle)
@@ -48,9 +45,10 @@ namespace MemoryBox
             SetContentView(Resource.Layout.Main);
             homeScreenFragment = new HomeScreenFragment();
             boxFragment = new BoxesFragment();
-            memoriesFragment = new MemoriesFragment();
+            mMemoriesFragment = new MemoriesFragment();
             currentFragment = homeScreenFragment;
             stack = new Stack<SupportFragment>();
+
 
             homeScreenFragment.facebookLogin += delegate
             {
@@ -70,44 +68,35 @@ namespace MemoryBox
 
                 {
                     var name = args.Text;
-                    ShowFragment(memoriesFragment);
+                    boxFragment.Boxes.Add(new MemoryModel() { Name = name });
+                    //ShowFragment(mMemoriesFragment);
                     createMemBoxFragment.Dismiss();
-
-
-                    MemoryStream ms = new MemoryStream();
-                    //using(BsonWriter writer = new BsonWriter(ms))
-                    //{ 
-                    //        JsonSerializer serializer = new JsonSerializer();
-                    //        serializer.Serialize(writer, boxFragment);
-                    //        string data = Convert.ToBase64String(ms.ToArray());
-                    //        Console.WriteLine("DATA: "+data);
-                    //}
-
-                    Newtonsoft.Json.JsonSerializerSettings jss = new Newtonsoft.Json.JsonSerializerSettings();
-
-
-                    Newtonsoft.Json.Serialization.DefaultContractResolver dcr = new Newtonsoft.Json.Serialization.DefaultContractResolver();
-                    dcr.DefaultMembersSearchFlags |= System.Reflection.BindingFlags.NonPublic;
-                    jss.ContractResolver = dcr;
-
-                    var test = JsonConvert.SerializeObject(new MemoriesFragment());
-
-                    Console.WriteLine("DATA: " + test.Length);
-                    Console.WriteLine("PARSED: " + test);
-
-
                 };
 
 
+            };
+
+            boxFragment.enterMemoryBox += delegate (object sender, EnterMemoryBoxEventArgs args)
+            {
+                var serialized = JsonConvert.SerializeObject(boxFragment.CurrentBox);
+                var serial = new SerializedMemory();
+                serial.Data = serialized;
+                JsonSerializerSettings settings = new JsonSerializerSettings();
+                settings.ObjectCreationHandling = ObjectCreationHandling.Replace;
+                boxFragment.CurrentBox = JsonConvert.DeserializeObject<MemoryModel>(serial.Data, settings);
+                mMemoriesFragment = new MemoriesFragment(boxFragment.CurrentBox);
+                ShowFragment(mMemoriesFragment);
             };
 
 
 
 
             callBackManager = CallbackManagerFactory.Create();
-            ShowFragment(homeScreenFragment);
+            ShowFragment(currentFragment);
         }
 
+
+        
 
         public override void OnBackPressed()
         {
@@ -117,10 +106,10 @@ namespace MemoryBox
                 Android.OS.Process.KillProcess(Android.OS.Process.MyPid());
             }
 
-            if (currentFragment == memoriesFragment)
+            if (currentFragment == mMemoriesFragment)
             {
                 var trans = SupportFragmentManager.BeginTransaction();
-                trans.Detach(memoriesFragment);
+                trans.Detach(mMemoriesFragment);
             }
 
             if (SupportFragmentManager.BackStackEntryCount > 0)
@@ -158,8 +147,11 @@ namespace MemoryBox
         private void ShowFragment(SupportFragment fragment)
         {
             var trans = SupportFragmentManager.BeginTransaction();
-            trans.SetCustomAnimations(Resource.Animation.slide_in, Resource.Animation.slide_out, Resource.Animation.abc_popup_enter, Resource.Animation.abc_popup_exit);
-            trans.Add(Resource.Id.titleScreen1, fragment, "BoxesFragment");
+            if(!(fragment is HomeScreenFragment))
+            { 
+                trans.SetCustomAnimations(Resource.Animation.slide_in, Resource.Animation.slide_out, Resource.Animation.slide_out, Resource.Animation.slide_in);
+            }
+            trans.Add(Resource.Id.titleScreen1, fragment, "CurrentFragment");
             trans.Hide(currentFragment);
             trans.Show(fragment);
             trans.AddToBackStack(null);

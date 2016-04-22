@@ -16,11 +16,14 @@ namespace MemoryBox
     {
         private TextView title;
         private TextView text;
+        private TextView createdBy;
+        private string created;
         private string inputTitle;
         private string inputText;
 
-        public TextFragment(string infTitle, string infText)
+        public TextFragment(string infTitle, string infText, string infCreated)
         {
+            created = infCreated;
             inputTitle = infTitle;
             inputText = infText;
         }
@@ -34,7 +37,7 @@ namespace MemoryBox
         {
             base.OnCreateView(inflater, container, savedInstanceState);
             var view = inflater.Inflate(Resource.Layout.CallText, container, false);
-
+            createdBy = view.FindViewById<TextView>(Resource.Id.callTextCreated);
             title = view.FindViewById<TextView>(Resource.Id.callTextTitle);
             text = view.FindViewById<TextView>(Resource.Id.callText);
 
@@ -53,6 +56,7 @@ namespace MemoryBox
         {
             title.SetText(inputTitle, TextView.BufferType.Normal);
             text.SetText(inputText, TextView.BufferType.Normal);
+            createdBy.SetText("Created by: "+created, TextView.BufferType.Normal);
         }
     }
 }

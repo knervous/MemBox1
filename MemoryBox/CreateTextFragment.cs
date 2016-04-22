@@ -9,6 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Xamarin.Facebook;
 
 namespace MemoryBox
 {
@@ -16,6 +17,7 @@ namespace MemoryBox
     {
         private string title;
         private string text;
+        private string created;
 
         public string Title
         {
@@ -29,10 +31,17 @@ namespace MemoryBox
             set { text = value; }
         }
 
+        public string Created
+        {
+            get { return created; }
+            set { created = value; }
+        }
+
         public SubmitTextEventArgs(string infTitle, string infText) : base()
         {
             Title = infTitle;
             Text = infText;
+            created = Profile.CurrentProfile.Name;
         }
 
 

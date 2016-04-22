@@ -82,6 +82,7 @@ class MonoPackageManager_Resources {
 		"MemoryBox.dll",
 		"Bolts.AppLinks.dll",
 		"Bolts.Tasks.dll",
+		"Imgur.API.dll",
 		"Microsoft.WindowsAzure.Mobile.dll",
 		"Microsoft.WindowsAzure.Mobile.Ext.dll",
 		"Newtonsoft.Json.dll",

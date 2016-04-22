@@ -8,23 +8,26 @@ using Android.Views;
 using Android.Widget;
 using Android.Graphics;
 using System.IO;
-using Com.Nostra13.Universalimageloader.Core;
-using Square.Picasso;
-using Java.IO;
-
+using System.Net;
+using System.Collections.Specialized;
+using System.Xml.Linq;
+using System.Text;
+using Newtonsoft.Json;
+using Xamarin.Facebook;
 
 namespace MemoryBox
 {
 
     public class SubmitPicEventArgs : EventArgs
     {
-        private ImageView picture;
+        private string url;
         private string pictureText;
+        private string pictureCreated;
 
-        public ImageView Picture
+        public string Url
         {
-            get { return picture; }
-            set { picture = value; }
+            get { return url; }
+            set { url = value; }
         }
 
         public string PictureText
@@ -33,20 +36,30 @@ namespace MemoryBox
             set { pictureText = value; }
         }
 
-
-        public SubmitPicEventArgs(ImageView infPicture, string infText) : base()
+        public string PictureCreated
         {
-            picture = infPicture;
+            get { return pictureCreated; }
+            set { pictureCreated = value; }
+        }
+
+
+        public SubmitPicEventArgs(string infUrl, string infText) : base()
+        {
+            url = infUrl;
             pictureText = infText;
+            pictureCreated = Profile.CurrentProfile.Name;
         }
 
 
     }
+
+
     class CreatePicFragment : DialogFragment
     {
 
 
         private EditText picText;
+        private string link;
         private Button goToGallery;
         private ImageView picture;
         private Context context;
@@ -99,130 +112,52 @@ namespace MemoryBox
 
             if(resultCode == Result.Ok)
             {
-                  Picasso.With(context)
-                     .Load(data.Data)
-                  .MemoryPolicy(MemoryPolicy.NoCache, MemoryPolicy.NoStore)
-
-                  // .Resize(300, 300)
-
-                 .Into(picture);
 
 
-                //  ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(context).Build();
-                //  ImageLoader.Instance.Init(config);
-                //ImageLoader.Instance.ClearMemoryCache();
+                Bitmap bitmap = BitmapFactory.DecodeStream(rs.OpenInputStream(data.Data));
+                byte[] bitmapData;
+                using (var stream = new MemoryStream())
+                {
+                    bitmap.Compress(Bitmap.CompressFormat.Png, 0, stream);
+                    bitmapData = stream.ToArray();
+                }
+
+                /*
+                   UPLOADING TO IMGUR
+
+                */
+
+                using (var w = new WebClient())
+                {
+                    var values = new NameValueCollection
+                    {
+                        { "image", Convert.ToBase64String(bitmapData) }
+                    };
+                    w.Headers.Add("Authorization", "Client-ID 14bb8bcd2a1d1f8");
+                    byte[] response = w.UploadValues("https://api.imgur.com/3/image", "POST", values);
+                    string responsebody = Encoding.UTF8.GetString(response);
+
+                    Org.Json.JSONObject root = new Org.Json.JSONObject(responsebody);
+                    Org.Json.JSONObject uploadData = root.GetJSONObject("data");
+                    link = uploadData.Get("link").ToString();
+
+                }
 
 
-
-                //Stream stream = rs.OpenInputStream(data.Data);
-                //Bitmap bm = null;
-                //Bitmap bitmap = BitmapFactory.DecodeStream(rs.OpenInputStream(data.Data));
-                //MemoryStream fout = new MemoryStream();
-                //bitmap.Compress(Bitmap.CompressFormat.Png, 100, fout);
-                //bitmap = BitmapFactory.DecodeStream(fout);
-                //bm = Bitmap.CreateScaledBitmap(bitmap, 300, 300, true);
-
-                //picture.SetImageBitmap(BitmapFactory.DecodeStream(stream));
-                //picture.SetImageBitmap(bitmap);
-                //picture.SetImageURI(data.Data);
-                //bm.Dispose();
-                //bitmap.Dispose();
-
-
-                //Bitmap bm = DecodeBitmapFromStream(data.Data, 300, 300);
-
-                //ExportBitmapAsPNG(bm);
-
-                //bm.Dispose();
-
-
-
-                onSubmitPic.Invoke(this, new SubmitPicEventArgs(picture, picText.Text));
-
-                //Dispose();
-                //GC.Collect();
+                onSubmitPic.Invoke(this, new SubmitPicEventArgs(link, picText.Text));
                 Dismiss();
 
             }
 
         }
 
-
-        void ExportBitmapAsPNG(Bitmap bitmap)
-        {
+        
 
 
-
-
-            var sdCardPath = Android.OS.Environment.ExternalStorageDirectory.AbsolutePath;
-            
-            var filePath = System.IO.Path.Combine(sdCardPath, "test.png");
-            var stream = new FileStream(filePath, FileMode.Create);
-
-
-            //MemoryStream stream = new MemoryStream();
-            //bitmap.Compress(Bitmap.CompressFormat.Png, 0, stream);
-            //byte[] bitmapData = stream.ToArray();
-
-
-
-            //System.IO.File.WriteAllBytes(mPath, bitmapData);
-
-            //var fstream = new fileoutputstream(filepath, true);
-            //using (var stream = new FileOutputStream(filePath, FileMode.Create))
-            //{
-            //    bitmap.compress(bitmap.compressformat.jpeg, 100, stream);
-            //}
-
-            bitmap.Compress(Bitmap.CompressFormat.Png, 100, stream);
-            bitmap.Dispose();
-            stream.Flush();
-            stream.Close();
-        }
-
-        private Bitmap DecodeBitmapFromStream (Android.Net.Uri data, int requestedWidth, int requestedHeight)
-        {
-            //decode with InJustDecodeBounds
-            Stream stream = rs.OpenInputStream(data);
-            BitmapFactory.Options options = new BitmapFactory.Options();
-            options.InJustDecodeBounds = true;
-            BitmapFactory.DecodeStream(stream);
-
-            options.InSampleSize = CalculateInSampleSize(options, requestedWidth, requestedHeight);
-
-            //decode the bitmap
-
-            stream = rs.OpenInputStream(data);
-            options.InJustDecodeBounds = false;
-            Bitmap bitmap = BitmapFactory.DecodeStream(stream, null, options);
-
-            return bitmap;
-
-        }
-
-        private int CalculateInSampleSize(BitmapFactory.Options options, int requestedWidth, int requestedHeight)
-        {
-            int height = options.OutHeight;
-            int width = options.OutWidth;
-            int inSampleSize = 1;
-
-            if (height > requestedHeight || width > requestedWidth)
-            {
-                //image is bigger than desired
-
-                int halfHeight = height / 2;
-                int halfWidth = width / 2;
-
-                while (halfHeight / inSampleSize > requestedHeight && halfWidth / inSampleSize > requestedWidth)
-                {
-                    inSampleSize *= 2;
-                }
-            }
-
-            return inSampleSize;
-
-        }
 
         
     }
+
+
+
 }

@@ -1,7 +1,3 @@
-MemoryBox.ButtonPicMemories, MemoryBox;md50f6ca6832a6d4b2672d7eb3467d6554b.ButtonPicMemories
-MemoryBox.ButtonPicMemories, MemoryBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50f6ca6832a6d4b2672d7eb3467d6554b.ButtonPicMemories
-MemoryBox.ButtonPicMemories;md50f6ca6832a6d4b2672d7eb3467d6554b.ButtonPicMemories
-memorybox.ButtonPicMemories;md50f6ca6832a6d4b2672d7eb3467d6554b.ButtonPicMemories
 MemoryBox.CreateVoiceFragment, MemoryBox;md50f6ca6832a6d4b2672d7eb3467d6554b.CreateVoiceFragment
 MemoryBox.CreateVoiceFragment, MemoryBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50f6ca6832a6d4b2672d7eb3467d6554b.CreateVoiceFragment
 MemoryBox.CreateVoiceFragment;md50f6ca6832a6d4b2672d7eb3467d6554b.CreateVoiceFragment
@@ -30,10 +26,6 @@ MemoryBox.BoxesFragment, MemoryBox;md50f6ca6832a6d4b2672d7eb3467d6554b.BoxesFrag
 MemoryBox.BoxesFragment, MemoryBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50f6ca6832a6d4b2672d7eb3467d6554b.BoxesFragment
 MemoryBox.BoxesFragment;md50f6ca6832a6d4b2672d7eb3467d6554b.BoxesFragment
 memorybox.BoxesFragment;md50f6ca6832a6d4b2672d7eb3467d6554b.BoxesFragment
-MemoryBox.BoxList, MemoryBox;md50f6ca6832a6d4b2672d7eb3467d6554b.BoxList
-MemoryBox.BoxList, MemoryBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50f6ca6832a6d4b2672d7eb3467d6554b.BoxList
-MemoryBox.BoxList;md50f6ca6832a6d4b2672d7eb3467d6554b.BoxList
-memorybox.BoxList;md50f6ca6832a6d4b2672d7eb3467d6554b.BoxList
 MemoryBox.MainActivity, MemoryBox;md50f6ca6832a6d4b2672d7eb3467d6554b.MainActivity
 MemoryBox.MainActivity, MemoryBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50f6ca6832a6d4b2672d7eb3467d6554b.MainActivity
 MemoryBox.MainActivity;md50f6ca6832a6d4b2672d7eb3467d6554b.MainActivity
@@ -46,6 +38,10 @@ MemoryBox.MemoriesFragment, MemoryBox;md50f6ca6832a6d4b2672d7eb3467d6554b.Memori
 MemoryBox.MemoriesFragment, MemoryBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50f6ca6832a6d4b2672d7eb3467d6554b.MemoriesFragment
 MemoryBox.MemoriesFragment;md50f6ca6832a6d4b2672d7eb3467d6554b.MemoriesFragment
 memorybox.MemoriesFragment;md50f6ca6832a6d4b2672d7eb3467d6554b.MemoriesFragment
+MemoryBox.MemoryListViewAdapter, MemoryBox;md50f6ca6832a6d4b2672d7eb3467d6554b.MemoryListViewAdapter
+MemoryBox.MemoryListViewAdapter, MemoryBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50f6ca6832a6d4b2672d7eb3467d6554b.MemoryListViewAdapter
+MemoryBox.MemoryListViewAdapter;md50f6ca6832a6d4b2672d7eb3467d6554b.MemoryListViewAdapter
+memorybox.MemoryListViewAdapter;md50f6ca6832a6d4b2672d7eb3467d6554b.MemoryListViewAdapter
 MemoryBox.PicFragment, MemoryBox;md50f6ca6832a6d4b2672d7eb3467d6554b.PicFragment
 MemoryBox.PicFragment, MemoryBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50f6ca6832a6d4b2672d7eb3467d6554b.PicFragment
 MemoryBox.PicFragment;md50f6ca6832a6d4b2672d7eb3467d6554b.PicFragment
@@ -54,10 +50,6 @@ MemoryBox.TextFragment, MemoryBox;md50f6ca6832a6d4b2672d7eb3467d6554b.TextFragme
 MemoryBox.TextFragment, MemoryBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50f6ca6832a6d4b2672d7eb3467d6554b.TextFragment
 MemoryBox.TextFragment;md50f6ca6832a6d4b2672d7eb3467d6554b.TextFragment
 memorybox.TextFragment;md50f6ca6832a6d4b2672d7eb3467d6554b.TextFragment
-MemoryBox.ButtonTextMemories, MemoryBox;md50f6ca6832a6d4b2672d7eb3467d6554b.ButtonTextMemories
-MemoryBox.ButtonTextMemories, MemoryBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50f6ca6832a6d4b2672d7eb3467d6554b.ButtonTextMemories
-MemoryBox.ButtonTextMemories;md50f6ca6832a6d4b2672d7eb3467d6554b.ButtonTextMemories
-memorybox.ButtonTextMemories;md50f6ca6832a6d4b2672d7eb3467d6554b.ButtonTextMemories
 MemoryBox.VoiceFragment, MemoryBox;md50f6ca6832a6d4b2672d7eb3467d6554b.VoiceFragment
 MemoryBox.VoiceFragment, MemoryBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50f6ca6832a6d4b2672d7eb3467d6554b.VoiceFragment
 MemoryBox.VoiceFragment;md50f6ca6832a6d4b2672d7eb3467d6554b.VoiceFragment

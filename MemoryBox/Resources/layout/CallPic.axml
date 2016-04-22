@@ -6,30 +6,66 @@
     android:minWidth="400dp"
     android:minHeight="400dp"
     android:background="@drawable/coverblank">
-    <ImageView
-        android:src="@drawable/couple"
+    <ScrollView
+        android:layout_height="300dp"
         android:layout_width="400dp"
-        android:layout_height="400dp"
-        android:id="@+id/viewPic"
-        android:scaleType="centerInside"
-        android:cropToPadding="true"
-        android:adjustViewBounds="false"
+        android:id="@+id/picZoom"
         android:paddingBottom="20dp"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
         android:paddingTop="20dp"
+        android:layout_centerHorizontal="true"
         android:layout_centerInParent="true"
-        android:layout_alignParentTop="true" />
+        android:layout_alignParentTop="true">
+        <ImageView
+            android:src="@drawable/couple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewPic"
+            android:scaleType="centerInside"
+            android:cropToPadding="true"
+            android:adjustViewBounds="true"
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"
+            android:gravity="center" />
+    </ScrollView>
     <TextView
-        android:text="Hanging out in the yard :)"
+        android:text="Link: "
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/callPicText"
-        android:layout_below="@+id/viewPic"
+        android:id="@+id/callPicCreated"
+        android:layout_below="@+id/picZoom"
         android:gravity="center"
-        android:paddingBottom="20dp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:paddingTop="15dp" />
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp" />
+    <TextView
+        android:text="Created By: "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/callPicURL"
+        android:layout_below="@+id/callPicCreated"
+        android:gravity="center"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp" />
+    <ScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/callPicURL"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:text="Hanging out in the yard :)"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/callPicText"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp" />
+    </ScrollView>
 </RelativeLayout>
