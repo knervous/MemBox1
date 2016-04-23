@@ -40,6 +40,7 @@ namespace MemoryBox
         {
             base.OnAttach(activity);
             context = activity.Application.BaseContext;
+            
         }
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
@@ -62,6 +63,7 @@ namespace MemoryBox
         public override void OnActivityCreated(Bundle savedInstanceState)
         {
             Dialog.Window.RequestFeature(WindowFeatures.NoTitle);
+            Dialog.Window.Attributes.WindowAnimations = Resource.Style.Animation_AppCompat_DropDownUp;
             base.OnActivityCreated(savedInstanceState);
         }
 

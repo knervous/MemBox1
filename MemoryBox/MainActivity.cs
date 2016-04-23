@@ -79,8 +79,7 @@ namespace MemoryBox
             boxFragment.enterMemoryBox += delegate (object sender, EnterMemoryBoxEventArgs args)
             {
                 var serialized = JsonConvert.SerializeObject(boxFragment.CurrentBox);
-                var serial = new SerializedMemory();
-                serial.Data = serialized;
+                var serial = new SerializedMemory() { Data = serialized };
                 JsonSerializerSettings settings = new JsonSerializerSettings();
                 settings.ObjectCreationHandling = ObjectCreationHandling.Replace;
                 boxFragment.CurrentBox = JsonConvert.DeserializeObject<MemoryModel>(serial.Data, settings);
@@ -110,6 +109,7 @@ namespace MemoryBox
             {
                 var trans = SupportFragmentManager.BeginTransaction();
                 trans.Detach(mMemoriesFragment);
+                trans.Commit();
             }
 
             if (SupportFragmentManager.BackStackEntryCount > 0)
@@ -149,7 +149,7 @@ namespace MemoryBox
             var trans = SupportFragmentManager.BeginTransaction();
             if(!(fragment is HomeScreenFragment))
             { 
-                trans.SetCustomAnimations(Resource.Animation.slide_in, Resource.Animation.slide_out, Resource.Animation.slide_out, Resource.Animation.slide_in);
+                trans.SetCustomAnimations(Resource.Animation.slide_in, Resource.Animation.slide_out);
             }
             trans.Add(Resource.Id.titleScreen1, fragment, "CurrentFragment");
             trans.Hide(currentFragment);

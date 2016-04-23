@@ -28,7 +28,7 @@ namespace MemoryBox
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            
+            Dialog.Window.Attributes.WindowAnimations = Resource.Style.Animation_AppCompat_DropDownUp;
 
             // Create your fragment here
         }

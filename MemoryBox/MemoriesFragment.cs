@@ -211,11 +211,12 @@ namespace MemoryBox
         {
             int dimensionRand = 0;
 
-
+            if (model != null)
+            { 
             //ADD TEXT MEMORIES
             for (int i = 0; i < model.TextMemTitle.Count; i++)
             {
-               
+
                 prmList.Add(new FrameLayout.LayoutParams(ViewGroup.LayoutParams.WrapContent, ViewGroup.LayoutParams.WrapContent));
                 textButtons.Add(new Button(mView.Context));
                 dimensionRand = RandomNumber(100, 200);
@@ -260,7 +261,7 @@ namespace MemoryBox
 
                 };
             }
-
+        }
 
         }
     }
