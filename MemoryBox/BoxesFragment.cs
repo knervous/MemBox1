@@ -28,6 +28,13 @@ namespace MemoryBox
         public event EventHandler<CreateMemoryBoxEventArgs> createMemoryBox;
         public event EventHandler<EnterMemoryBoxEventArgs> enterMemoryBox;
 
+        public MemoryListViewAdapter Adapter {
+
+            get{ return memoryListViewAdapter;}
+            set{ memoryListViewAdapter = value;}
+
+            }
+
 
         public override void OnCreate(Bundle savedInstanceState)
         {

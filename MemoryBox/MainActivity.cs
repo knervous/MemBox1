@@ -32,15 +32,55 @@ namespace MemoryBox
         private ICallbackManager callBackManager;
         public static MobileServiceClient client = new MobileServiceClient(applicationURL);
         private MemoryModel memoryModel;
-        private IMobileServiceSyncTable<MemoryModel> syncMemModel;
+        private IMobileServiceSyncTable<SerializedMemory> syncMemModel;
+
+        private async Task InitLocalStoreAsync()
+        {
+            string path = System.IO.Path.Combine(System.Environment.GetFolderPath(System.Enviironment.SpecialFolder.Personal), localDbFilename);
+            if (!System.IO.File.Exists(path))
+            {
+                System.IO.File.Create(path).Dispose();
+            }
+
+            var store = new MobileServiceSQLiteStore(path);
+
+            await client.SyncContext.InitializeAsync(store);
+
+        }
+
+        private async void OnRefreshItemsSelected()
+        {
+            await SyncAsync(pullData: true);
+            await RefreshItemsFromTableAsync();
+        }
+
+        private async Task RefreshItemsFromTableAsync()
+        {
+            try
+            {
+                var list = await syncMemModel.ToListAsync();
+                boxFragment.Adapter.Clear();
+                JsonSerializerSettings settings = new JsonSerializerSettings();
+                settings.ObjectCreationHandling = ObjectCreationHandling.Replace;
+                foreach (SerializedMemory current in list)
+                {
+                    var temp = JsonConverter.DeserializeObject<MemoryModel>(current);
+                    boxFragment.Adapter.Add(temp);
+                }
+            }
+            catch (Exception dungle) { Console.WriteLine(dungle); }
+
+        }
 
 
-        protected override void OnCreate(Bundle bundle)
+
+        protected async override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
             Xamarin.Insights.Initialize(XamarinInsights.ApiKey, this);
             FacebookSdk.SdkInitialize(this.ApplicationContext);
             CurrentPlatform.Init();
+            await InitLocalStoreAsync();
             ActionBar.Hide();
             SetContentView(Resource.Layout.Main);
             homeScreenFragment = new HomeScreenFragment();
@@ -69,7 +109,12 @@ namespace MemoryBox
                 {
                     var name = args.Text;
                     boxFragment.Boxes.Add(new MemoryModel() { Name = name });
-                    //ShowFragment(mMemoriesFragment);
+                    var temp = new MemoryModel() { Name = name};
+                    var serialized = JsonConvert.SerializeObject(temp);
+                    SerializedMemory mem = new SerializedMemory() { Data = serialized };
+                    await syncMemModel.InsertAsync(mem);
+                    await SyncAsync();
+
                     createMemBoxFragment.Dismiss();
                 };
 
@@ -107,6 +152,8 @@ namespace MemoryBox
 
             if (currentFragment == mMemoriesFragment)
             {
+
+
                 var trans = SupportFragmentManager.BeginTransaction();
                 trans.Detach(mMemoriesFragment);
                 trans.Commit();
@@ -160,6 +207,15 @@ namespace MemoryBox
             currentFragment = fragment;
         }
 
+        private async Task SyncAsync(bool pullData = false)
+        {
+            try
+            {
+                await client.SyncContext.PushAsync();
+                if (pullData) { await syncMemModel.PullAsync("allitems", syncMemModel.CreateQuery()); }
+            }
+            catch (Exception e) { }
+        }
 
         protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
         {

@@ -142,10 +142,6 @@ namespace MemoryBox
                 
                 Dismiss();
 
-                
-
-
-
             }
 
         }
