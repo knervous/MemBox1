@@ -26,7 +26,8 @@
         android:layout_below="@+id/callTextTitle"
         android:gravity="center"
         android:paddingBottom="3dp"
-        android:paddingTop="3dp" />
+        android:paddingTop="3dp"
+        android:textSize="15dp" />
     <ScrollView
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"

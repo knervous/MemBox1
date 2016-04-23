@@ -83,6 +83,8 @@ namespace MemoryBox
         public override void OnActivityCreated(Bundle savedInstanceState)
         {
             Dialog.Window.RequestFeature(WindowFeatures.NoTitle);
+            Dialog.Window.Attributes.WindowAnimations = Resource.Style.tooltip_bubble_text;
+
             base.OnActivityCreated(savedInstanceState);
         }
     }

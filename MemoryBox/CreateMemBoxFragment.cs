@@ -28,6 +28,7 @@ namespace MemoryBox
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            
 
             // Create your fragment here
         }
@@ -38,6 +39,7 @@ namespace MemoryBox
         {
             base.OnCreateView(inflater, container, savedInstanceState);
             Dialog.Window.RequestFeature(WindowFeatures.NoTitle);
+            Dialog.Window.Attributes.WindowAnimations = 17432577;
 
             var view = inflater.Inflate(Resource.Layout.createMemBox, container, false);
 
