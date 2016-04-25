@@ -25,6 +25,13 @@ public class MemoryListViewAdapter
 			mono.android.TypeManager.Activate ("MemoryBox.MemoryListViewAdapter, MemoryBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
 
+	public MemoryListViewAdapter (android.content.Context p0) throws java.lang.Throwable
+	{
+		super ();
+		if (getClass () == MemoryListViewAdapter.class)
+			mono.android.TypeManager.Activate ("MemoryBox.MemoryListViewAdapter, MemoryBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Android.Content.Context, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", this, new java.lang.Object[] { p0 });
+	}
+
 
 	public java.lang.Object getItem (int p0)
 	{

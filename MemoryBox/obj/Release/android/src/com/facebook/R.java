@@ -25,9 +25,10 @@ public final class R {
         public static final int design_fab_out=0x7f04000d;
         public static final int design_snackbar_in=0x7f04000e;
         public static final int design_snackbar_out=0x7f04000f;
-        public static final int slide_in=0x7f040010;
-        public static final int slide_out=0x7f040011;
-        public static final int slide_up1=0x7f040012;
+        public static final int rotate_center=0x7f040010;
+        public static final int slide_in=0x7f040011;
+        public static final int slide_out=0x7f040012;
+        public static final int slide_up1=0x7f040013;
     }
     public static final class attr {
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
@@ -2626,72 +2627,68 @@ containing a value of this type.
         public static final int abc_textfield_search_activated_mtrl_alpha=0x7f020047;
         public static final int abc_textfield_search_default_mtrl_alpha=0x7f020048;
         public static final int abc_textfield_search_material=0x7f020049;
-        public static final int ajaxloader=0x7f02004a;
-        public static final int com_facebook_auth_dialog_background=0x7f02004b;
-        public static final int com_facebook_auth_dialog_cancel_background=0x7f02004c;
-        public static final int com_facebook_auth_dialog_header_background=0x7f02004d;
-        public static final int com_facebook_button_background=0x7f02004e;
-        public static final int com_facebook_button_icon=0x7f02004f;
-        public static final int com_facebook_button_icon_blue=0x7f020050;
-        public static final int com_facebook_button_icon_white=0x7f020051;
-        public static final int com_facebook_button_like_background=0x7f020052;
-        public static final int com_facebook_button_like_icon_selected=0x7f020053;
-        public static final int com_facebook_button_login_silver_background=0x7f020054;
-        public static final int com_facebook_button_send_background=0x7f020055;
-        public static final int com_facebook_button_send_icon_blue=0x7f020056;
-        public static final int com_facebook_button_send_icon_white=0x7f020057;
-        public static final int com_facebook_close=0x7f020058;
-        public static final int com_facebook_favicon_white=0x7f020059;
-        public static final int com_facebook_profile_picture_blank_portrait=0x7f02005a;
-        public static final int com_facebook_profile_picture_blank_square=0x7f02005b;
-        public static final int com_facebook_send_button_icon=0x7f02005c;
-        public static final int com_facebook_tooltip_black_background=0x7f02005d;
-        public static final int com_facebook_tooltip_black_bottomnub=0x7f02005e;
-        public static final int com_facebook_tooltip_black_topnub=0x7f02005f;
-        public static final int com_facebook_tooltip_black_xout=0x7f020060;
-        public static final int com_facebook_tooltip_blue_background=0x7f020061;
-        public static final int com_facebook_tooltip_blue_bottomnub=0x7f020062;
-        public static final int com_facebook_tooltip_blue_topnub=0x7f020063;
-        public static final int com_facebook_tooltip_blue_xout=0x7f020064;
-        public static final int common_full_open_on_phone=0x7f020065;
-        public static final int common_ic_googleplayservices=0x7f020066;
-        public static final int couple=0x7f020067;
-        public static final int cover=0x7f020068;
-        public static final int coverblank=0x7f020069;
-        public static final int design_fab_background=0x7f02006a;
-        public static final int design_snackbar_background=0x7f02006b;
-        public static final int edit_text_style=0x7f02006c;
-        public static final int icon=0x7f02006d;
-        public static final int loginbutton=0x7f02006e;
-        public static final int loginbutton7=0x7f02006f;
-        public static final int loginbuttonpressed=0x7f020070;
-        public static final int loginframe=0x7f020071;
-        public static final int loginsignin=0x7f020072;
-        public static final int membackground=0x7f020073;
-        public static final int membox=0x7f020074;
-        public static final int memboxps=0x7f020075;
-        public static final int messenger_bubble_large_blue=0x7f020076;
-        public static final int messenger_bubble_large_white=0x7f020077;
-        public static final int messenger_bubble_small_blue=0x7f020078;
-        public static final int messenger_bubble_small_white=0x7f020079;
-        public static final int messenger_button_blue_bg_round=0x7f02007a;
-        public static final int messenger_button_blue_bg_selector=0x7f02007b;
-        public static final int messenger_button_send_round_shadow=0x7f02007c;
-        public static final int messenger_button_white_bg_round=0x7f02007d;
-        public static final int messenger_button_white_bg_selector=0x7f02007e;
-        public static final int microphone=0x7f02007f;
-        public static final int microphone1=0x7f020080;
-        public static final int note=0x7f020081;
-        public static final int notification_template_icon_bg=0x7f02008b;
-        public static final int password=0x7f020082;
-        public static final int round_button=0x7f020083;
-        public static final int text_mem=0x7f020084;
-        public static final int textmem=0x7f020085;
-        public static final int username=0x7f020086;
-        public static final int vid_mem=0x7f020087;
-        public static final int vidmem=0x7f020088;
-        public static final int voice_mem=0x7f020089;
-        public static final int voicemem=0x7f02008a;
+        public static final int background_beach=0x7f02004a;
+        public static final int background_farm=0x7f02004b;
+        public static final int background_tree=0x7f02004c;
+        public static final int background_winter=0x7f02004d;
+        public static final int com_facebook_auth_dialog_background=0x7f02004e;
+        public static final int com_facebook_auth_dialog_cancel_background=0x7f02004f;
+        public static final int com_facebook_auth_dialog_header_background=0x7f020050;
+        public static final int com_facebook_button_background=0x7f020051;
+        public static final int com_facebook_button_icon=0x7f020052;
+        public static final int com_facebook_button_icon_blue=0x7f020053;
+        public static final int com_facebook_button_icon_white=0x7f020054;
+        public static final int com_facebook_button_like_background=0x7f020055;
+        public static final int com_facebook_button_like_icon_selected=0x7f020056;
+        public static final int com_facebook_button_login_silver_background=0x7f020057;
+        public static final int com_facebook_button_send_background=0x7f020058;
+        public static final int com_facebook_button_send_icon_blue=0x7f020059;
+        public static final int com_facebook_button_send_icon_white=0x7f02005a;
+        public static final int com_facebook_close=0x7f02005b;
+        public static final int com_facebook_favicon_white=0x7f02005c;
+        public static final int com_facebook_profile_picture_blank_portrait=0x7f02005d;
+        public static final int com_facebook_profile_picture_blank_square=0x7f02005e;
+        public static final int com_facebook_send_button_icon=0x7f02005f;
+        public static final int com_facebook_tooltip_black_background=0x7f020060;
+        public static final int com_facebook_tooltip_black_bottomnub=0x7f020061;
+        public static final int com_facebook_tooltip_black_topnub=0x7f020062;
+        public static final int com_facebook_tooltip_black_xout=0x7f020063;
+        public static final int com_facebook_tooltip_blue_background=0x7f020064;
+        public static final int com_facebook_tooltip_blue_bottomnub=0x7f020065;
+        public static final int com_facebook_tooltip_blue_topnub=0x7f020066;
+        public static final int com_facebook_tooltip_blue_xout=0x7f020067;
+        public static final int common_full_open_on_phone=0x7f020068;
+        public static final int common_ic_googleplayservices=0x7f020069;
+        public static final int cover=0x7f02006a;
+        public static final int coverblank=0x7f02006b;
+        public static final int design_fab_background=0x7f02006c;
+        public static final int design_snackbar_background=0x7f02006d;
+        public static final int edit_text_style=0x7f02006e;
+        public static final int icon=0x7f02006f;
+        public static final int membackground=0x7f020070;
+        public static final int membox=0x7f020071;
+        public static final int memboxps=0x7f020072;
+        public static final int messenger_bubble_large_blue=0x7f020073;
+        public static final int messenger_bubble_large_white=0x7f020074;
+        public static final int messenger_bubble_small_blue=0x7f020075;
+        public static final int messenger_bubble_small_white=0x7f020076;
+        public static final int messenger_button_blue_bg_round=0x7f020077;
+        public static final int messenger_button_blue_bg_selector=0x7f020078;
+        public static final int messenger_button_send_round_shadow=0x7f020079;
+        public static final int messenger_button_white_bg_round=0x7f02007a;
+        public static final int messenger_button_white_bg_selector=0x7f02007b;
+        public static final int microphone=0x7f02007c;
+        public static final int microphone1=0x7f02007d;
+        public static final int note=0x7f02007e;
+        public static final int notification_template_icon_bg=0x7f020087;
+        public static final int round_button=0x7f02007f;
+        public static final int text_mem=0x7f020080;
+        public static final int textmem=0x7f020081;
+        public static final int username=0x7f020082;
+        public static final int vid_mem=0x7f020083;
+        public static final int vidmem=0x7f020084;
+        public static final int voice_mem=0x7f020085;
+        public static final int voicemem=0x7f020086;
     }
     public static final class id {
         public static final int CreatePicButton=0x7f0b00ad;
@@ -2762,7 +2759,6 @@ containing a value of this type.
         public static final int design_navigation_view=0x7f0b009e;
         public static final int disableHome=0x7f0b0011;
         public static final int display_always=0x7f0b0044;
-        public static final int editText1=0x7f0b00be;
         public static final int edit_query=0x7f0b006a;
         public static final int end=0x7f0b001e;
         public static final int end_padder=0x7f0b00bd;
@@ -2844,7 +2840,6 @@ containing a value of this type.
         public static final int showCustom=0x7f0b0013;
         public static final int showHome=0x7f0b0014;
         public static final int showTitle=0x7f0b0015;
-        public static final int signUpButton=0x7f0b00bf;
         public static final int small=0x7f0b0047;
         public static final int snackbar_action=0x7f0b009c;
         public static final int snackbar_text=0x7f0b009b;
@@ -2969,8 +2964,7 @@ containing a value of this type.
         public static final int select_dialog_item_material=0x7f030044;
         public static final int select_dialog_multichoice_material=0x7f030045;
         public static final int select_dialog_singlechoice_material=0x7f030046;
-        public static final int signup=0x7f030047;
-        public static final int support_simple_spinner_dropdown_item=0x7f030048;
+        public static final int support_simple_spinner_dropdown_item=0x7f030047;
     }
     public static final class raw {
         public static final int avril_14th=0x7f050000;
@@ -3514,33 +3508,33 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionBar_background MemoryBox.MemoryBox:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundSplit MemoryBox.MemoryBox:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundStacked MemoryBox.MemoryBox:backgroundStacked}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetEnd MemoryBox.MemoryBox:contentInsetEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetLeft MemoryBox.MemoryBox:contentInsetLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetRight MemoryBox.MemoryBox:contentInsetRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetStart MemoryBox.MemoryBox:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_customNavigationLayout MemoryBox.MemoryBox:customNavigationLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_displayOptions MemoryBox.MemoryBox:displayOptions}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_divider MemoryBox.MemoryBox:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_elevation MemoryBox.MemoryBox:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_height MemoryBox.MemoryBox:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_hideOnContentScroll MemoryBox.MemoryBox:hideOnContentScroll}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeAsUpIndicator MemoryBox.MemoryBox:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeLayout MemoryBox.MemoryBox:homeLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_icon MemoryBox.MemoryBox:icon}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle MemoryBox.MemoryBox:indeterminateProgressStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_itemPadding MemoryBox.MemoryBox:itemPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_logo MemoryBox.MemoryBox:logo}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_navigationMode MemoryBox.MemoryBox:navigationMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_popupTheme MemoryBox.MemoryBox:popupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarPadding MemoryBox.MemoryBox:progressBarPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarStyle MemoryBox.MemoryBox:progressBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitle MemoryBox.MemoryBox:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitleTextStyle MemoryBox.MemoryBox:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_title MemoryBox.MemoryBox:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_titleTextStyle MemoryBox.MemoryBox:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_background memorybox.memorybox:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundSplit memorybox.memorybox:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundStacked memorybox.memorybox:backgroundStacked}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetEnd memorybox.memorybox:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetLeft memorybox.memorybox:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetRight memorybox.memorybox:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetStart memorybox.memorybox:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_customNavigationLayout memorybox.memorybox:customNavigationLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_displayOptions memorybox.memorybox:displayOptions}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_divider memorybox.memorybox:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_elevation memorybox.memorybox:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_height memorybox.memorybox:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_hideOnContentScroll memorybox.memorybox:hideOnContentScroll}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeAsUpIndicator memorybox.memorybox:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeLayout memorybox.memorybox:homeLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_icon memorybox.memorybox:icon}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle memorybox.memorybox:indeterminateProgressStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_itemPadding memorybox.memorybox:itemPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_logo memorybox.memorybox:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_navigationMode memorybox.memorybox:navigationMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_popupTheme memorybox.memorybox:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarPadding memorybox.memorybox:progressBarPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarStyle memorybox.memorybox:progressBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitle memorybox.memorybox:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitleTextStyle memorybox.memorybox:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_title memorybox.memorybox:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_titleTextStyle memorybox.memorybox:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionBar_background
            @see #ActionBar_backgroundSplit
@@ -3580,17 +3574,17 @@ containing a value of this type.
             0x7f01002f, 0x7f010030, 0x7f010069
         };
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#background}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#background}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:background
+          @attr name memorybox.memorybox:background
         */
         public static final int ActionBar_background = 10;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3598,11 +3592,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name MemoryBox.MemoryBox:backgroundSplit
+          @attr name memorybox.memorybox:backgroundSplit
         */
         public static final int ActionBar_backgroundSplit = 12;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#backgroundStacked}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#backgroundStacked}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3610,11 +3604,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name MemoryBox.MemoryBox:backgroundStacked
+          @attr name memorybox.memorybox:backgroundStacked
         */
         public static final int ActionBar_backgroundStacked = 11;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3626,11 +3620,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:contentInsetEnd
+          @attr name memorybox.memorybox:contentInsetEnd
         */
         public static final int ActionBar_contentInsetEnd = 21;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3642,11 +3636,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:contentInsetLeft
+          @attr name memorybox.memorybox:contentInsetLeft
         */
         public static final int ActionBar_contentInsetLeft = 22;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3658,11 +3652,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:contentInsetRight
+          @attr name memorybox.memorybox:contentInsetRight
         */
         public static final int ActionBar_contentInsetRight = 23;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3674,21 +3668,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:contentInsetStart
+          @attr name memorybox.memorybox:contentInsetStart
         */
         public static final int ActionBar_contentInsetStart = 20;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#customNavigationLayout}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#customNavigationLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:customNavigationLayout
+          @attr name memorybox.memorybox:customNavigationLayout
         */
         public static final int ActionBar_customNavigationLayout = 13;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#displayOptions}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#displayOptions}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3706,21 +3700,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>showCustom</code></td><td>0x10</td><td></td></tr>
 <tr><td><code>disableHome</code></td><td>0x20</td><td></td></tr>
 </table>
-          @attr name MemoryBox.MemoryBox:displayOptions
+          @attr name memorybox.memorybox:displayOptions
         */
         public static final int ActionBar_displayOptions = 3;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#divider}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#divider}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:divider
+          @attr name memorybox.memorybox:divider
         */
         public static final int ActionBar_divider = 9;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#elevation}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#elevation}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3732,11 +3726,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:elevation
+          @attr name memorybox.memorybox:elevation
         */
         public static final int ActionBar_elevation = 24;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#height}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#height}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3748,11 +3742,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:height
+          @attr name memorybox.memorybox:height
         */
         public static final int ActionBar_height = 0;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#hideOnContentScroll}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#hideOnContentScroll}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3762,51 +3756,51 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:hideOnContentScroll
+          @attr name memorybox.memorybox:hideOnContentScroll
         */
         public static final int ActionBar_hideOnContentScroll = 19;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:homeAsUpIndicator
+          @attr name memorybox.memorybox:homeAsUpIndicator
         */
         public static final int ActionBar_homeAsUpIndicator = 26;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#homeLayout}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#homeLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:homeLayout
+          @attr name memorybox.memorybox:homeLayout
         */
         public static final int ActionBar_homeLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#icon}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#icon}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:icon
+          @attr name memorybox.memorybox:icon
         */
         public static final int ActionBar_icon = 7;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#indeterminateProgressStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#indeterminateProgressStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:indeterminateProgressStyle
+          @attr name memorybox.memorybox:indeterminateProgressStyle
         */
         public static final int ActionBar_indeterminateProgressStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#itemPadding}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#itemPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3818,21 +3812,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:itemPadding
+          @attr name memorybox.memorybox:itemPadding
         */
         public static final int ActionBar_itemPadding = 18;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#logo}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#logo}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:logo
+          @attr name memorybox.memorybox:logo
         */
         public static final int ActionBar_logo = 8;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#navigationMode}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#navigationMode}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3846,21 +3840,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>listMode</code></td><td>1</td><td></td></tr>
 <tr><td><code>tabMode</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name MemoryBox.MemoryBox:navigationMode
+          @attr name memorybox.memorybox:navigationMode
         */
         public static final int ActionBar_navigationMode = 2;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#popupTheme}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:popupTheme
+          @attr name memorybox.memorybox:popupTheme
         */
         public static final int ActionBar_popupTheme = 25;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#progressBarPadding}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#progressBarPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3872,21 +3866,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:progressBarPadding
+          @attr name memorybox.memorybox:progressBarPadding
         */
         public static final int ActionBar_progressBarPadding = 17;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#progressBarStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#progressBarStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:progressBarStyle
+          @attr name memorybox.memorybox:progressBarStyle
         */
         public static final int ActionBar_progressBarStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#subtitle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3896,21 +3890,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:subtitle
+          @attr name memorybox.memorybox:subtitle
         */
         public static final int ActionBar_subtitle = 4;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:subtitleTextStyle
+          @attr name memorybox.memorybox:subtitleTextStyle
         */
         public static final int ActionBar_subtitleTextStyle = 6;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#title}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#title}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3920,17 +3914,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:title
+          @attr name memorybox.memorybox:title
         */
         public static final int ActionBar_title = 1;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:titleTextStyle
+          @attr name memorybox.memorybox:titleTextStyle
         */
         public static final int ActionBar_titleTextStyle = 5;
         /** Attributes that can be used with a ActionBarLayout.
@@ -3982,12 +3976,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionMode_background MemoryBox.MemoryBox:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_backgroundSplit MemoryBox.MemoryBox:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_closeItemLayout MemoryBox.MemoryBox:closeItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_height MemoryBox.MemoryBox:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_subtitleTextStyle MemoryBox.MemoryBox:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_titleTextStyle MemoryBox.MemoryBox:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_background memorybox.memorybox:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_backgroundSplit memorybox.memorybox:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_closeItemLayout memorybox.memorybox:closeItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_height memorybox.memorybox:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_subtitleTextStyle memorybox.memorybox:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_titleTextStyle memorybox.memorybox:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionMode_background
            @see #ActionMode_backgroundSplit
@@ -4001,17 +3995,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010023, 0x7f010031
         };
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#background}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#background}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:background
+          @attr name memorybox.memorybox:background
         */
         public static final int ActionMode_background = 3;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -4019,21 +4013,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name MemoryBox.MemoryBox:backgroundSplit
+          @attr name memorybox.memorybox:backgroundSplit
         */
         public static final int ActionMode_backgroundSplit = 4;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#closeItemLayout}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#closeItemLayout}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:closeItemLayout
+          @attr name memorybox.memorybox:closeItemLayout
         */
         public static final int ActionMode_closeItemLayout = 5;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#height}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#height}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -4045,27 +4039,27 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:height
+          @attr name memorybox.memorybox:height
         */
         public static final int ActionMode_height = 0;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:subtitleTextStyle
+          @attr name memorybox.memorybox:subtitleTextStyle
         */
         public static final int ActionMode_subtitleTextStyle = 2;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:titleTextStyle
+          @attr name memorybox.memorybox:titleTextStyle
         */
         public static final int ActionMode_titleTextStyle = 1;
         /** Attributes that can be used with a ActivityChooserView.
@@ -4074,8 +4068,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable MemoryBox.MemoryBox:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActivityChooserView_initialActivityCount MemoryBox.MemoryBox:initialActivityCount}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable memorybox.memorybox:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_initialActivityCount memorybox.memorybox:initialActivityCount}</code></td><td></td></tr>
            </table>
            @see #ActivityChooserView_expandActivityOverflowButtonDrawable
            @see #ActivityChooserView_initialActivityCount
@@ -4084,17 +4078,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010032, 0x7f010033
         };
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#expandActivityOverflowButtonDrawable}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#expandActivityOverflowButtonDrawable}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:expandActivityOverflowButtonDrawable
+          @attr name memorybox.memorybox:expandActivityOverflowButtonDrawable
         */
         public static final int ActivityChooserView_expandActivityOverflowButtonDrawable = 1;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#initialActivityCount}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#initialActivityCount}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
@@ -4104,7 +4098,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:initialActivityCount
+          @attr name memorybox.memorybox:initialActivityCount
         */
         public static final int ActivityChooserView_initialActivityCount = 0;
         /** Attributes that can be used with a AdsAttrs.
@@ -4113,11 +4107,11 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AdsAttrs_adSize MemoryBox.MemoryBox:adSize}</code></td><td>
+           <tr><td><code>{@link #AdsAttrs_adSize memorybox.memorybox:adSize}</code></td><td>
     The size of the ad.</td></tr>
-           <tr><td><code>{@link #AdsAttrs_adSizes MemoryBox.MemoryBox:adSizes}</code></td><td>
+           <tr><td><code>{@link #AdsAttrs_adSizes memorybox.memorybox:adSizes}</code></td><td>
     A comma-separated list of the supported ad sizes.</td></tr>
-           <tr><td><code>{@link #AdsAttrs_adUnitId MemoryBox.MemoryBox:adUnitId}</code></td><td> The ad unit ID.</td></tr>
+           <tr><td><code>{@link #AdsAttrs_adUnitId memorybox.memorybox:adUnitId}</code></td><td> The ad unit ID.</td></tr>
            </table>
            @see #AdsAttrs_adSize
            @see #AdsAttrs_adSizes
@@ -4143,7 +4137,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name MemoryBox.MemoryBox:adSize
+          @attr name memorybox.memorybox:adSize
         */
         public static final int AdsAttrs_adSize = 0;
         /**
@@ -4163,7 +4157,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name MemoryBox.MemoryBox:adSizes
+          @attr name memorybox.memorybox:adSizes
         */
         public static final int AdsAttrs_adSizes = 1;
         /**
@@ -4179,7 +4173,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name MemoryBox.MemoryBox:adUnitId
+          @attr name memorybox.memorybox:adUnitId
         */
         public static final int AdsAttrs_adUnitId = 2;
         /** Attributes that can be used with a AlertDialog.
@@ -4189,11 +4183,11 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AlertDialog_android_layout android:layout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout MemoryBox.MemoryBox:buttonPanelSideLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_listItemLayout MemoryBox.MemoryBox:listItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_listLayout MemoryBox.MemoryBox:listLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout MemoryBox.MemoryBox:multiChoiceItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout MemoryBox.MemoryBox:singleChoiceItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout memorybox.memorybox:buttonPanelSideLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_listItemLayout memorybox.memorybox:listItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_listLayout memorybox.memorybox:listLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout memorybox.memorybox:multiChoiceItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout memorybox.memorybox:singleChoiceItemLayout}</code></td><td></td></tr>
            </table>
            @see #AlertDialog_android_layout
            @see #AlertDialog_buttonPanelSideLayout
@@ -4213,53 +4207,53 @@ containing a value of this type.
         */
         public static final int AlertDialog_android_layout = 0;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#buttonPanelSideLayout}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#buttonPanelSideLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:buttonPanelSideLayout
+          @attr name memorybox.memorybox:buttonPanelSideLayout
         */
         public static final int AlertDialog_buttonPanelSideLayout = 1;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#listItemLayout}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#listItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:listItemLayout
+          @attr name memorybox.memorybox:listItemLayout
         */
         public static final int AlertDialog_listItemLayout = 5;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#listLayout}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#listLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:listLayout
+          @attr name memorybox.memorybox:listLayout
         */
         public static final int AlertDialog_listLayout = 2;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#multiChoiceItemLayout}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#multiChoiceItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:multiChoiceItemLayout
+          @attr name memorybox.memorybox:multiChoiceItemLayout
         */
         public static final int AlertDialog_multiChoiceItemLayout = 3;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#singleChoiceItemLayout}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#singleChoiceItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:singleChoiceItemLayout
+          @attr name memorybox.memorybox:singleChoiceItemLayout
         */
         public static final int AlertDialog_singleChoiceItemLayout = 4;
         /** Attributes that can be used with a AppBarLayout.
@@ -4269,8 +4263,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppBarLayout_android_background android:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayout_elevation MemoryBox.MemoryBox:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayout_expanded MemoryBox.MemoryBox:expanded}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_elevation memorybox.memorybox:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_expanded memorybox.memorybox:expanded}</code></td><td></td></tr>
            </table>
            @see #AppBarLayout_android_background
            @see #AppBarLayout_elevation
@@ -4286,7 +4280,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppBarLayout_android_background = 0;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#elevation}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#elevation}
           attribute's value can be found in the {@link #AppBarLayout} array.
 
 
@@ -4298,11 +4292,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:elevation
+          @attr name memorybox.memorybox:elevation
         */
         public static final int AppBarLayout_elevation = 1;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#expanded}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#expanded}
           attribute's value can be found in the {@link #AppBarLayout} array.
 
 
@@ -4312,7 +4306,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:expanded
+          @attr name memorybox.memorybox:expanded
         */
         public static final int AppBarLayout_expanded = 2;
         /** Attributes that can be used with a AppBarLayout_LayoutParams.
@@ -4321,8 +4315,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AppBarLayout_LayoutParams_layout_scrollFlags MemoryBox.MemoryBox:layout_scrollFlags}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayout_LayoutParams_layout_scrollInterpolator MemoryBox.MemoryBox:layout_scrollInterpolator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_LayoutParams_layout_scrollFlags memorybox.memorybox:layout_scrollFlags}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_LayoutParams_layout_scrollInterpolator memorybox.memorybox:layout_scrollInterpolator}</code></td><td></td></tr>
            </table>
            @see #AppBarLayout_LayoutParams_layout_scrollFlags
            @see #AppBarLayout_LayoutParams_layout_scrollInterpolator
@@ -4331,7 +4325,7 @@ containing a value of this type.
             0x7f0100e7, 0x7f0100e8
         };
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#layout_scrollFlags}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#layout_scrollFlags}
           attribute's value can be found in the {@link #AppBarLayout_LayoutParams} array.
 
 
@@ -4347,17 +4341,17 @@ containing a value of this type.
 <tr><td><code>enterAlwaysCollapsed</code></td><td>0x8</td><td></td></tr>
 <tr><td><code>snap</code></td><td>0x10</td><td></td></tr>
 </table>
-          @attr name MemoryBox.MemoryBox:layout_scrollFlags
+          @attr name memorybox.memorybox:layout_scrollFlags
         */
         public static final int AppBarLayout_LayoutParams_layout_scrollFlags = 0;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#layout_scrollInterpolator}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#layout_scrollInterpolator}
           attribute's value can be found in the {@link #AppBarLayout_LayoutParams} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:layout_scrollInterpolator
+          @attr name memorybox.memorybox:layout_scrollInterpolator
         */
         public static final int AppBarLayout_LayoutParams_layout_scrollInterpolator = 1;
         /** Attributes that can be used with a AppCompatImageView.
@@ -4367,7 +4361,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppCompatImageView_android_src android:src}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatImageView_srcCompat MemoryBox.MemoryBox:srcCompat}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatImageView_srcCompat memorybox.memorybox:srcCompat}</code></td><td></td></tr>
            </table>
            @see #AppCompatImageView_android_src
            @see #AppCompatImageView_srcCompat
@@ -4382,13 +4376,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatImageView_android_src = 0;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#srcCompat}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#srcCompat}
           attribute's value can be found in the {@link #AppCompatImageView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:srcCompat
+          @attr name memorybox.memorybox:srcCompat
         */
         public static final int AppCompatImageView_srcCompat = 1;
         /** Attributes that can be used with a AppCompatTextView.
@@ -4398,7 +4392,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppCompatTextView_android_textAppearance android:textAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTextView_textAllCaps MemoryBox.MemoryBox:textAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTextView_textAllCaps memorybox.memorybox:textAllCaps}</code></td><td></td></tr>
            </table>
            @see #AppCompatTextView_android_textAppearance
            @see #AppCompatTextView_textAllCaps
@@ -4413,14 +4407,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTextView_android_textAppearance = 0;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#textAllCaps}
           attribute's value can be found in the {@link #AppCompatTextView} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          @attr name MemoryBox.MemoryBox:textAllCaps
+          @attr name memorybox.memorybox:textAllCaps
         */
         public static final int AppCompatTextView_textAllCaps = 1;
         /** Attributes that can be used with a AppCompatTheme.
@@ -4429,118 +4423,118 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarDivider MemoryBox.MemoryBox:actionBarDivider}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground MemoryBox.MemoryBox:actionBarItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme MemoryBox.MemoryBox:actionBarPopupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarSize MemoryBox.MemoryBox:actionBarSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle MemoryBox.MemoryBox:actionBarSplitStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarStyle MemoryBox.MemoryBox:actionBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle MemoryBox.MemoryBox:actionBarTabBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle MemoryBox.MemoryBox:actionBarTabStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle MemoryBox.MemoryBox:actionBarTabTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarTheme MemoryBox.MemoryBox:actionBarTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme MemoryBox.MemoryBox:actionBarWidgetTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionButtonStyle MemoryBox.MemoryBox:actionButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle MemoryBox.MemoryBox:actionDropDownStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance MemoryBox.MemoryBox:actionMenuTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor MemoryBox.MemoryBox:actionMenuTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeBackground MemoryBox.MemoryBox:actionModeBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle MemoryBox.MemoryBox:actionModeCloseButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable MemoryBox.MemoryBox:actionModeCloseDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable MemoryBox.MemoryBox:actionModeCopyDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable MemoryBox.MemoryBox:actionModeCutDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable MemoryBox.MemoryBox:actionModeFindDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable MemoryBox.MemoryBox:actionModePasteDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle MemoryBox.MemoryBox:actionModePopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable MemoryBox.MemoryBox:actionModeSelectAllDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable MemoryBox.MemoryBox:actionModeShareDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground MemoryBox.MemoryBox:actionModeSplitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeStyle MemoryBox.MemoryBox:actionModeStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable MemoryBox.MemoryBox:actionModeWebSearchDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle MemoryBox.MemoryBox:actionOverflowButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle MemoryBox.MemoryBox:actionOverflowMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle MemoryBox.MemoryBox:activityChooserViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle MemoryBox.MemoryBox:alertDialogButtonGroupStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons MemoryBox.MemoryBox:alertDialogCenterButtons}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_alertDialogStyle MemoryBox.MemoryBox:alertDialogStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_alertDialogTheme MemoryBox.MemoryBox:alertDialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarDivider memorybox.memorybox:actionBarDivider}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground memorybox.memorybox:actionBarItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme memorybox.memorybox:actionBarPopupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarSize memorybox.memorybox:actionBarSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle memorybox.memorybox:actionBarSplitStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarStyle memorybox.memorybox:actionBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle memorybox.memorybox:actionBarTabBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle memorybox.memorybox:actionBarTabStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle memorybox.memorybox:actionBarTabTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTheme memorybox.memorybox:actionBarTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme memorybox.memorybox:actionBarWidgetTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionButtonStyle memorybox.memorybox:actionButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle memorybox.memorybox:actionDropDownStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance memorybox.memorybox:actionMenuTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor memorybox.memorybox:actionMenuTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeBackground memorybox.memorybox:actionModeBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle memorybox.memorybox:actionModeCloseButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable memorybox.memorybox:actionModeCloseDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable memorybox.memorybox:actionModeCopyDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable memorybox.memorybox:actionModeCutDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable memorybox.memorybox:actionModeFindDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable memorybox.memorybox:actionModePasteDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle memorybox.memorybox:actionModePopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable memorybox.memorybox:actionModeSelectAllDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable memorybox.memorybox:actionModeShareDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground memorybox.memorybox:actionModeSplitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeStyle memorybox.memorybox:actionModeStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable memorybox.memorybox:actionModeWebSearchDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle memorybox.memorybox:actionOverflowButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle memorybox.memorybox:actionOverflowMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle memorybox.memorybox:activityChooserViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle memorybox.memorybox:alertDialogButtonGroupStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons memorybox.memorybox:alertDialogCenterButtons}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogStyle memorybox.memorybox:alertDialogStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogTheme memorybox.memorybox:alertDialogTheme}</code></td><td></td></tr>
            <tr><td><code>{@link #AppCompatTheme_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #AppCompatTheme_android_windowIsFloating android:windowIsFloating}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle MemoryBox.MemoryBox:autoCompleteTextViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle MemoryBox.MemoryBox:borderlessButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle MemoryBox.MemoryBox:buttonBarButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle MemoryBox.MemoryBox:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle MemoryBox.MemoryBox:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle MemoryBox.MemoryBox:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarStyle MemoryBox.MemoryBox:buttonBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonStyle MemoryBox.MemoryBox:buttonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall MemoryBox.MemoryBox:buttonStyleSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_checkboxStyle MemoryBox.MemoryBox:checkboxStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle MemoryBox.MemoryBox:checkedTextViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorAccent MemoryBox.MemoryBox:colorAccent}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorButtonNormal MemoryBox.MemoryBox:colorButtonNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorControlActivated MemoryBox.MemoryBox:colorControlActivated}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorControlHighlight MemoryBox.MemoryBox:colorControlHighlight}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorControlNormal MemoryBox.MemoryBox:colorControlNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorPrimary MemoryBox.MemoryBox:colorPrimary}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark MemoryBox.MemoryBox:colorPrimaryDark}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal MemoryBox.MemoryBox:colorSwitchThumbNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_controlBackground MemoryBox.MemoryBox:controlBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding MemoryBox.MemoryBox:dialogPreferredPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dialogTheme MemoryBox.MemoryBox:dialogTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dividerHorizontal MemoryBox.MemoryBox:dividerHorizontal}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dividerVertical MemoryBox.MemoryBox:dividerVertical}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle MemoryBox.MemoryBox:dropDownListViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight MemoryBox.MemoryBox:dropdownListPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_editTextBackground MemoryBox.MemoryBox:editTextBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_editTextColor MemoryBox.MemoryBox:editTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_editTextStyle MemoryBox.MemoryBox:editTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator MemoryBox.MemoryBox:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_imageButtonStyle MemoryBox.MemoryBox:imageButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator MemoryBox.MemoryBox:listChoiceBackgroundIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog MemoryBox.MemoryBox:listDividerAlertDialog}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle MemoryBox.MemoryBox:listPopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight MemoryBox.MemoryBox:listPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge MemoryBox.MemoryBox:listPreferredItemHeightLarge}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall MemoryBox.MemoryBox:listPreferredItemHeightSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft MemoryBox.MemoryBox:listPreferredItemPaddingLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight MemoryBox.MemoryBox:listPreferredItemPaddingRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_panelBackground MemoryBox.MemoryBox:panelBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme MemoryBox.MemoryBox:panelMenuListTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth MemoryBox.MemoryBox:panelMenuListWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_popupMenuStyle MemoryBox.MemoryBox:popupMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_popupWindowStyle MemoryBox.MemoryBox:popupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_radioButtonStyle MemoryBox.MemoryBox:radioButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_ratingBarStyle MemoryBox.MemoryBox:ratingBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator MemoryBox.MemoryBox:ratingBarStyleIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall MemoryBox.MemoryBox:ratingBarStyleSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_searchViewStyle MemoryBox.MemoryBox:searchViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_seekBarStyle MemoryBox.MemoryBox:seekBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_selectableItemBackground MemoryBox.MemoryBox:selectableItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless MemoryBox.MemoryBox:selectableItemBackgroundBorderless}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle MemoryBox.MemoryBox:spinnerDropDownItemStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_spinnerStyle MemoryBox.MemoryBox:spinnerStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_switchStyle MemoryBox.MemoryBox:switchStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu MemoryBox.MemoryBox:textAppearanceLargePopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem MemoryBox.MemoryBox:textAppearanceListItem}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall MemoryBox.MemoryBox:textAppearanceListItemSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle MemoryBox.MemoryBox:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle MemoryBox.MemoryBox:textAppearanceSearchResultTitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu MemoryBox.MemoryBox:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem MemoryBox.MemoryBox:textColorAlertDialogListItem}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl MemoryBox.MemoryBox:textColorSearchUrl}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle MemoryBox.MemoryBox:toolbarNavigationButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_toolbarStyle MemoryBox.MemoryBox:toolbarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowActionBar MemoryBox.MemoryBox:windowActionBar}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay MemoryBox.MemoryBox:windowActionBarOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay MemoryBox.MemoryBox:windowActionModeOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor MemoryBox.MemoryBox:windowFixedHeightMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor MemoryBox.MemoryBox:windowFixedHeightMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor MemoryBox.MemoryBox:windowFixedWidthMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor MemoryBox.MemoryBox:windowFixedWidthMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor MemoryBox.MemoryBox:windowMinWidthMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor MemoryBox.MemoryBox:windowMinWidthMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowNoTitle MemoryBox.MemoryBox:windowNoTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle memorybox.memorybox:autoCompleteTextViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle memorybox.memorybox:borderlessButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle memorybox.memorybox:buttonBarButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle memorybox.memorybox:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle memorybox.memorybox:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle memorybox.memorybox:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarStyle memorybox.memorybox:buttonBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonStyle memorybox.memorybox:buttonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall memorybox.memorybox:buttonStyleSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_checkboxStyle memorybox.memorybox:checkboxStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle memorybox.memorybox:checkedTextViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorAccent memorybox.memorybox:colorAccent}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorButtonNormal memorybox.memorybox:colorButtonNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorControlActivated memorybox.memorybox:colorControlActivated}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorControlHighlight memorybox.memorybox:colorControlHighlight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorControlNormal memorybox.memorybox:colorControlNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorPrimary memorybox.memorybox:colorPrimary}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark memorybox.memorybox:colorPrimaryDark}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal memorybox.memorybox:colorSwitchThumbNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_controlBackground memorybox.memorybox:controlBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding memorybox.memorybox:dialogPreferredPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dialogTheme memorybox.memorybox:dialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dividerHorizontal memorybox.memorybox:dividerHorizontal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dividerVertical memorybox.memorybox:dividerVertical}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle memorybox.memorybox:dropDownListViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight memorybox.memorybox:dropdownListPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_editTextBackground memorybox.memorybox:editTextBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_editTextColor memorybox.memorybox:editTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_editTextStyle memorybox.memorybox:editTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator memorybox.memorybox:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_imageButtonStyle memorybox.memorybox:imageButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator memorybox.memorybox:listChoiceBackgroundIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog memorybox.memorybox:listDividerAlertDialog}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle memorybox.memorybox:listPopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight memorybox.memorybox:listPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge memorybox.memorybox:listPreferredItemHeightLarge}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall memorybox.memorybox:listPreferredItemHeightSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft memorybox.memorybox:listPreferredItemPaddingLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight memorybox.memorybox:listPreferredItemPaddingRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_panelBackground memorybox.memorybox:panelBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme memorybox.memorybox:panelMenuListTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth memorybox.memorybox:panelMenuListWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_popupMenuStyle memorybox.memorybox:popupMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_popupWindowStyle memorybox.memorybox:popupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_radioButtonStyle memorybox.memorybox:radioButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_ratingBarStyle memorybox.memorybox:ratingBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator memorybox.memorybox:ratingBarStyleIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall memorybox.memorybox:ratingBarStyleSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_searchViewStyle memorybox.memorybox:searchViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_seekBarStyle memorybox.memorybox:seekBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_selectableItemBackground memorybox.memorybox:selectableItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless memorybox.memorybox:selectableItemBackgroundBorderless}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle memorybox.memorybox:spinnerDropDownItemStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_spinnerStyle memorybox.memorybox:spinnerStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_switchStyle memorybox.memorybox:switchStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu memorybox.memorybox:textAppearanceLargePopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem memorybox.memorybox:textAppearanceListItem}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall memorybox.memorybox:textAppearanceListItemSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle memorybox.memorybox:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle memorybox.memorybox:textAppearanceSearchResultTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu memorybox.memorybox:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem memorybox.memorybox:textColorAlertDialogListItem}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl memorybox.memorybox:textColorSearchUrl}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle memorybox.memorybox:toolbarNavigationButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_toolbarStyle memorybox.memorybox:toolbarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowActionBar memorybox.memorybox:windowActionBar}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay memorybox.memorybox:windowActionBarOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay memorybox.memorybox:windowActionModeOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor memorybox.memorybox:windowFixedHeightMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor memorybox.memorybox:windowFixedHeightMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor memorybox.memorybox:windowFixedWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor memorybox.memorybox:windowFixedWidthMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor memorybox.memorybox:windowMinWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor memorybox.memorybox:windowMinWidthMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowNoTitle memorybox.memorybox:windowNoTitle}</code></td><td></td></tr>
            </table>
            @see #AppCompatTheme_actionBarDivider
            @see #AppCompatTheme_actionBarItemBackground
@@ -4686,37 +4680,37 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f0100a5, 0x7f0100a6, 0x7f0100a7, 0x7f0100a8
         };
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#actionBarDivider}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#actionBarDivider}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:actionBarDivider
+          @attr name memorybox.memorybox:actionBarDivider
         */
         public static final int AppCompatTheme_actionBarDivider = 23;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#actionBarItemBackground}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#actionBarItemBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:actionBarItemBackground
+          @attr name memorybox.memorybox:actionBarItemBackground
         */
         public static final int AppCompatTheme_actionBarItemBackground = 24;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#actionBarPopupTheme}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#actionBarPopupTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:actionBarPopupTheme
+          @attr name memorybox.memorybox:actionBarPopupTheme
         */
         public static final int AppCompatTheme_actionBarPopupTheme = 17;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#actionBarSize}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#actionBarSize}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -4736,111 +4730,111 @@ containing a value of this type.
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>wrap_content</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name MemoryBox.MemoryBox:actionBarSize
+          @attr name memorybox.memorybox:actionBarSize
         */
         public static final int AppCompatTheme_actionBarSize = 22;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#actionBarSplitStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#actionBarSplitStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:actionBarSplitStyle
+          @attr name memorybox.memorybox:actionBarSplitStyle
         */
         public static final int AppCompatTheme_actionBarSplitStyle = 19;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#actionBarStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#actionBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:actionBarStyle
+          @attr name memorybox.memorybox:actionBarStyle
         */
         public static final int AppCompatTheme_actionBarStyle = 18;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#actionBarTabBarStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#actionBarTabBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:actionBarTabBarStyle
+          @attr name memorybox.memorybox:actionBarTabBarStyle
         */
         public static final int AppCompatTheme_actionBarTabBarStyle = 13;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#actionBarTabStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#actionBarTabStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:actionBarTabStyle
+          @attr name memorybox.memorybox:actionBarTabStyle
         */
         public static final int AppCompatTheme_actionBarTabStyle = 12;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#actionBarTabTextStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#actionBarTabTextStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:actionBarTabTextStyle
+          @attr name memorybox.memorybox:actionBarTabTextStyle
         */
         public static final int AppCompatTheme_actionBarTabTextStyle = 14;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#actionBarTheme}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#actionBarTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:actionBarTheme
+          @attr name memorybox.memorybox:actionBarTheme
         */
         public static final int AppCompatTheme_actionBarTheme = 20;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#actionBarWidgetTheme}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#actionBarWidgetTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:actionBarWidgetTheme
+          @attr name memorybox.memorybox:actionBarWidgetTheme
         */
         public static final int AppCompatTheme_actionBarWidgetTheme = 21;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#actionButtonStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#actionButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:actionButtonStyle
+          @attr name memorybox.memorybox:actionButtonStyle
         */
         public static final int AppCompatTheme_actionButtonStyle = 49;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#actionDropDownStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#actionDropDownStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:actionDropDownStyle
+          @attr name memorybox.memorybox:actionDropDownStyle
         */
         public static final int AppCompatTheme_actionDropDownStyle = 45;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#actionMenuTextAppearance}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#actionMenuTextAppearance}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:actionMenuTextAppearance
+          @attr name memorybox.memorybox:actionMenuTextAppearance
         */
         public static final int AppCompatTheme_actionMenuTextAppearance = 25;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#actionMenuTextColor}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#actionMenuTextColor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -4848,181 +4842,181 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name MemoryBox.MemoryBox:actionMenuTextColor
+          @attr name memorybox.memorybox:actionMenuTextColor
         */
         public static final int AppCompatTheme_actionMenuTextColor = 26;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#actionModeBackground}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#actionModeBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:actionModeBackground
+          @attr name memorybox.memorybox:actionModeBackground
         */
         public static final int AppCompatTheme_actionModeBackground = 29;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#actionModeCloseButtonStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#actionModeCloseButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:actionModeCloseButtonStyle
+          @attr name memorybox.memorybox:actionModeCloseButtonStyle
         */
         public static final int AppCompatTheme_actionModeCloseButtonStyle = 28;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#actionModeCloseDrawable}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#actionModeCloseDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:actionModeCloseDrawable
+          @attr name memorybox.memorybox:actionModeCloseDrawable
         */
         public static final int AppCompatTheme_actionModeCloseDrawable = 31;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#actionModeCopyDrawable}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#actionModeCopyDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:actionModeCopyDrawable
+          @attr name memorybox.memorybox:actionModeCopyDrawable
         */
         public static final int AppCompatTheme_actionModeCopyDrawable = 33;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#actionModeCutDrawable}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#actionModeCutDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:actionModeCutDrawable
+          @attr name memorybox.memorybox:actionModeCutDrawable
         */
         public static final int AppCompatTheme_actionModeCutDrawable = 32;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#actionModeFindDrawable}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#actionModeFindDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:actionModeFindDrawable
+          @attr name memorybox.memorybox:actionModeFindDrawable
         */
         public static final int AppCompatTheme_actionModeFindDrawable = 37;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#actionModePasteDrawable}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#actionModePasteDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:actionModePasteDrawable
+          @attr name memorybox.memorybox:actionModePasteDrawable
         */
         public static final int AppCompatTheme_actionModePasteDrawable = 34;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#actionModePopupWindowStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#actionModePopupWindowStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:actionModePopupWindowStyle
+          @attr name memorybox.memorybox:actionModePopupWindowStyle
         */
         public static final int AppCompatTheme_actionModePopupWindowStyle = 39;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#actionModeSelectAllDrawable}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#actionModeSelectAllDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:actionModeSelectAllDrawable
+          @attr name memorybox.memorybox:actionModeSelectAllDrawable
         */
         public static final int AppCompatTheme_actionModeSelectAllDrawable = 35;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#actionModeShareDrawable}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#actionModeShareDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:actionModeShareDrawable
+          @attr name memorybox.memorybox:actionModeShareDrawable
         */
         public static final int AppCompatTheme_actionModeShareDrawable = 36;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#actionModeSplitBackground}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#actionModeSplitBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:actionModeSplitBackground
+          @attr name memorybox.memorybox:actionModeSplitBackground
         */
         public static final int AppCompatTheme_actionModeSplitBackground = 30;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#actionModeStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#actionModeStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:actionModeStyle
+          @attr name memorybox.memorybox:actionModeStyle
         */
         public static final int AppCompatTheme_actionModeStyle = 27;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#actionModeWebSearchDrawable}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#actionModeWebSearchDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:actionModeWebSearchDrawable
+          @attr name memorybox.memorybox:actionModeWebSearchDrawable
         */
         public static final int AppCompatTheme_actionModeWebSearchDrawable = 38;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#actionOverflowButtonStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#actionOverflowButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:actionOverflowButtonStyle
+          @attr name memorybox.memorybox:actionOverflowButtonStyle
         */
         public static final int AppCompatTheme_actionOverflowButtonStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#actionOverflowMenuStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#actionOverflowMenuStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:actionOverflowMenuStyle
+          @attr name memorybox.memorybox:actionOverflowMenuStyle
         */
         public static final int AppCompatTheme_actionOverflowMenuStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#activityChooserViewStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#activityChooserViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:activityChooserViewStyle
+          @attr name memorybox.memorybox:activityChooserViewStyle
         */
         public static final int AppCompatTheme_activityChooserViewStyle = 57;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#alertDialogButtonGroupStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#alertDialogButtonGroupStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:alertDialogButtonGroupStyle
+          @attr name memorybox.memorybox:alertDialogButtonGroupStyle
         */
         public static final int AppCompatTheme_alertDialogButtonGroupStyle = 92;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#alertDialogCenterButtons}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#alertDialogCenterButtons}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5032,27 +5026,27 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:alertDialogCenterButtons
+          @attr name memorybox.memorybox:alertDialogCenterButtons
         */
         public static final int AppCompatTheme_alertDialogCenterButtons = 93;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#alertDialogStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#alertDialogStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:alertDialogStyle
+          @attr name memorybox.memorybox:alertDialogStyle
         */
         public static final int AppCompatTheme_alertDialogStyle = 91;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#alertDialogTheme}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#alertDialogTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:alertDialogTheme
+          @attr name memorybox.memorybox:alertDialogTheme
         */
         public static final int AppCompatTheme_alertDialogTheme = 94;
         /**
@@ -5068,117 +5062,117 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_android_windowIsFloating = 0;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#autoCompleteTextViewStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#autoCompleteTextViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:autoCompleteTextViewStyle
+          @attr name memorybox.memorybox:autoCompleteTextViewStyle
         */
         public static final int AppCompatTheme_autoCompleteTextViewStyle = 99;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#borderlessButtonStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#borderlessButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:borderlessButtonStyle
+          @attr name memorybox.memorybox:borderlessButtonStyle
         */
         public static final int AppCompatTheme_borderlessButtonStyle = 54;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#buttonBarButtonStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#buttonBarButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:buttonBarButtonStyle
+          @attr name memorybox.memorybox:buttonBarButtonStyle
         */
         public static final int AppCompatTheme_buttonBarButtonStyle = 51;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#buttonBarNegativeButtonStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#buttonBarNegativeButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:buttonBarNegativeButtonStyle
+          @attr name memorybox.memorybox:buttonBarNegativeButtonStyle
         */
         public static final int AppCompatTheme_buttonBarNegativeButtonStyle = 97;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#buttonBarNeutralButtonStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#buttonBarNeutralButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:buttonBarNeutralButtonStyle
+          @attr name memorybox.memorybox:buttonBarNeutralButtonStyle
         */
         public static final int AppCompatTheme_buttonBarNeutralButtonStyle = 98;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#buttonBarPositiveButtonStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#buttonBarPositiveButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:buttonBarPositiveButtonStyle
+          @attr name memorybox.memorybox:buttonBarPositiveButtonStyle
         */
         public static final int AppCompatTheme_buttonBarPositiveButtonStyle = 96;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#buttonBarStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#buttonBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:buttonBarStyle
+          @attr name memorybox.memorybox:buttonBarStyle
         */
         public static final int AppCompatTheme_buttonBarStyle = 50;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#buttonStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#buttonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:buttonStyle
+          @attr name memorybox.memorybox:buttonStyle
         */
         public static final int AppCompatTheme_buttonStyle = 100;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#buttonStyleSmall}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#buttonStyleSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:buttonStyleSmall
+          @attr name memorybox.memorybox:buttonStyleSmall
         */
         public static final int AppCompatTheme_buttonStyleSmall = 101;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#checkboxStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#checkboxStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:checkboxStyle
+          @attr name memorybox.memorybox:checkboxStyle
         */
         public static final int AppCompatTheme_checkboxStyle = 102;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#checkedTextViewStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#checkedTextViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:checkedTextViewStyle
+          @attr name memorybox.memorybox:checkedTextViewStyle
         */
         public static final int AppCompatTheme_checkedTextViewStyle = 103;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#colorAccent}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#colorAccent}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5189,11 +5183,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:colorAccent
+          @attr name memorybox.memorybox:colorAccent
         */
         public static final int AppCompatTheme_colorAccent = 84;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#colorButtonNormal}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#colorButtonNormal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5204,11 +5198,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:colorButtonNormal
+          @attr name memorybox.memorybox:colorButtonNormal
         */
         public static final int AppCompatTheme_colorButtonNormal = 88;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#colorControlActivated}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#colorControlActivated}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5219,11 +5213,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:colorControlActivated
+          @attr name memorybox.memorybox:colorControlActivated
         */
         public static final int AppCompatTheme_colorControlActivated = 86;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#colorControlHighlight}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#colorControlHighlight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5234,11 +5228,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:colorControlHighlight
+          @attr name memorybox.memorybox:colorControlHighlight
         */
         public static final int AppCompatTheme_colorControlHighlight = 87;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#colorControlNormal}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#colorControlNormal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5249,11 +5243,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:colorControlNormal
+          @attr name memorybox.memorybox:colorControlNormal
         */
         public static final int AppCompatTheme_colorControlNormal = 85;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#colorPrimary}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#colorPrimary}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5264,11 +5258,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:colorPrimary
+          @attr name memorybox.memorybox:colorPrimary
         */
         public static final int AppCompatTheme_colorPrimary = 82;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#colorPrimaryDark}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#colorPrimaryDark}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5279,11 +5273,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:colorPrimaryDark
+          @attr name memorybox.memorybox:colorPrimaryDark
         */
         public static final int AppCompatTheme_colorPrimaryDark = 83;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#colorSwitchThumbNormal}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#colorSwitchThumbNormal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5294,21 +5288,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:colorSwitchThumbNormal
+          @attr name memorybox.memorybox:colorSwitchThumbNormal
         */
         public static final int AppCompatTheme_colorSwitchThumbNormal = 89;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#controlBackground}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#controlBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:controlBackground
+          @attr name memorybox.memorybox:controlBackground
         */
         public static final int AppCompatTheme_controlBackground = 90;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#dialogPreferredPadding}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#dialogPreferredPadding}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5320,51 +5314,51 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:dialogPreferredPadding
+          @attr name memorybox.memorybox:dialogPreferredPadding
         */
         public static final int AppCompatTheme_dialogPreferredPadding = 43;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#dialogTheme}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#dialogTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:dialogTheme
+          @attr name memorybox.memorybox:dialogTheme
         */
         public static final int AppCompatTheme_dialogTheme = 42;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#dividerHorizontal}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#dividerHorizontal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:dividerHorizontal
+          @attr name memorybox.memorybox:dividerHorizontal
         */
         public static final int AppCompatTheme_dividerHorizontal = 56;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#dividerVertical}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#dividerVertical}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:dividerVertical
+          @attr name memorybox.memorybox:dividerVertical
         */
         public static final int AppCompatTheme_dividerVertical = 55;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#dropDownListViewStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#dropDownListViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:dropDownListViewStyle
+          @attr name memorybox.memorybox:dropDownListViewStyle
         */
         public static final int AppCompatTheme_dropDownListViewStyle = 74;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#dropdownListPreferredItemHeight}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#dropdownListPreferredItemHeight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5376,21 +5370,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:dropdownListPreferredItemHeight
+          @attr name memorybox.memorybox:dropdownListPreferredItemHeight
         */
         public static final int AppCompatTheme_dropdownListPreferredItemHeight = 46;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#editTextBackground}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#editTextBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:editTextBackground
+          @attr name memorybox.memorybox:editTextBackground
         */
         public static final int AppCompatTheme_editTextBackground = 63;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#editTextColor}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#editTextColor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5398,71 +5392,71 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name MemoryBox.MemoryBox:editTextColor
+          @attr name memorybox.memorybox:editTextColor
         */
         public static final int AppCompatTheme_editTextColor = 62;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#editTextStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#editTextStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:editTextStyle
+          @attr name memorybox.memorybox:editTextStyle
         */
         public static final int AppCompatTheme_editTextStyle = 104;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:homeAsUpIndicator
+          @attr name memorybox.memorybox:homeAsUpIndicator
         */
         public static final int AppCompatTheme_homeAsUpIndicator = 48;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#imageButtonStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#imageButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:imageButtonStyle
+          @attr name memorybox.memorybox:imageButtonStyle
         */
         public static final int AppCompatTheme_imageButtonStyle = 64;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#listChoiceBackgroundIndicator}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#listChoiceBackgroundIndicator}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:listChoiceBackgroundIndicator
+          @attr name memorybox.memorybox:listChoiceBackgroundIndicator
         */
         public static final int AppCompatTheme_listChoiceBackgroundIndicator = 81;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#listDividerAlertDialog}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#listDividerAlertDialog}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:listDividerAlertDialog
+          @attr name memorybox.memorybox:listDividerAlertDialog
         */
         public static final int AppCompatTheme_listDividerAlertDialog = 44;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#listPopupWindowStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#listPopupWindowStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:listPopupWindowStyle
+          @attr name memorybox.memorybox:listPopupWindowStyle
         */
         public static final int AppCompatTheme_listPopupWindowStyle = 75;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#listPreferredItemHeight}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#listPreferredItemHeight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5474,11 +5468,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:listPreferredItemHeight
+          @attr name memorybox.memorybox:listPreferredItemHeight
         */
         public static final int AppCompatTheme_listPreferredItemHeight = 69;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#listPreferredItemHeightLarge}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#listPreferredItemHeightLarge}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5490,11 +5484,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:listPreferredItemHeightLarge
+          @attr name memorybox.memorybox:listPreferredItemHeightLarge
         */
         public static final int AppCompatTheme_listPreferredItemHeightLarge = 71;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#listPreferredItemHeightSmall}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#listPreferredItemHeightSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5506,11 +5500,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:listPreferredItemHeightSmall
+          @attr name memorybox.memorybox:listPreferredItemHeightSmall
         */
         public static final int AppCompatTheme_listPreferredItemHeightSmall = 70;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#listPreferredItemPaddingLeft}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#listPreferredItemPaddingLeft}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5522,11 +5516,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:listPreferredItemPaddingLeft
+          @attr name memorybox.memorybox:listPreferredItemPaddingLeft
         */
         public static final int AppCompatTheme_listPreferredItemPaddingLeft = 72;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#listPreferredItemPaddingRight}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#listPreferredItemPaddingRight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5538,31 +5532,31 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:listPreferredItemPaddingRight
+          @attr name memorybox.memorybox:listPreferredItemPaddingRight
         */
         public static final int AppCompatTheme_listPreferredItemPaddingRight = 73;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#panelBackground}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#panelBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:panelBackground
+          @attr name memorybox.memorybox:panelBackground
         */
         public static final int AppCompatTheme_panelBackground = 78;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#panelMenuListTheme}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#panelMenuListTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:panelMenuListTheme
+          @attr name memorybox.memorybox:panelMenuListTheme
         */
         public static final int AppCompatTheme_panelMenuListTheme = 80;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#panelMenuListWidth}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#panelMenuListWidth}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5574,201 +5568,201 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:panelMenuListWidth
+          @attr name memorybox.memorybox:panelMenuListWidth
         */
         public static final int AppCompatTheme_panelMenuListWidth = 79;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#popupMenuStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#popupMenuStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:popupMenuStyle
+          @attr name memorybox.memorybox:popupMenuStyle
         */
         public static final int AppCompatTheme_popupMenuStyle = 60;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#popupWindowStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#popupWindowStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:popupWindowStyle
+          @attr name memorybox.memorybox:popupWindowStyle
         */
         public static final int AppCompatTheme_popupWindowStyle = 61;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#radioButtonStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#radioButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:radioButtonStyle
+          @attr name memorybox.memorybox:radioButtonStyle
         */
         public static final int AppCompatTheme_radioButtonStyle = 105;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#ratingBarStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#ratingBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:ratingBarStyle
+          @attr name memorybox.memorybox:ratingBarStyle
         */
         public static final int AppCompatTheme_ratingBarStyle = 106;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#ratingBarStyleIndicator}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#ratingBarStyleIndicator}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:ratingBarStyleIndicator
+          @attr name memorybox.memorybox:ratingBarStyleIndicator
         */
         public static final int AppCompatTheme_ratingBarStyleIndicator = 107;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#ratingBarStyleSmall}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#ratingBarStyleSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:ratingBarStyleSmall
+          @attr name memorybox.memorybox:ratingBarStyleSmall
         */
         public static final int AppCompatTheme_ratingBarStyleSmall = 108;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#searchViewStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#searchViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:searchViewStyle
+          @attr name memorybox.memorybox:searchViewStyle
         */
         public static final int AppCompatTheme_searchViewStyle = 68;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#seekBarStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#seekBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:seekBarStyle
+          @attr name memorybox.memorybox:seekBarStyle
         */
         public static final int AppCompatTheme_seekBarStyle = 109;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#selectableItemBackground}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#selectableItemBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:selectableItemBackground
+          @attr name memorybox.memorybox:selectableItemBackground
         */
         public static final int AppCompatTheme_selectableItemBackground = 52;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#selectableItemBackgroundBorderless}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#selectableItemBackgroundBorderless}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:selectableItemBackgroundBorderless
+          @attr name memorybox.memorybox:selectableItemBackgroundBorderless
         */
         public static final int AppCompatTheme_selectableItemBackgroundBorderless = 53;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#spinnerDropDownItemStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#spinnerDropDownItemStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:spinnerDropDownItemStyle
+          @attr name memorybox.memorybox:spinnerDropDownItemStyle
         */
         public static final int AppCompatTheme_spinnerDropDownItemStyle = 47;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#spinnerStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#spinnerStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:spinnerStyle
+          @attr name memorybox.memorybox:spinnerStyle
         */
         public static final int AppCompatTheme_spinnerStyle = 110;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#switchStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#switchStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:switchStyle
+          @attr name memorybox.memorybox:switchStyle
         */
         public static final int AppCompatTheme_switchStyle = 111;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#textAppearanceLargePopupMenu}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#textAppearanceLargePopupMenu}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:textAppearanceLargePopupMenu
+          @attr name memorybox.memorybox:textAppearanceLargePopupMenu
         */
         public static final int AppCompatTheme_textAppearanceLargePopupMenu = 40;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#textAppearanceListItem}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#textAppearanceListItem}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:textAppearanceListItem
+          @attr name memorybox.memorybox:textAppearanceListItem
         */
         public static final int AppCompatTheme_textAppearanceListItem = 76;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#textAppearanceListItemSmall}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#textAppearanceListItemSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:textAppearanceListItemSmall
+          @attr name memorybox.memorybox:textAppearanceListItemSmall
         */
         public static final int AppCompatTheme_textAppearanceListItemSmall = 77;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#textAppearanceSearchResultSubtitle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#textAppearanceSearchResultSubtitle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:textAppearanceSearchResultSubtitle
+          @attr name memorybox.memorybox:textAppearanceSearchResultSubtitle
         */
         public static final int AppCompatTheme_textAppearanceSearchResultSubtitle = 66;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#textAppearanceSearchResultTitle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#textAppearanceSearchResultTitle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:textAppearanceSearchResultTitle
+          @attr name memorybox.memorybox:textAppearanceSearchResultTitle
         */
         public static final int AppCompatTheme_textAppearanceSearchResultTitle = 65;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#textAppearanceSmallPopupMenu}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#textAppearanceSmallPopupMenu}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:textAppearanceSmallPopupMenu
+          @attr name memorybox.memorybox:textAppearanceSmallPopupMenu
         */
         public static final int AppCompatTheme_textAppearanceSmallPopupMenu = 41;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#textColorAlertDialogListItem}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#textColorAlertDialogListItem}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5776,11 +5770,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name MemoryBox.MemoryBox:textColorAlertDialogListItem
+          @attr name memorybox.memorybox:textColorAlertDialogListItem
         */
         public static final int AppCompatTheme_textColorAlertDialogListItem = 95;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#textColorSearchUrl}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#textColorSearchUrl}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5788,31 +5782,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name MemoryBox.MemoryBox:textColorSearchUrl
+          @attr name memorybox.memorybox:textColorSearchUrl
         */
         public static final int AppCompatTheme_textColorSearchUrl = 67;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#toolbarNavigationButtonStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#toolbarNavigationButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:toolbarNavigationButtonStyle
+          @attr name memorybox.memorybox:toolbarNavigationButtonStyle
         */
         public static final int AppCompatTheme_toolbarNavigationButtonStyle = 59;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#toolbarStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#toolbarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:toolbarStyle
+          @attr name memorybox.memorybox:toolbarStyle
         */
         public static final int AppCompatTheme_toolbarStyle = 58;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#windowActionBar}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#windowActionBar}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5822,11 +5816,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:windowActionBar
+          @attr name memorybox.memorybox:windowActionBar
         */
         public static final int AppCompatTheme_windowActionBar = 2;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#windowActionBarOverlay}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#windowActionBarOverlay}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5836,11 +5830,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:windowActionBarOverlay
+          @attr name memorybox.memorybox:windowActionBarOverlay
         */
         public static final int AppCompatTheme_windowActionBarOverlay = 4;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#windowActionModeOverlay}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#windowActionModeOverlay}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5850,11 +5844,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:windowActionModeOverlay
+          @attr name memorybox.memorybox:windowActionModeOverlay
         */
         public static final int AppCompatTheme_windowActionModeOverlay = 5;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#windowFixedHeightMajor}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#windowFixedHeightMajor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5869,11 +5863,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:windowFixedHeightMajor
+          @attr name memorybox.memorybox:windowFixedHeightMajor
         */
         public static final int AppCompatTheme_windowFixedHeightMajor = 9;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#windowFixedHeightMinor}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#windowFixedHeightMinor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5888,11 +5882,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:windowFixedHeightMinor
+          @attr name memorybox.memorybox:windowFixedHeightMinor
         */
         public static final int AppCompatTheme_windowFixedHeightMinor = 7;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#windowFixedWidthMajor}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#windowFixedWidthMajor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5907,11 +5901,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:windowFixedWidthMajor
+          @attr name memorybox.memorybox:windowFixedWidthMajor
         */
         public static final int AppCompatTheme_windowFixedWidthMajor = 6;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#windowFixedWidthMinor}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#windowFixedWidthMinor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5926,11 +5920,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:windowFixedWidthMinor
+          @attr name memorybox.memorybox:windowFixedWidthMinor
         */
         public static final int AppCompatTheme_windowFixedWidthMinor = 8;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#windowMinWidthMajor}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#windowMinWidthMajor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5945,11 +5939,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:windowMinWidthMajor
+          @attr name memorybox.memorybox:windowMinWidthMajor
         */
         public static final int AppCompatTheme_windowMinWidthMajor = 10;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#windowMinWidthMinor}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#windowMinWidthMinor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5964,11 +5958,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:windowMinWidthMinor
+          @attr name memorybox.memorybox:windowMinWidthMinor
         */
         public static final int AppCompatTheme_windowMinWidthMinor = 11;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#windowNoTitle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#windowNoTitle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5978,7 +5972,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:windowNoTitle
+          @attr name memorybox.memorybox:windowNoTitle
         */
         public static final int AppCompatTheme_windowNoTitle = 3;
         /** Attributes that can be used with a BottomSheetBehavior_Params.
@@ -5987,8 +5981,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #BottomSheetBehavior_Params_behavior_hideable MemoryBox.MemoryBox:behavior_hideable}</code></td><td></td></tr>
-           <tr><td><code>{@link #BottomSheetBehavior_Params_behavior_peekHeight MemoryBox.MemoryBox:behavior_peekHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomSheetBehavior_Params_behavior_hideable memorybox.memorybox:behavior_hideable}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomSheetBehavior_Params_behavior_peekHeight memorybox.memorybox:behavior_peekHeight}</code></td><td></td></tr>
            </table>
            @see #BottomSheetBehavior_Params_behavior_hideable
            @see #BottomSheetBehavior_Params_behavior_peekHeight
@@ -5997,7 +5991,7 @@ containing a value of this type.
             0x7f0100e9, 0x7f0100ea
         };
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#behavior_hideable}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#behavior_hideable}
           attribute's value can be found in the {@link #BottomSheetBehavior_Params} array.
 
 
@@ -6007,11 +6001,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:behavior_hideable
+          @attr name memorybox.memorybox:behavior_hideable
         */
         public static final int BottomSheetBehavior_Params_behavior_hideable = 1;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#behavior_peekHeight}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#behavior_peekHeight}
           attribute's value can be found in the {@link #BottomSheetBehavior_Params} array.
 
 
@@ -6023,7 +6017,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:behavior_peekHeight
+          @attr name memorybox.memorybox:behavior_peekHeight
         */
         public static final int BottomSheetBehavior_Params_behavior_peekHeight = 0;
         /** Attributes that can be used with a ButtonBarLayout.
@@ -6032,7 +6026,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ButtonBarLayout_allowStacking MemoryBox.MemoryBox:allowStacking}</code></td><td></td></tr>
+           <tr><td><code>{@link #ButtonBarLayout_allowStacking memorybox.memorybox:allowStacking}</code></td><td></td></tr>
            </table>
            @see #ButtonBarLayout_allowStacking
          */
@@ -6040,7 +6034,7 @@ containing a value of this type.
             0x7f0100a9
         };
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#allowStacking}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#allowStacking}
           attribute's value can be found in the {@link #ButtonBarLayout} array.
 
 
@@ -6050,7 +6044,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:allowStacking
+          @attr name memorybox.memorybox:allowStacking
         */
         public static final int ButtonBarLayout_allowStacking = 0;
         /** Attributes that can be used with a CardView.
@@ -6059,17 +6053,17 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CardView_cardBackgroundColor MemoryBox.MemoryBox:cardBackgroundColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardCornerRadius MemoryBox.MemoryBox:cardCornerRadius}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardElevation MemoryBox.MemoryBox:cardElevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardMaxElevation MemoryBox.MemoryBox:cardMaxElevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardPreventCornerOverlap MemoryBox.MemoryBox:cardPreventCornerOverlap}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardUseCompatPadding MemoryBox.MemoryBox:cardUseCompatPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPadding MemoryBox.MemoryBox:contentPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPaddingBottom MemoryBox.MemoryBox:contentPaddingBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPaddingLeft MemoryBox.MemoryBox:contentPaddingLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPaddingRight MemoryBox.MemoryBox:contentPaddingRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPaddingTop MemoryBox.MemoryBox:contentPaddingTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardBackgroundColor memorybox.memorybox:cardBackgroundColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardCornerRadius memorybox.memorybox:cardCornerRadius}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardElevation memorybox.memorybox:cardElevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardMaxElevation memorybox.memorybox:cardMaxElevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardPreventCornerOverlap memorybox.memorybox:cardPreventCornerOverlap}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardUseCompatPadding memorybox.memorybox:cardUseCompatPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPadding memorybox.memorybox:contentPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingBottom memorybox.memorybox:contentPaddingBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingLeft memorybox.memorybox:contentPaddingLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingRight memorybox.memorybox:contentPaddingRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingTop memorybox.memorybox:contentPaddingTop}</code></td><td></td></tr>
            </table>
            @see #CardView_cardBackgroundColor
            @see #CardView_cardCornerRadius
@@ -6089,7 +6083,7 @@ containing a value of this type.
             0x7f010012, 0x7f010013, 0x7f010014
         };
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#cardBackgroundColor}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#cardBackgroundColor}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6100,11 +6094,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:cardBackgroundColor
+          @attr name memorybox.memorybox:cardBackgroundColor
         */
         public static final int CardView_cardBackgroundColor = 0;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#cardCornerRadius}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#cardCornerRadius}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6116,11 +6110,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:cardCornerRadius
+          @attr name memorybox.memorybox:cardCornerRadius
         */
         public static final int CardView_cardCornerRadius = 1;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#cardElevation}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#cardElevation}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6132,11 +6126,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:cardElevation
+          @attr name memorybox.memorybox:cardElevation
         */
         public static final int CardView_cardElevation = 2;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#cardMaxElevation}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#cardMaxElevation}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6148,11 +6142,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:cardMaxElevation
+          @attr name memorybox.memorybox:cardMaxElevation
         */
         public static final int CardView_cardMaxElevation = 3;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#cardPreventCornerOverlap}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#cardPreventCornerOverlap}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6162,11 +6156,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:cardPreventCornerOverlap
+          @attr name memorybox.memorybox:cardPreventCornerOverlap
         */
         public static final int CardView_cardPreventCornerOverlap = 5;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#cardUseCompatPadding}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#cardUseCompatPadding}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6176,11 +6170,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:cardUseCompatPadding
+          @attr name memorybox.memorybox:cardUseCompatPadding
         */
         public static final int CardView_cardUseCompatPadding = 4;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#contentPadding}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#contentPadding}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6192,11 +6186,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:contentPadding
+          @attr name memorybox.memorybox:contentPadding
         */
         public static final int CardView_contentPadding = 6;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#contentPaddingBottom}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#contentPaddingBottom}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6208,11 +6202,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:contentPaddingBottom
+          @attr name memorybox.memorybox:contentPaddingBottom
         */
         public static final int CardView_contentPaddingBottom = 10;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#contentPaddingLeft}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#contentPaddingLeft}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6224,11 +6218,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:contentPaddingLeft
+          @attr name memorybox.memorybox:contentPaddingLeft
         */
         public static final int CardView_contentPaddingLeft = 7;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#contentPaddingRight}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#contentPaddingRight}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6240,11 +6234,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:contentPaddingRight
+          @attr name memorybox.memorybox:contentPaddingRight
         */
         public static final int CardView_contentPaddingRight = 8;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#contentPaddingTop}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#contentPaddingTop}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6256,7 +6250,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:contentPaddingTop
+          @attr name memorybox.memorybox:contentPaddingTop
         */
         public static final int CardView_contentPaddingTop = 9;
         /** Attributes that can be used with a CollapsingAppBarLayout_LayoutParams.
@@ -6265,8 +6259,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CollapsingAppBarLayout_LayoutParams_layout_collapseMode MemoryBox.MemoryBox:layout_collapseMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier MemoryBox.MemoryBox:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingAppBarLayout_LayoutParams_layout_collapseMode memorybox.memorybox:layout_collapseMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier memorybox.memorybox:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
            </table>
            @see #CollapsingAppBarLayout_LayoutParams_layout_collapseMode
            @see #CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier
@@ -6275,7 +6269,7 @@ containing a value of this type.
             0x7f0100eb, 0x7f0100ec
         };
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#layout_collapseMode}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#layout_collapseMode}
           attribute's value can be found in the {@link #CollapsingAppBarLayout_LayoutParams} array.
 
 
@@ -6289,11 +6283,11 @@ containing a value of this type.
 <tr><td><code>pin</code></td><td>1</td><td></td></tr>
 <tr><td><code>parallax</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name MemoryBox.MemoryBox:layout_collapseMode
+          @attr name memorybox.memorybox:layout_collapseMode
         */
         public static final int CollapsingAppBarLayout_LayoutParams_layout_collapseMode = 0;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#layout_collapseParallaxMultiplier}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#layout_collapseParallaxMultiplier}
           attribute's value can be found in the {@link #CollapsingAppBarLayout_LayoutParams} array.
 
 
@@ -6303,7 +6297,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:layout_collapseParallaxMultiplier
+          @attr name memorybox.memorybox:layout_collapseParallaxMultiplier
         */
         public static final int CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier = 1;
         /** Attributes that can be used with a CollapsingToolbarLayout.
@@ -6312,20 +6306,20 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity MemoryBox.MemoryBox:collapsedTitleGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance MemoryBox.MemoryBox:collapsedTitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim MemoryBox.MemoryBox:contentScrim}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity MemoryBox.MemoryBox:expandedTitleGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin MemoryBox.MemoryBox:expandedTitleMargin}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom MemoryBox.MemoryBox:expandedTitleMarginBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd MemoryBox.MemoryBox:expandedTitleMarginEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart MemoryBox.MemoryBox:expandedTitleMarginStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop MemoryBox.MemoryBox:expandedTitleMarginTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance MemoryBox.MemoryBox:expandedTitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim MemoryBox.MemoryBox:statusBarScrim}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_title MemoryBox.MemoryBox:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled MemoryBox.MemoryBox:titleEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId MemoryBox.MemoryBox:toolbarId}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity memorybox.memorybox:collapsedTitleGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance memorybox.memorybox:collapsedTitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim memorybox.memorybox:contentScrim}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity memorybox.memorybox:expandedTitleGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin memorybox.memorybox:expandedTitleMargin}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom memorybox.memorybox:expandedTitleMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd memorybox.memorybox:expandedTitleMarginEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart memorybox.memorybox:expandedTitleMarginStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop memorybox.memorybox:expandedTitleMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance memorybox.memorybox:expandedTitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim memorybox.memorybox:statusBarScrim}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_title memorybox.memorybox:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled memorybox.memorybox:titleEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId memorybox.memorybox:toolbarId}</code></td><td></td></tr>
            </table>
            @see #CollapsingToolbarLayout_collapsedTitleGravity
            @see #CollapsingToolbarLayout_collapsedTitleTextAppearance
@@ -6349,7 +6343,7 @@ containing a value of this type.
             0x7f0100f8, 0x7f0100f9
         };
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#collapsedTitleGravity}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#collapsedTitleGravity}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6370,21 +6364,21 @@ containing a value of this type.
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name MemoryBox.MemoryBox:collapsedTitleGravity
+          @attr name memorybox.memorybox:collapsedTitleGravity
         */
         public static final int CollapsingToolbarLayout_collapsedTitleGravity = 11;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#collapsedTitleTextAppearance}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#collapsedTitleTextAppearance}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:collapsedTitleTextAppearance
+          @attr name memorybox.memorybox:collapsedTitleTextAppearance
         */
         public static final int CollapsingToolbarLayout_collapsedTitleTextAppearance = 7;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#contentScrim}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#contentScrim}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6395,11 +6389,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:contentScrim
+          @attr name memorybox.memorybox:contentScrim
         */
         public static final int CollapsingToolbarLayout_contentScrim = 8;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#expandedTitleGravity}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#expandedTitleGravity}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6420,11 +6414,11 @@ containing a value of this type.
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name MemoryBox.MemoryBox:expandedTitleGravity
+          @attr name memorybox.memorybox:expandedTitleGravity
         */
         public static final int CollapsingToolbarLayout_expandedTitleGravity = 12;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#expandedTitleMargin}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#expandedTitleMargin}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6436,11 +6430,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:expandedTitleMargin
+          @attr name memorybox.memorybox:expandedTitleMargin
         */
         public static final int CollapsingToolbarLayout_expandedTitleMargin = 1;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#expandedTitleMarginBottom}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#expandedTitleMarginBottom}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6452,11 +6446,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:expandedTitleMarginBottom
+          @attr name memorybox.memorybox:expandedTitleMarginBottom
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginBottom = 5;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#expandedTitleMarginEnd}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#expandedTitleMarginEnd}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6468,11 +6462,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:expandedTitleMarginEnd
+          @attr name memorybox.memorybox:expandedTitleMarginEnd
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginEnd = 4;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#expandedTitleMarginStart}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#expandedTitleMarginStart}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6484,11 +6478,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:expandedTitleMarginStart
+          @attr name memorybox.memorybox:expandedTitleMarginStart
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginStart = 2;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#expandedTitleMarginTop}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#expandedTitleMarginTop}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6500,21 +6494,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:expandedTitleMarginTop
+          @attr name memorybox.memorybox:expandedTitleMarginTop
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginTop = 3;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#expandedTitleTextAppearance}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#expandedTitleTextAppearance}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:expandedTitleTextAppearance
+          @attr name memorybox.memorybox:expandedTitleTextAppearance
         */
         public static final int CollapsingToolbarLayout_expandedTitleTextAppearance = 6;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#statusBarScrim}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#statusBarScrim}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6525,11 +6519,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:statusBarScrim
+          @attr name memorybox.memorybox:statusBarScrim
         */
         public static final int CollapsingToolbarLayout_statusBarScrim = 9;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#title}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#title}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6539,11 +6533,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:title
+          @attr name memorybox.memorybox:title
         */
         public static final int CollapsingToolbarLayout_title = 0;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#titleEnabled}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#titleEnabled}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6553,17 +6547,17 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:titleEnabled
+          @attr name memorybox.memorybox:titleEnabled
         */
         public static final int CollapsingToolbarLayout_titleEnabled = 13;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#toolbarId}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#toolbarId}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:toolbarId
+          @attr name memorybox.memorybox:toolbarId
         */
         public static final int CollapsingToolbarLayout_toolbarId = 10;
         /** Attributes that can be used with a CompoundButton.
@@ -6573,8 +6567,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #CompoundButton_android_button android:button}</code></td><td></td></tr>
-           <tr><td><code>{@link #CompoundButton_buttonTint MemoryBox.MemoryBox:buttonTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #CompoundButton_buttonTintMode MemoryBox.MemoryBox:buttonTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #CompoundButton_buttonTint memorybox.memorybox:buttonTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #CompoundButton_buttonTintMode memorybox.memorybox:buttonTintMode}</code></td><td></td></tr>
            </table>
            @see #CompoundButton_android_button
            @see #CompoundButton_buttonTint
@@ -6590,7 +6584,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CompoundButton_android_button = 0;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#buttonTint}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#buttonTint}
           attribute's value can be found in the {@link #CompoundButton} array.
 
 
@@ -6601,11 +6595,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:buttonTint
+          @attr name memorybox.memorybox:buttonTint
         */
         public static final int CompoundButton_buttonTint = 1;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#buttonTintMode}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#buttonTintMode}
           attribute's value can be found in the {@link #CompoundButton} array.
 
 
@@ -6621,7 +6615,7 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name MemoryBox.MemoryBox:buttonTintMode
+          @attr name memorybox.memorybox:buttonTintMode
         */
         public static final int CompoundButton_buttonTintMode = 2;
         /** Attributes that can be used with a CoordinatorLayout.
@@ -6630,8 +6624,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CoordinatorLayout_keylines MemoryBox.MemoryBox:keylines}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_statusBarBackground MemoryBox.MemoryBox:statusBarBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_keylines memorybox.memorybox:keylines}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_statusBarBackground memorybox.memorybox:statusBarBackground}</code></td><td></td></tr>
            </table>
            @see #CoordinatorLayout_keylines
            @see #CoordinatorLayout_statusBarBackground
@@ -6640,23 +6634,23 @@ containing a value of this type.
             0x7f0100fa, 0x7f0100fb
         };
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#keylines}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#keylines}
           attribute's value can be found in the {@link #CoordinatorLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:keylines
+          @attr name memorybox.memorybox:keylines
         */
         public static final int CoordinatorLayout_keylines = 0;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#statusBarBackground}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#statusBarBackground}
           attribute's value can be found in the {@link #CoordinatorLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:statusBarBackground
+          @attr name memorybox.memorybox:statusBarBackground
         */
         public static final int CoordinatorLayout_statusBarBackground = 1;
         /** Attributes that can be used with a CoordinatorLayout_LayoutParams.
@@ -6666,10 +6660,10 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #CoordinatorLayout_LayoutParams_android_layout_gravity android:layout_gravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_anchor MemoryBox.MemoryBox:layout_anchor}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_anchorGravity MemoryBox.MemoryBox:layout_anchorGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_behavior MemoryBox.MemoryBox:layout_behavior}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_keyline MemoryBox.MemoryBox:layout_keyline}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_anchor memorybox.memorybox:layout_anchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_anchorGravity memorybox.memorybox:layout_anchorGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_behavior memorybox.memorybox:layout_behavior}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_keyline memorybox.memorybox:layout_keyline}</code></td><td></td></tr>
            </table>
            @see #CoordinatorLayout_LayoutParams_android_layout_gravity
            @see #CoordinatorLayout_LayoutParams_layout_anchor
@@ -6688,17 +6682,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CoordinatorLayout_LayoutParams_android_layout_gravity = 0;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#layout_anchor}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#layout_anchor}
           attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:layout_anchor
+          @attr name memorybox.memorybox:layout_anchor
         */
         public static final int CoordinatorLayout_LayoutParams_layout_anchor = 2;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#layout_anchorGravity}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#layout_anchorGravity}
           attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
 
 
@@ -6723,11 +6717,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name MemoryBox.MemoryBox:layout_anchorGravity
+          @attr name memorybox.memorybox:layout_anchorGravity
         */
         public static final int CoordinatorLayout_LayoutParams_layout_anchorGravity = 4;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#layout_behavior}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#layout_behavior}
           attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
 
 
@@ -6737,11 +6731,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:layout_behavior
+          @attr name memorybox.memorybox:layout_behavior
         */
         public static final int CoordinatorLayout_LayoutParams_layout_behavior = 1;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#layout_keyline}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#layout_keyline}
           attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
 
 
@@ -6751,7 +6745,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:layout_keyline
+          @attr name memorybox.memorybox:layout_keyline
         */
         public static final int CoordinatorLayout_LayoutParams_layout_keyline = 3;
         /** Attributes that can be used with a DesignTheme.
@@ -6760,9 +6754,9 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #DesignTheme_bottomSheetDialogTheme MemoryBox.MemoryBox:bottomSheetDialogTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #DesignTheme_bottomSheetStyle MemoryBox.MemoryBox:bottomSheetStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #DesignTheme_textColorError MemoryBox.MemoryBox:textColorError}</code></td><td></td></tr>
+           <tr><td><code>{@link #DesignTheme_bottomSheetDialogTheme memorybox.memorybox:bottomSheetDialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #DesignTheme_bottomSheetStyle memorybox.memorybox:bottomSheetStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #DesignTheme_textColorError memorybox.memorybox:textColorError}</code></td><td></td></tr>
            </table>
            @see #DesignTheme_bottomSheetDialogTheme
            @see #DesignTheme_bottomSheetStyle
@@ -6772,27 +6766,27 @@ containing a value of this type.
             0x7f010100, 0x7f010101, 0x7f010102
         };
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#bottomSheetDialogTheme}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#bottomSheetDialogTheme}
           attribute's value can be found in the {@link #DesignTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:bottomSheetDialogTheme
+          @attr name memorybox.memorybox:bottomSheetDialogTheme
         */
         public static final int DesignTheme_bottomSheetDialogTheme = 0;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#bottomSheetStyle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#bottomSheetStyle}
           attribute's value can be found in the {@link #DesignTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:bottomSheetStyle
+          @attr name memorybox.memorybox:bottomSheetStyle
         */
         public static final int DesignTheme_bottomSheetStyle = 1;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#textColorError}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#textColorError}
           attribute's value can be found in the {@link #DesignTheme} array.
 
 
@@ -6803,7 +6797,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:textColorError
+          @attr name memorybox.memorybox:textColorError
         */
         public static final int DesignTheme_textColorError = 2;
         /** Attributes that can be used with a DrawerArrowToggle.
@@ -6812,14 +6806,14 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength MemoryBox.MemoryBox:arrowHeadLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength MemoryBox.MemoryBox:arrowShaftLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_barLength MemoryBox.MemoryBox:barLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_color MemoryBox.MemoryBox:color}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_drawableSize MemoryBox.MemoryBox:drawableSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars MemoryBox.MemoryBox:gapBetweenBars}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_spinBars MemoryBox.MemoryBox:spinBars}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_thickness MemoryBox.MemoryBox:thickness}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength memorybox.memorybox:arrowHeadLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength memorybox.memorybox:arrowShaftLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_barLength memorybox.memorybox:barLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_color memorybox.memorybox:color}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_drawableSize memorybox.memorybox:drawableSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars memorybox.memorybox:gapBetweenBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_spinBars memorybox.memorybox:spinBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_thickness memorybox.memorybox:thickness}</code></td><td></td></tr>
            </table>
            @see #DrawerArrowToggle_arrowHeadLength
            @see #DrawerArrowToggle_arrowShaftLength
@@ -6835,7 +6829,7 @@ containing a value of this type.
             0x7f0100b0, 0x7f0100b1, 0x7f0100b2, 0x7f0100b3
         };
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#arrowHeadLength}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#arrowHeadLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -6847,11 +6841,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:arrowHeadLength
+          @attr name memorybox.memorybox:arrowHeadLength
         */
         public static final int DrawerArrowToggle_arrowHeadLength = 4;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#arrowShaftLength}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#arrowShaftLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -6863,11 +6857,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:arrowShaftLength
+          @attr name memorybox.memorybox:arrowShaftLength
         */
         public static final int DrawerArrowToggle_arrowShaftLength = 5;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#barLength}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#barLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -6879,11 +6873,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:barLength
+          @attr name memorybox.memorybox:barLength
         */
         public static final int DrawerArrowToggle_barLength = 6;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#color}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#color}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -6894,11 +6888,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:color
+          @attr name memorybox.memorybox:color
         */
         public static final int DrawerArrowToggle_color = 0;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#drawableSize}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#drawableSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -6910,11 +6904,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:drawableSize
+          @attr name memorybox.memorybox:drawableSize
         */
         public static final int DrawerArrowToggle_drawableSize = 2;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#gapBetweenBars}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#gapBetweenBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -6926,11 +6920,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:gapBetweenBars
+          @attr name memorybox.memorybox:gapBetweenBars
         */
         public static final int DrawerArrowToggle_gapBetweenBars = 3;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#spinBars}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#spinBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -6940,11 +6934,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:spinBars
+          @attr name memorybox.memorybox:spinBars
         */
         public static final int DrawerArrowToggle_spinBars = 1;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#thickness}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#thickness}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -6956,7 +6950,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:thickness
+          @attr name memorybox.memorybox:thickness
         */
         public static final int DrawerArrowToggle_thickness = 7;
         /** Attributes that can be used with a FloatingActionButton.
@@ -6965,14 +6959,14 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #FloatingActionButton_backgroundTint MemoryBox.MemoryBox:backgroundTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_backgroundTintMode MemoryBox.MemoryBox:backgroundTintMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_borderWidth MemoryBox.MemoryBox:borderWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_elevation MemoryBox.MemoryBox:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_fabSize MemoryBox.MemoryBox:fabSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ MemoryBox.MemoryBox:pressedTranslationZ}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_rippleColor MemoryBox.MemoryBox:rippleColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_useCompatPadding MemoryBox.MemoryBox:useCompatPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_backgroundTint memorybox.memorybox:backgroundTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_backgroundTintMode memorybox.memorybox:backgroundTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_borderWidth memorybox.memorybox:borderWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_elevation memorybox.memorybox:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_fabSize memorybox.memorybox:fabSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ memorybox.memorybox:pressedTranslationZ}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_rippleColor memorybox.memorybox:rippleColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_useCompatPadding memorybox.memorybox:useCompatPadding}</code></td><td></td></tr>
            </table>
            @see #FloatingActionButton_backgroundTint
            @see #FloatingActionButton_backgroundTintMode
@@ -6988,7 +6982,7 @@ containing a value of this type.
             0x7f010104, 0x7f010105, 0x7f010106, 0x7f010107
         };
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#backgroundTint}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#backgroundTint}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -6999,11 +6993,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:backgroundTint
+          @attr name memorybox.memorybox:backgroundTint
         */
         public static final int FloatingActionButton_backgroundTint = 1;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#backgroundTintMode}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#backgroundTintMode}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7019,11 +7013,11 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name MemoryBox.MemoryBox:backgroundTintMode
+          @attr name memorybox.memorybox:backgroundTintMode
         */
         public static final int FloatingActionButton_backgroundTintMode = 2;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#borderWidth}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#borderWidth}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7035,11 +7029,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:borderWidth
+          @attr name memorybox.memorybox:borderWidth
         */
         public static final int FloatingActionButton_borderWidth = 6;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#elevation}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#elevation}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7051,11 +7045,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:elevation
+          @attr name memorybox.memorybox:elevation
         */
         public static final int FloatingActionButton_elevation = 0;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#fabSize}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#fabSize}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7068,11 +7062,11 @@ containing a value of this type.
 <tr><td><code>normal</code></td><td>0</td><td></td></tr>
 <tr><td><code>mini</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name MemoryBox.MemoryBox:fabSize
+          @attr name memorybox.memorybox:fabSize
         */
         public static final int FloatingActionButton_fabSize = 4;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#pressedTranslationZ}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#pressedTranslationZ}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7084,11 +7078,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:pressedTranslationZ
+          @attr name memorybox.memorybox:pressedTranslationZ
         */
         public static final int FloatingActionButton_pressedTranslationZ = 5;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#rippleColor}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#rippleColor}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7099,11 +7093,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:rippleColor
+          @attr name memorybox.memorybox:rippleColor
         */
         public static final int FloatingActionButton_rippleColor = 3;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#useCompatPadding}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#useCompatPadding}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7113,7 +7107,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:useCompatPadding
+          @attr name memorybox.memorybox:useCompatPadding
         */
         public static final int FloatingActionButton_useCompatPadding = 7;
         /** Attributes that can be used with a ForegroundLinearLayout.
@@ -7124,7 +7118,7 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #ForegroundLinearLayout_android_foreground android:foreground}</code></td><td></td></tr>
            <tr><td><code>{@link #ForegroundLinearLayout_android_foregroundGravity android:foregroundGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding MemoryBox.MemoryBox:foregroundInsidePadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding memorybox.memorybox:foregroundInsidePadding}</code></td><td></td></tr>
            </table>
            @see #ForegroundLinearLayout_android_foreground
            @see #ForegroundLinearLayout_android_foregroundGravity
@@ -7146,7 +7140,7 @@ containing a value of this type.
         */
         public static final int ForegroundLinearLayout_android_foregroundGravity = 1;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#foregroundInsidePadding}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#foregroundInsidePadding}
           attribute's value can be found in the {@link #ForegroundLinearLayout} array.
 
 
@@ -7156,7 +7150,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:foregroundInsidePadding
+          @attr name memorybox.memorybox:foregroundInsidePadding
         */
         public static final int ForegroundLinearLayout_foregroundInsidePadding = 2;
         /** Attributes that can be used with a LinearLayoutCompat.
@@ -7170,10 +7164,10 @@ containing a value of this type.
            <tr><td><code>{@link #LinearLayoutCompat_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_orientation android:orientation}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_divider MemoryBox.MemoryBox:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding MemoryBox.MemoryBox:dividerPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild MemoryBox.MemoryBox:measureWithLargestChild}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_showDividers MemoryBox.MemoryBox:showDividers}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_divider memorybox.memorybox:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding memorybox.memorybox:dividerPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild memorybox.memorybox:measureWithLargestChild}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_showDividers memorybox.memorybox:showDividers}</code></td><td></td></tr>
            </table>
            @see #LinearLayoutCompat_android_baselineAligned
            @see #LinearLayoutCompat_android_baselineAlignedChildIndex
@@ -7221,17 +7215,17 @@ containing a value of this type.
         */
         public static final int LinearLayoutCompat_android_weightSum = 4;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#divider}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#divider}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:divider
+          @attr name memorybox.memorybox:divider
         */
         public static final int LinearLayoutCompat_divider = 5;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#dividerPadding}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#dividerPadding}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -7243,11 +7237,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:dividerPadding
+          @attr name memorybox.memorybox:dividerPadding
         */
         public static final int LinearLayoutCompat_dividerPadding = 8;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#measureWithLargestChild}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#measureWithLargestChild}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -7257,11 +7251,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:measureWithLargestChild
+          @attr name memorybox.memorybox:measureWithLargestChild
         */
         public static final int LinearLayoutCompat_measureWithLargestChild = 6;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#showDividers}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#showDividers}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -7276,7 +7270,7 @@ containing a value of this type.
 <tr><td><code>middle</code></td><td>2</td><td></td></tr>
 <tr><td><code>end</code></td><td>4</td><td></td></tr>
 </table>
-          @attr name MemoryBox.MemoryBox:showDividers
+          @attr name memorybox.memorybox:showDividers
         */
         public static final int LinearLayoutCompat_showDividers = 7;
         /** Attributes that can be used with a LinearLayoutCompat_Layout.
@@ -7355,12 +7349,12 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #LoadingImageView_circleCrop MemoryBox.MemoryBox:circleCrop}</code></td><td>
+           <tr><td><code>{@link #LoadingImageView_circleCrop memorybox.memorybox:circleCrop}</code></td><td>
         Whether or not this view should have a circular clip applied
         </td></tr>
-           <tr><td><code>{@link #LoadingImageView_imageAspectRatio MemoryBox.MemoryBox:imageAspectRatio}</code></td><td>
+           <tr><td><code>{@link #LoadingImageView_imageAspectRatio memorybox.memorybox:imageAspectRatio}</code></td><td>
         The fixed aspect ratio to use in aspect ratio adjustments.</td></tr>
-           <tr><td><code>{@link #LoadingImageView_imageAspectRatioAdjust MemoryBox.MemoryBox:imageAspectRatioAdjust}</code></td><td>
+           <tr><td><code>{@link #LoadingImageView_imageAspectRatioAdjust memorybox.memorybox:imageAspectRatioAdjust}</code></td><td>
         What kind of aspect ratio adjustment to do.</td></tr>
            </table>
            @see #LoadingImageView_circleCrop
@@ -7385,7 +7379,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name MemoryBox.MemoryBox:circleCrop
+          @attr name memorybox.memorybox:circleCrop
         */
         public static final int LoadingImageView_circleCrop = 2;
         /**
@@ -7403,7 +7397,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name MemoryBox.MemoryBox:imageAspectRatio
+          @attr name memorybox.memorybox:imageAspectRatio
         */
         public static final int LoadingImageView_imageAspectRatio = 1;
         /**
@@ -7426,7 +7420,7 @@ containing a value of this type.
 <tr><td><code>adjust_height</code></td><td>2</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name MemoryBox.MemoryBox:imageAspectRatioAdjust
+          @attr name memorybox.memorybox:imageAspectRatioAdjust
         */
         public static final int LoadingImageView_imageAspectRatioAdjust = 0;
         /** Attributes that can be used with a MenuGroup.
@@ -7495,9 +7489,9 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MenuItem_actionLayout MemoryBox.MemoryBox:actionLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionProviderClass MemoryBox.MemoryBox:actionProviderClass}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionViewClass MemoryBox.MemoryBox:actionViewClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionLayout memorybox.memorybox:actionLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionProviderClass memorybox.memorybox:actionProviderClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionViewClass memorybox.memorybox:actionViewClass}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_alphabeticShortcut android:alphabeticShortcut}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checked android:checked}</code></td><td></td></tr>
@@ -7511,7 +7505,7 @@ containing a value of this type.
            <tr><td><code>{@link #MenuItem_android_title android:title}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_titleCondensed android:titleCondensed}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_visible android:visible}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_showAsAction MemoryBox.MemoryBox:showAsAction}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_showAsAction memorybox.memorybox:showAsAction}</code></td><td></td></tr>
            </table>
            @see #MenuItem_actionLayout
            @see #MenuItem_actionProviderClass
@@ -7539,17 +7533,17 @@ containing a value of this type.
             0x7f0100ba
         };
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#actionLayout}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#actionLayout}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:actionLayout
+          @attr name memorybox.memorybox:actionLayout
         */
         public static final int MenuItem_actionLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#actionProviderClass}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#actionProviderClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -7559,11 +7553,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:actionProviderClass
+          @attr name memorybox.memorybox:actionProviderClass
         */
         public static final int MenuItem_actionProviderClass = 16;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#actionViewClass}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#actionViewClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -7573,7 +7567,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:actionViewClass
+          @attr name memorybox.memorybox:actionViewClass
         */
         public static final int MenuItem_actionViewClass = 15;
         /**
@@ -7655,7 +7649,7 @@ containing a value of this type.
         */
         public static final int MenuItem_android_visible = 4;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#showAsAction}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#showAsAction}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -7671,7 +7665,7 @@ containing a value of this type.
 <tr><td><code>withText</code></td><td>4</td><td></td></tr>
 <tr><td><code>collapseActionView</code></td><td>8</td><td></td></tr>
 </table>
-          @attr name MemoryBox.MemoryBox:showAsAction
+          @attr name memorybox.memorybox:showAsAction
         */
         public static final int MenuItem_showAsAction = 13;
         /** Attributes that can be used with a MenuView.
@@ -7687,7 +7681,7 @@ containing a value of this type.
            <tr><td><code>{@link #MenuView_android_itemTextAppearance android:itemTextAppearance}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_verticalDivider android:verticalDivider}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuView_preserveIconSpacing MemoryBox.MemoryBox:preserveIconSpacing}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuView_preserveIconSpacing memorybox.memorybox:preserveIconSpacing}</code></td><td></td></tr>
            </table>
            @see #MenuView_android_headerBackground
            @see #MenuView_android_horizontalDivider
@@ -7745,7 +7739,7 @@ containing a value of this type.
         */
         public static final int MenuView_android_windowAnimationStyle = 0;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#preserveIconSpacing}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#preserveIconSpacing}
           attribute's value can be found in the {@link #MenuView} array.
 
 
@@ -7755,7 +7749,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:preserveIconSpacing
+          @attr name memorybox.memorybox:preserveIconSpacing
         */
         public static final int MenuView_preserveIconSpacing = 7;
         /** Attributes that can be used with a NavigationView.
@@ -7767,13 +7761,13 @@ containing a value of this type.
            <tr><td><code>{@link #NavigationView_android_background android:background}</code></td><td></td></tr>
            <tr><td><code>{@link #NavigationView_android_fitsSystemWindows android:fitsSystemWindows}</code></td><td></td></tr>
            <tr><td><code>{@link #NavigationView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_elevation MemoryBox.MemoryBox:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_headerLayout MemoryBox.MemoryBox:headerLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemBackground MemoryBox.MemoryBox:itemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemIconTint MemoryBox.MemoryBox:itemIconTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemTextAppearance MemoryBox.MemoryBox:itemTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemTextColor MemoryBox.MemoryBox:itemTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_menu MemoryBox.MemoryBox:menu}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_elevation memorybox.memorybox:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_headerLayout memorybox.memorybox:headerLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemBackground memorybox.memorybox:itemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemIconTint memorybox.memorybox:itemIconTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemTextAppearance memorybox.memorybox:itemTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemTextColor memorybox.memorybox:itemTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_menu memorybox.memorybox:menu}</code></td><td></td></tr>
            </table>
            @see #NavigationView_android_background
            @see #NavigationView_android_fitsSystemWindows
@@ -7810,7 +7804,7 @@ containing a value of this type.
         */
         public static final int NavigationView_android_maxWidth = 2;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#elevation}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#elevation}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -7822,31 +7816,31 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:elevation
+          @attr name memorybox.memorybox:elevation
         */
         public static final int NavigationView_elevation = 3;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#headerLayout}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#headerLayout}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:headerLayout
+          @attr name memorybox.memorybox:headerLayout
         */
         public static final int NavigationView_headerLayout = 9;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#itemBackground}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#itemBackground}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:itemBackground
+          @attr name memorybox.memorybox:itemBackground
         */
         public static final int NavigationView_itemBackground = 7;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#itemIconTint}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#itemIconTint}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -7857,21 +7851,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:itemIconTint
+          @attr name memorybox.memorybox:itemIconTint
         */
         public static final int NavigationView_itemIconTint = 5;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#itemTextAppearance}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#itemTextAppearance}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:itemTextAppearance
+          @attr name memorybox.memorybox:itemTextAppearance
         */
         public static final int NavigationView_itemTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#itemTextColor}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#itemTextColor}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -7882,17 +7876,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:itemTextColor
+          @attr name memorybox.memorybox:itemTextColor
         */
         public static final int NavigationView_itemTextColor = 6;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#menu}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#menu}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:menu
+          @attr name memorybox.memorybox:menu
         */
         public static final int NavigationView_menu = 4;
         /** Attributes that can be used with a PopupWindow.
@@ -7902,7 +7896,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #PopupWindow_android_popupBackground android:popupBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #PopupWindow_overlapAnchor MemoryBox.MemoryBox:overlapAnchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindow_overlapAnchor memorybox.memorybox:overlapAnchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindow_android_popupBackground
            @see #PopupWindow_overlapAnchor
@@ -7917,7 +7911,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int PopupWindow_android_popupBackground = 0;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#overlapAnchor}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#overlapAnchor}
           attribute's value can be found in the {@link #PopupWindow} array.
 
 
@@ -7927,7 +7921,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:overlapAnchor
+          @attr name memorybox.memorybox:overlapAnchor
         */
         public static final int PopupWindow_overlapAnchor = 1;
         /** Attributes that can be used with a PopupWindowBackgroundState.
@@ -7936,7 +7930,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor MemoryBox.MemoryBox:state_above_anchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor memorybox.memorybox:state_above_anchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindowBackgroundState_state_above_anchor
          */
@@ -7944,7 +7938,7 @@ containing a value of this type.
             0x7f0100bd
         };
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#state_above_anchor}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#state_above_anchor}
           attribute's value can be found in the {@link #PopupWindowBackgroundState} array.
 
 
@@ -7954,7 +7948,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:state_above_anchor
+          @attr name memorybox.memorybox:state_above_anchor
         */
         public static final int PopupWindowBackgroundState_state_above_anchor = 0;
         /** Attributes that can be used with a RecyclerView.
@@ -7964,10 +7958,10 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #RecyclerView_android_orientation android:orientation}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_layoutManager MemoryBox.MemoryBox:layoutManager}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_reverseLayout MemoryBox.MemoryBox:reverseLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_spanCount MemoryBox.MemoryBox:spanCount}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_stackFromEnd MemoryBox.MemoryBox:stackFromEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_layoutManager memorybox.memorybox:layoutManager}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_reverseLayout memorybox.memorybox:reverseLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_spanCount memorybox.memorybox:spanCount}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_stackFromEnd memorybox.memorybox:stackFromEnd}</code></td><td></td></tr>
            </table>
            @see #RecyclerView_android_orientation
            @see #RecyclerView_layoutManager
@@ -7986,7 +7980,7 @@ containing a value of this type.
         */
         public static final int RecyclerView_android_orientation = 0;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#layoutManager}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#layoutManager}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -7996,11 +7990,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:layoutManager
+          @attr name memorybox.memorybox:layoutManager
         */
         public static final int RecyclerView_layoutManager = 1;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#reverseLayout}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#reverseLayout}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -8010,11 +8004,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:reverseLayout
+          @attr name memorybox.memorybox:reverseLayout
         */
         public static final int RecyclerView_reverseLayout = 3;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#spanCount}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#spanCount}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -8024,11 +8018,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:spanCount
+          @attr name memorybox.memorybox:spanCount
         */
         public static final int RecyclerView_spanCount = 2;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#stackFromEnd}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#stackFromEnd}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -8038,7 +8032,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:stackFromEnd
+          @attr name memorybox.memorybox:stackFromEnd
         */
         public static final int RecyclerView_stackFromEnd = 4;
         /** Attributes that can be used with a ScrimInsetsFrameLayout.
@@ -8047,7 +8041,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground MemoryBox.MemoryBox:insetForeground}</code></td><td></td></tr>
+           <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground memorybox.memorybox:insetForeground}</code></td><td></td></tr>
            </table>
            @see #ScrimInsetsFrameLayout_insetForeground
          */
@@ -8055,7 +8049,7 @@ containing a value of this type.
             0x7f01010f
         };
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#insetForeground}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#insetForeground}
           attribute's value can be found in the {@link #ScrimInsetsFrameLayout} array.
 
 
@@ -8063,7 +8057,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name MemoryBox.MemoryBox:insetForeground
+          @attr name memorybox.memorybox:insetForeground
         */
         public static final int ScrimInsetsFrameLayout_insetForeground = 0;
         /** Attributes that can be used with a ScrollingViewBehavior_Params.
@@ -8072,7 +8066,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ScrollingViewBehavior_Params_behavior_overlapTop MemoryBox.MemoryBox:behavior_overlapTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #ScrollingViewBehavior_Params_behavior_overlapTop memorybox.memorybox:behavior_overlapTop}</code></td><td></td></tr>
            </table>
            @see #ScrollingViewBehavior_Params_behavior_overlapTop
          */
@@ -8080,7 +8074,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010110
         };
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#behavior_overlapTop}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#behavior_overlapTop}
           attribute's value can be found in the {@link #ScrollingViewBehavior_Params} array.
 
 
@@ -8092,7 +8086,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:behavior_overlapTop
+          @attr name memorybox.memorybox:behavior_overlapTop
         */
         public static final int ScrollingViewBehavior_Params_behavior_overlapTop = 0;
         /** Attributes that can be used with a SearchView.
@@ -8105,19 +8099,19 @@ containing a value of this type.
            <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_closeIcon MemoryBox.MemoryBox:closeIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_commitIcon MemoryBox.MemoryBox:commitIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_defaultQueryHint MemoryBox.MemoryBox:defaultQueryHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_goIcon MemoryBox.MemoryBox:goIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_iconifiedByDefault MemoryBox.MemoryBox:iconifiedByDefault}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_layout MemoryBox.MemoryBox:layout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryBackground MemoryBox.MemoryBox:queryBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryHint MemoryBox.MemoryBox:queryHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_searchHintIcon MemoryBox.MemoryBox:searchHintIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_searchIcon MemoryBox.MemoryBox:searchIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_submitBackground MemoryBox.MemoryBox:submitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_suggestionRowLayout MemoryBox.MemoryBox:suggestionRowLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_voiceIcon MemoryBox.MemoryBox:voiceIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_closeIcon memorybox.memorybox:closeIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_commitIcon memorybox.memorybox:commitIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_defaultQueryHint memorybox.memorybox:defaultQueryHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_goIcon memorybox.memorybox:goIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_iconifiedByDefault memorybox.memorybox:iconifiedByDefault}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_layout memorybox.memorybox:layout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryBackground memorybox.memorybox:queryBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryHint memorybox.memorybox:queryHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_searchHintIcon memorybox.memorybox:searchHintIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_searchIcon memorybox.memorybox:searchIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_submitBackground memorybox.memorybox:submitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_suggestionRowLayout memorybox.memorybox:suggestionRowLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_voiceIcon memorybox.memorybox:voiceIcon}</code></td><td></td></tr>
            </table>
            @see #SearchView_android_focusable
            @see #SearchView_android_imeOptions
@@ -8169,27 +8163,27 @@ containing a value of this type.
         */
         public static final int SearchView_android_maxWidth = 1;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#closeIcon}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#closeIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:closeIcon
+          @attr name memorybox.memorybox:closeIcon
         */
         public static final int SearchView_closeIcon = 8;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#commitIcon}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#commitIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:commitIcon
+          @attr name memorybox.memorybox:commitIcon
         */
         public static final int SearchView_commitIcon = 13;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#defaultQueryHint}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#defaultQueryHint}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -8199,21 +8193,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:defaultQueryHint
+          @attr name memorybox.memorybox:defaultQueryHint
         */
         public static final int SearchView_defaultQueryHint = 7;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#goIcon}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#goIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:goIcon
+          @attr name memorybox.memorybox:goIcon
         */
         public static final int SearchView_goIcon = 9;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#iconifiedByDefault}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#iconifiedByDefault}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -8223,31 +8217,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:iconifiedByDefault
+          @attr name memorybox.memorybox:iconifiedByDefault
         */
         public static final int SearchView_iconifiedByDefault = 5;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#layout}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#layout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:layout
+          @attr name memorybox.memorybox:layout
         */
         public static final int SearchView_layout = 4;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#queryBackground}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#queryBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:queryBackground
+          @attr name memorybox.memorybox:queryBackground
         */
         public static final int SearchView_queryBackground = 15;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#queryHint}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#queryHint}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -8257,57 +8251,57 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:queryHint
+          @attr name memorybox.memorybox:queryHint
         */
         public static final int SearchView_queryHint = 6;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#searchHintIcon}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#searchHintIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:searchHintIcon
+          @attr name memorybox.memorybox:searchHintIcon
         */
         public static final int SearchView_searchHintIcon = 11;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#searchIcon}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#searchIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:searchIcon
+          @attr name memorybox.memorybox:searchIcon
         */
         public static final int SearchView_searchIcon = 10;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#submitBackground}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#submitBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:submitBackground
+          @attr name memorybox.memorybox:submitBackground
         */
         public static final int SearchView_submitBackground = 16;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#suggestionRowLayout}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#suggestionRowLayout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:suggestionRowLayout
+          @attr name memorybox.memorybox:suggestionRowLayout
         */
         public static final int SearchView_suggestionRowLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#voiceIcon}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#voiceIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:voiceIcon
+          @attr name memorybox.memorybox:voiceIcon
         */
         public static final int SearchView_voiceIcon = 12;
         /** Attributes that can be used with a SnackbarLayout.
@@ -8317,8 +8311,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #SnackbarLayout_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SnackbarLayout_elevation MemoryBox.MemoryBox:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth MemoryBox.MemoryBox:maxActionInlineWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SnackbarLayout_elevation memorybox.memorybox:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth memorybox.memorybox:maxActionInlineWidth}</code></td><td></td></tr>
            </table>
            @see #SnackbarLayout_android_maxWidth
            @see #SnackbarLayout_elevation
@@ -8334,7 +8328,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SnackbarLayout_android_maxWidth = 0;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#elevation}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#elevation}
           attribute's value can be found in the {@link #SnackbarLayout} array.
 
 
@@ -8346,11 +8340,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:elevation
+          @attr name memorybox.memorybox:elevation
         */
         public static final int SnackbarLayout_elevation = 1;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#maxActionInlineWidth}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#maxActionInlineWidth}
           attribute's value can be found in the {@link #SnackbarLayout} array.
 
 
@@ -8362,7 +8356,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:maxActionInlineWidth
+          @attr name memorybox.memorybox:maxActionInlineWidth
         */
         public static final int SnackbarLayout_maxActionInlineWidth = 2;
         /** Attributes that can be used with a Spinner.
@@ -8375,7 +8369,7 @@ containing a value of this type.
            <tr><td><code>{@link #Spinner_android_entries android:entries}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_prompt android:prompt}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_popupTheme MemoryBox.MemoryBox:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_popupTheme memorybox.memorybox:popupTheme}</code></td><td></td></tr>
            </table>
            @see #Spinner_android_dropDownWidth
            @see #Spinner_android_entries
@@ -8412,13 +8406,13 @@ containing a value of this type.
         */
         public static final int Spinner_android_prompt = 2;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#popupTheme}
           attribute's value can be found in the {@link #Spinner} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:popupTheme
+          @attr name memorybox.memorybox:popupTheme
         */
         public static final int Spinner_popupTheme = 4;
         /** Attributes that can be used with a SwitchCompat.
@@ -8430,13 +8424,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_showText MemoryBox.MemoryBox:showText}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_splitTrack MemoryBox.MemoryBox:splitTrack}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchMinWidth MemoryBox.MemoryBox:switchMinWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchPadding MemoryBox.MemoryBox:switchPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchTextAppearance MemoryBox.MemoryBox:switchTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_thumbTextPadding MemoryBox.MemoryBox:thumbTextPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_track MemoryBox.MemoryBox:track}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_showText memorybox.memorybox:showText}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_splitTrack memorybox.memorybox:splitTrack}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchMinWidth memorybox.memorybox:switchMinWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchPadding memorybox.memorybox:switchPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchTextAppearance memorybox.memorybox:switchTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_thumbTextPadding memorybox.memorybox:thumbTextPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_track memorybox.memorybox:track}</code></td><td></td></tr>
            </table>
            @see #SwitchCompat_android_textOff
            @see #SwitchCompat_android_textOn
@@ -8473,7 +8467,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SwitchCompat_android_thumb = 2;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#showText}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#showText}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -8483,11 +8477,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:showText
+          @attr name memorybox.memorybox:showText
         */
         public static final int SwitchCompat_showText = 9;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#splitTrack}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#splitTrack}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -8497,11 +8491,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:splitTrack
+          @attr name memorybox.memorybox:splitTrack
         */
         public static final int SwitchCompat_splitTrack = 8;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#switchMinWidth}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#switchMinWidth}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -8513,11 +8507,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:switchMinWidth
+          @attr name memorybox.memorybox:switchMinWidth
         */
         public static final int SwitchCompat_switchMinWidth = 6;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#switchPadding}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#switchPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -8529,21 +8523,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:switchPadding
+          @attr name memorybox.memorybox:switchPadding
         */
         public static final int SwitchCompat_switchPadding = 7;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#switchTextAppearance}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#switchTextAppearance}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:switchTextAppearance
+          @attr name memorybox.memorybox:switchTextAppearance
         */
         public static final int SwitchCompat_switchTextAppearance = 5;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#thumbTextPadding}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#thumbTextPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -8555,17 +8549,17 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:thumbTextPadding
+          @attr name memorybox.memorybox:thumbTextPadding
         */
         public static final int SwitchCompat_thumbTextPadding = 4;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#track}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#track}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:track
+          @attr name memorybox.memorybox:track
         */
         public static final int SwitchCompat_track = 3;
         /** Attributes that can be used with a TabItem.
@@ -8609,22 +8603,22 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #TabLayout_tabBackground MemoryBox.MemoryBox:tabBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabContentStart MemoryBox.MemoryBox:tabContentStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabGravity MemoryBox.MemoryBox:tabGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabIndicatorColor MemoryBox.MemoryBox:tabIndicatorColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabIndicatorHeight MemoryBox.MemoryBox:tabIndicatorHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabMaxWidth MemoryBox.MemoryBox:tabMaxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabMinWidth MemoryBox.MemoryBox:tabMinWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabMode MemoryBox.MemoryBox:tabMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPadding MemoryBox.MemoryBox:tabPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingBottom MemoryBox.MemoryBox:tabPaddingBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingEnd MemoryBox.MemoryBox:tabPaddingEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingStart MemoryBox.MemoryBox:tabPaddingStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingTop MemoryBox.MemoryBox:tabPaddingTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabSelectedTextColor MemoryBox.MemoryBox:tabSelectedTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabTextAppearance MemoryBox.MemoryBox:tabTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabTextColor MemoryBox.MemoryBox:tabTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabBackground memorybox.memorybox:tabBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabContentStart memorybox.memorybox:tabContentStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabGravity memorybox.memorybox:tabGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabIndicatorColor memorybox.memorybox:tabIndicatorColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabIndicatorHeight memorybox.memorybox:tabIndicatorHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMaxWidth memorybox.memorybox:tabMaxWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMinWidth memorybox.memorybox:tabMinWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMode memorybox.memorybox:tabMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPadding memorybox.memorybox:tabPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingBottom memorybox.memorybox:tabPaddingBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingEnd memorybox.memorybox:tabPaddingEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingStart memorybox.memorybox:tabPaddingStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingTop memorybox.memorybox:tabPaddingTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabSelectedTextColor memorybox.memorybox:tabSelectedTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabTextAppearance memorybox.memorybox:tabTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabTextColor memorybox.memorybox:tabTextColor}</code></td><td></td></tr>
            </table>
            @see #TabLayout_tabBackground
            @see #TabLayout_tabContentStart
@@ -8650,17 +8644,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01011e, 0x7f01011f, 0x7f010120, 0x7f010121
         };
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#tabBackground}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#tabBackground}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:tabBackground
+          @attr name memorybox.memorybox:tabBackground
         */
         public static final int TabLayout_tabBackground = 3;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#tabContentStart}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#tabContentStart}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8672,11 +8666,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:tabContentStart
+          @attr name memorybox.memorybox:tabContentStart
         */
         public static final int TabLayout_tabContentStart = 2;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#tabGravity}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#tabGravity}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8689,11 +8683,11 @@ containing a value of this type.
 <tr><td><code>fill</code></td><td>0</td><td></td></tr>
 <tr><td><code>center</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name MemoryBox.MemoryBox:tabGravity
+          @attr name memorybox.memorybox:tabGravity
         */
         public static final int TabLayout_tabGravity = 5;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#tabIndicatorColor}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#tabIndicatorColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8704,11 +8698,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:tabIndicatorColor
+          @attr name memorybox.memorybox:tabIndicatorColor
         */
         public static final int TabLayout_tabIndicatorColor = 0;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#tabIndicatorHeight}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#tabIndicatorHeight}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8720,11 +8714,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:tabIndicatorHeight
+          @attr name memorybox.memorybox:tabIndicatorHeight
         */
         public static final int TabLayout_tabIndicatorHeight = 1;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#tabMaxWidth}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#tabMaxWidth}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8736,11 +8730,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:tabMaxWidth
+          @attr name memorybox.memorybox:tabMaxWidth
         */
         public static final int TabLayout_tabMaxWidth = 7;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#tabMinWidth}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#tabMinWidth}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8752,11 +8746,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:tabMinWidth
+          @attr name memorybox.memorybox:tabMinWidth
         */
         public static final int TabLayout_tabMinWidth = 6;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#tabMode}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#tabMode}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8769,11 +8763,11 @@ containing a value of this type.
 <tr><td><code>scrollable</code></td><td>0</td><td></td></tr>
 <tr><td><code>fixed</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name MemoryBox.MemoryBox:tabMode
+          @attr name memorybox.memorybox:tabMode
         */
         public static final int TabLayout_tabMode = 4;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#tabPadding}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#tabPadding}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8785,11 +8779,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:tabPadding
+          @attr name memorybox.memorybox:tabPadding
         */
         public static final int TabLayout_tabPadding = 15;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#tabPaddingBottom}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#tabPaddingBottom}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8801,11 +8795,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:tabPaddingBottom
+          @attr name memorybox.memorybox:tabPaddingBottom
         */
         public static final int TabLayout_tabPaddingBottom = 14;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#tabPaddingEnd}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#tabPaddingEnd}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8817,11 +8811,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:tabPaddingEnd
+          @attr name memorybox.memorybox:tabPaddingEnd
         */
         public static final int TabLayout_tabPaddingEnd = 13;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#tabPaddingStart}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#tabPaddingStart}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8833,11 +8827,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:tabPaddingStart
+          @attr name memorybox.memorybox:tabPaddingStart
         */
         public static final int TabLayout_tabPaddingStart = 11;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#tabPaddingTop}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#tabPaddingTop}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8849,11 +8843,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:tabPaddingTop
+          @attr name memorybox.memorybox:tabPaddingTop
         */
         public static final int TabLayout_tabPaddingTop = 12;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#tabSelectedTextColor}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#tabSelectedTextColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8864,21 +8858,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:tabSelectedTextColor
+          @attr name memorybox.memorybox:tabSelectedTextColor
         */
         public static final int TabLayout_tabSelectedTextColor = 10;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#tabTextAppearance}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#tabTextAppearance}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:tabTextAppearance
+          @attr name memorybox.memorybox:tabTextAppearance
         */
         public static final int TabLayout_tabTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#tabTextColor}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#tabTextColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8889,7 +8883,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:tabTextColor
+          @attr name memorybox.memorybox:tabTextColor
         */
         public static final int TabLayout_tabTextColor = 9;
         /** Attributes that can be used with a TextAppearance.
@@ -8906,7 +8900,7 @@ containing a value of this type.
            <tr><td><code>{@link #TextAppearance_android_textSize android:textSize}</code></td><td></td></tr>
            <tr><td><code>{@link #TextAppearance_android_textStyle android:textStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #TextAppearance_android_typeface android:typeface}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextAppearance_textAllCaps MemoryBox.MemoryBox:textAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextAppearance_textAllCaps memorybox.memorybox:textAllCaps}</code></td><td></td></tr>
            </table>
            @see #TextAppearance_android_shadowColor
            @see #TextAppearance_android_shadowDx
@@ -8972,14 +8966,14 @@ containing a value of this type.
         */
         public static final int TextAppearance_android_typeface = 1;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#textAllCaps}
           attribute's value can be found in the {@link #TextAppearance} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          @attr name MemoryBox.MemoryBox:textAllCaps
+          @attr name memorybox.memorybox:textAllCaps
         */
         public static final int TextAppearance_textAllCaps = 8;
         /** Attributes that can be used with a TextInputLayout.
@@ -8990,15 +8984,15 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #TextInputLayout_android_hint android:hint}</code></td><td></td></tr>
            <tr><td><code>{@link #TextInputLayout_android_textColorHint android:textColorHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterEnabled MemoryBox.MemoryBox:counterEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterMaxLength MemoryBox.MemoryBox:counterMaxLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance MemoryBox.MemoryBox:counterOverflowTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterTextAppearance MemoryBox.MemoryBox:counterTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_errorEnabled MemoryBox.MemoryBox:errorEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_errorTextAppearance MemoryBox.MemoryBox:errorTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled MemoryBox.MemoryBox:hintAnimationEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_hintEnabled MemoryBox.MemoryBox:hintEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_hintTextAppearance MemoryBox.MemoryBox:hintTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterEnabled memorybox.memorybox:counterEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterMaxLength memorybox.memorybox:counterMaxLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance memorybox.memorybox:counterOverflowTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterTextAppearance memorybox.memorybox:counterTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_errorEnabled memorybox.memorybox:errorEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_errorTextAppearance memorybox.memorybox:errorTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled memorybox.memorybox:hintAnimationEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintEnabled memorybox.memorybox:hintEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintTextAppearance memorybox.memorybox:hintTextAppearance}</code></td><td></td></tr>
            </table>
            @see #TextInputLayout_android_hint
            @see #TextInputLayout_android_textColorHint
@@ -9030,7 +9024,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int TextInputLayout_android_textColorHint = 0;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#counterEnabled}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#counterEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -9040,11 +9034,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:counterEnabled
+          @attr name memorybox.memorybox:counterEnabled
         */
         public static final int TextInputLayout_counterEnabled = 6;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#counterMaxLength}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#counterMaxLength}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -9054,31 +9048,31 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:counterMaxLength
+          @attr name memorybox.memorybox:counterMaxLength
         */
         public static final int TextInputLayout_counterMaxLength = 7;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#counterOverflowTextAppearance}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#counterOverflowTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:counterOverflowTextAppearance
+          @attr name memorybox.memorybox:counterOverflowTextAppearance
         */
         public static final int TextInputLayout_counterOverflowTextAppearance = 9;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#counterTextAppearance}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#counterTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:counterTextAppearance
+          @attr name memorybox.memorybox:counterTextAppearance
         */
         public static final int TextInputLayout_counterTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#errorEnabled}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#errorEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -9088,21 +9082,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:errorEnabled
+          @attr name memorybox.memorybox:errorEnabled
         */
         public static final int TextInputLayout_errorEnabled = 4;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#errorTextAppearance}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#errorTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:errorTextAppearance
+          @attr name memorybox.memorybox:errorTextAppearance
         */
         public static final int TextInputLayout_errorTextAppearance = 5;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#hintAnimationEnabled}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#hintAnimationEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -9112,11 +9106,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:hintAnimationEnabled
+          @attr name memorybox.memorybox:hintAnimationEnabled
         */
         public static final int TextInputLayout_hintAnimationEnabled = 10;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#hintEnabled}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#hintEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -9126,17 +9120,17 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:hintEnabled
+          @attr name memorybox.memorybox:hintEnabled
         */
         public static final int TextInputLayout_hintEnabled = 3;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#hintTextAppearance}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#hintTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:hintTextAppearance
+          @attr name memorybox.memorybox:hintTextAppearance
         */
         public static final int TextInputLayout_hintTextAppearance = 2;
         /** Attributes that can be used with a Toolbar.
@@ -9147,29 +9141,29 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #Toolbar_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_collapseContentDescription MemoryBox.MemoryBox:collapseContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_collapseIcon MemoryBox.MemoryBox:collapseIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetEnd MemoryBox.MemoryBox:contentInsetEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetLeft MemoryBox.MemoryBox:contentInsetLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetRight MemoryBox.MemoryBox:contentInsetRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetStart MemoryBox.MemoryBox:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_logo MemoryBox.MemoryBox:logo}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_logoDescription MemoryBox.MemoryBox:logoDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_maxButtonHeight MemoryBox.MemoryBox:maxButtonHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationContentDescription MemoryBox.MemoryBox:navigationContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationIcon MemoryBox.MemoryBox:navigationIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_popupTheme MemoryBox.MemoryBox:popupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitle MemoryBox.MemoryBox:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitleTextAppearance MemoryBox.MemoryBox:subtitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitleTextColor MemoryBox.MemoryBox:subtitleTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_title MemoryBox.MemoryBox:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginBottom MemoryBox.MemoryBox:titleMarginBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginEnd MemoryBox.MemoryBox:titleMarginEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginStart MemoryBox.MemoryBox:titleMarginStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginTop MemoryBox.MemoryBox:titleMarginTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMargins MemoryBox.MemoryBox:titleMargins}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleTextAppearance MemoryBox.MemoryBox:titleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleTextColor MemoryBox.MemoryBox:titleTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseContentDescription memorybox.memorybox:collapseContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseIcon memorybox.memorybox:collapseIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetEnd memorybox.memorybox:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetLeft memorybox.memorybox:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetRight memorybox.memorybox:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetStart memorybox.memorybox:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_logo memorybox.memorybox:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_logoDescription memorybox.memorybox:logoDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_maxButtonHeight memorybox.memorybox:maxButtonHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationContentDescription memorybox.memorybox:navigationContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationIcon memorybox.memorybox:navigationIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_popupTheme memorybox.memorybox:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitle memorybox.memorybox:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitleTextAppearance memorybox.memorybox:subtitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitleTextColor memorybox.memorybox:subtitleTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_title memorybox.memorybox:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginBottom memorybox.memorybox:titleMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginEnd memorybox.memorybox:titleMarginEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginStart memorybox.memorybox:titleMarginStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginTop memorybox.memorybox:titleMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMargins memorybox.memorybox:titleMargins}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleTextAppearance memorybox.memorybox:titleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleTextColor memorybox.memorybox:titleTextColor}</code></td><td></td></tr>
            </table>
            @see #Toolbar_android_gravity
            @see #Toolbar_android_minHeight
@@ -9219,7 +9213,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Toolbar_android_minHeight = 1;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#collapseContentDescription}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#collapseContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9229,21 +9223,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:collapseContentDescription
+          @attr name memorybox.memorybox:collapseContentDescription
         */
         public static final int Toolbar_collapseContentDescription = 19;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#collapseIcon}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#collapseIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:collapseIcon
+          @attr name memorybox.memorybox:collapseIcon
         */
         public static final int Toolbar_collapseIcon = 18;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9255,11 +9249,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:contentInsetEnd
+          @attr name memorybox.memorybox:contentInsetEnd
         */
         public static final int Toolbar_contentInsetEnd = 6;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9271,11 +9265,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:contentInsetLeft
+          @attr name memorybox.memorybox:contentInsetLeft
         */
         public static final int Toolbar_contentInsetLeft = 7;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9287,11 +9281,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:contentInsetRight
+          @attr name memorybox.memorybox:contentInsetRight
         */
         public static final int Toolbar_contentInsetRight = 8;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9303,21 +9297,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:contentInsetStart
+          @attr name memorybox.memorybox:contentInsetStart
         */
         public static final int Toolbar_contentInsetStart = 5;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#logo}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#logo}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:logo
+          @attr name memorybox.memorybox:logo
         */
         public static final int Toolbar_logo = 4;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#logoDescription}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#logoDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9327,11 +9321,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:logoDescription
+          @attr name memorybox.memorybox:logoDescription
         */
         public static final int Toolbar_logoDescription = 22;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#maxButtonHeight}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#maxButtonHeight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9343,11 +9337,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:maxButtonHeight
+          @attr name memorybox.memorybox:maxButtonHeight
         */
         public static final int Toolbar_maxButtonHeight = 17;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#navigationContentDescription}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#navigationContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9357,31 +9351,31 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:navigationContentDescription
+          @attr name memorybox.memorybox:navigationContentDescription
         */
         public static final int Toolbar_navigationContentDescription = 21;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#navigationIcon}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#navigationIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:navigationIcon
+          @attr name memorybox.memorybox:navigationIcon
         */
         public static final int Toolbar_navigationIcon = 20;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#popupTheme}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:popupTheme
+          @attr name memorybox.memorybox:popupTheme
         */
         public static final int Toolbar_popupTheme = 9;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#subtitle}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9391,21 +9385,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:subtitle
+          @attr name memorybox.memorybox:subtitle
         */
         public static final int Toolbar_subtitle = 3;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#subtitleTextAppearance}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#subtitleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:subtitleTextAppearance
+          @attr name memorybox.memorybox:subtitleTextAppearance
         */
         public static final int Toolbar_subtitleTextAppearance = 11;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#subtitleTextColor}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#subtitleTextColor}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9416,11 +9410,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:subtitleTextColor
+          @attr name memorybox.memorybox:subtitleTextColor
         */
         public static final int Toolbar_subtitleTextColor = 24;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#title}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#title}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9430,11 +9424,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:title
+          @attr name memorybox.memorybox:title
         */
         public static final int Toolbar_title = 2;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#titleMarginBottom}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#titleMarginBottom}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9446,11 +9440,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:titleMarginBottom
+          @attr name memorybox.memorybox:titleMarginBottom
         */
         public static final int Toolbar_titleMarginBottom = 16;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#titleMarginEnd}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#titleMarginEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9462,11 +9456,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:titleMarginEnd
+          @attr name memorybox.memorybox:titleMarginEnd
         */
         public static final int Toolbar_titleMarginEnd = 14;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#titleMarginStart}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#titleMarginStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9478,11 +9472,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:titleMarginStart
+          @attr name memorybox.memorybox:titleMarginStart
         */
         public static final int Toolbar_titleMarginStart = 13;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#titleMarginTop}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#titleMarginTop}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9494,11 +9488,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:titleMarginTop
+          @attr name memorybox.memorybox:titleMarginTop
         */
         public static final int Toolbar_titleMarginTop = 15;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#titleMargins}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#titleMargins}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9510,21 +9504,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:titleMargins
+          @attr name memorybox.memorybox:titleMargins
         */
         public static final int Toolbar_titleMargins = 12;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#titleTextAppearance}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#titleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:titleTextAppearance
+          @attr name memorybox.memorybox:titleTextAppearance
         */
         public static final int Toolbar_titleTextAppearance = 10;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#titleTextColor}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#titleTextColor}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9535,7 +9529,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:titleTextColor
+          @attr name memorybox.memorybox:titleTextColor
         */
         public static final int Toolbar_titleTextColor = 23;
         /** Attributes that can be used with a View.
@@ -9546,9 +9540,9 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td></td></tr>
            <tr><td><code>{@link #View_android_theme android:theme}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingEnd MemoryBox.MemoryBox:paddingEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingStart MemoryBox.MemoryBox:paddingStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_theme MemoryBox.MemoryBox:theme}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingEnd memorybox.memorybox:paddingEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingStart memorybox.memorybox:paddingStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_theme memorybox.memorybox:theme}</code></td><td></td></tr>
            </table>
            @see #View_android_focusable
            @see #View_android_theme
@@ -9573,7 +9567,7 @@ containing a value of this type.
         */
         public static final int View_android_theme = 0;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#paddingEnd}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#paddingEnd}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -9585,11 +9579,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:paddingEnd
+          @attr name memorybox.memorybox:paddingEnd
         */
         public static final int View_paddingEnd = 3;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#paddingStart}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#paddingStart}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -9601,17 +9595,17 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:paddingStart
+          @attr name memorybox.memorybox:paddingStart
         */
         public static final int View_paddingStart = 2;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#theme}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#theme}
           attribute's value can be found in the {@link #View} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name MemoryBox.MemoryBox:theme
+          @attr name memorybox.memorybox:theme
         */
         public static final int View_theme = 4;
         /** Attributes that can be used with a ViewBackgroundHelper.
@@ -9621,8 +9615,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #ViewBackgroundHelper_android_background android:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint MemoryBox.MemoryBox:backgroundTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode MemoryBox.MemoryBox:backgroundTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint memorybox.memorybox:backgroundTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode memorybox.memorybox:backgroundTintMode}</code></td><td></td></tr>
            </table>
            @see #ViewBackgroundHelper_android_background
            @see #ViewBackgroundHelper_backgroundTint
@@ -9638,7 +9632,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ViewBackgroundHelper_android_background = 0;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#backgroundTint}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#backgroundTint}
           attribute's value can be found in the {@link #ViewBackgroundHelper} array.
 
 
@@ -9649,11 +9643,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:backgroundTint
+          @attr name memorybox.memorybox:backgroundTint
         */
         public static final int ViewBackgroundHelper_backgroundTint = 1;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#backgroundTintMode}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#backgroundTintMode}
           attribute's value can be found in the {@link #ViewBackgroundHelper} array.
 
 
@@ -9669,7 +9663,7 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name MemoryBox.MemoryBox:backgroundTintMode
+          @attr name memorybox.memorybox:backgroundTintMode
         */
         public static final int ViewBackgroundHelper_backgroundTintMode = 2;
         /** Attributes that can be used with a ViewStubCompat.
@@ -9713,12 +9707,12 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #com_facebook_like_view_com_facebook_auxiliary_view_position MemoryBox.MemoryBox:com_facebook_auxiliary_view_position}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_like_view_com_facebook_foreground_color MemoryBox.MemoryBox:com_facebook_foreground_color}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_like_view_com_facebook_horizontal_alignment MemoryBox.MemoryBox:com_facebook_horizontal_alignment}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_like_view_com_facebook_object_id MemoryBox.MemoryBox:com_facebook_object_id}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_like_view_com_facebook_object_type MemoryBox.MemoryBox:com_facebook_object_type}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_like_view_com_facebook_style MemoryBox.MemoryBox:com_facebook_style}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_like_view_com_facebook_auxiliary_view_position memorybox.memorybox:com_facebook_auxiliary_view_position}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_like_view_com_facebook_foreground_color memorybox.memorybox:com_facebook_foreground_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_like_view_com_facebook_horizontal_alignment memorybox.memorybox:com_facebook_horizontal_alignment}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_like_view_com_facebook_object_id memorybox.memorybox:com_facebook_object_id}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_like_view_com_facebook_object_type memorybox.memorybox:com_facebook_object_type}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_like_view_com_facebook_style memorybox.memorybox:com_facebook_style}</code></td><td></td></tr>
            </table>
            @see #com_facebook_like_view_com_facebook_auxiliary_view_position
            @see #com_facebook_like_view_com_facebook_foreground_color
@@ -9732,7 +9726,7 @@ containing a value of this type.
             0x7f01012f, 0x7f010130
         };
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#com_facebook_auxiliary_view_position}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#com_facebook_auxiliary_view_position}
           attribute's value can be found in the {@link #com_facebook_like_view} array.
 
 
@@ -9746,11 +9740,11 @@ containing a value of this type.
 <tr><td><code>inline</code></td><td>1</td><td></td></tr>
 <tr><td><code>top</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name MemoryBox.MemoryBox:com_facebook_auxiliary_view_position
+          @attr name memorybox.memorybox:com_facebook_auxiliary_view_position
         */
         public static final int com_facebook_like_view_com_facebook_auxiliary_view_position = 4;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#com_facebook_foreground_color}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#com_facebook_foreground_color}
           attribute's value can be found in the {@link #com_facebook_like_view} array.
 
 
@@ -9761,11 +9755,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:com_facebook_foreground_color
+          @attr name memorybox.memorybox:com_facebook_foreground_color
         */
         public static final int com_facebook_like_view_com_facebook_foreground_color = 0;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#com_facebook_horizontal_alignment}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#com_facebook_horizontal_alignment}
           attribute's value can be found in the {@link #com_facebook_like_view} array.
 
 
@@ -9779,11 +9773,11 @@ containing a value of this type.
 <tr><td><code>left</code></td><td>1</td><td></td></tr>
 <tr><td><code>right</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name MemoryBox.MemoryBox:com_facebook_horizontal_alignment
+          @attr name memorybox.memorybox:com_facebook_horizontal_alignment
         */
         public static final int com_facebook_like_view_com_facebook_horizontal_alignment = 5;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#com_facebook_object_id}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#com_facebook_object_id}
           attribute's value can be found in the {@link #com_facebook_like_view} array.
 
 
@@ -9793,11 +9787,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:com_facebook_object_id
+          @attr name memorybox.memorybox:com_facebook_object_id
         */
         public static final int com_facebook_like_view_com_facebook_object_id = 1;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#com_facebook_object_type}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#com_facebook_object_type}
           attribute's value can be found in the {@link #com_facebook_like_view} array.
 
 
@@ -9811,11 +9805,11 @@ containing a value of this type.
 <tr><td><code>open_graph</code></td><td>1</td><td></td></tr>
 <tr><td><code>page</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name MemoryBox.MemoryBox:com_facebook_object_type
+          @attr name memorybox.memorybox:com_facebook_object_type
         */
         public static final int com_facebook_like_view_com_facebook_object_type = 2;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#com_facebook_style}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#com_facebook_style}
           attribute's value can be found in the {@link #com_facebook_like_view} array.
 
 
@@ -9829,7 +9823,7 @@ containing a value of this type.
 <tr><td><code>button</code></td><td>1</td><td></td></tr>
 <tr><td><code>box_count</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name MemoryBox.MemoryBox:com_facebook_style
+          @attr name memorybox.memorybox:com_facebook_style
         */
         public static final int com_facebook_like_view_com_facebook_style = 3;
         /** Attributes that can be used with a com_facebook_login_view.
@@ -9838,10 +9832,10 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #com_facebook_login_view_com_facebook_confirm_logout MemoryBox.MemoryBox:com_facebook_confirm_logout}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_login_view_com_facebook_login_text MemoryBox.MemoryBox:com_facebook_login_text}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_login_view_com_facebook_logout_text MemoryBox.MemoryBox:com_facebook_logout_text}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_login_view_com_facebook_tooltip_mode MemoryBox.MemoryBox:com_facebook_tooltip_mode}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_login_view_com_facebook_confirm_logout memorybox.memorybox:com_facebook_confirm_logout}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_login_view_com_facebook_login_text memorybox.memorybox:com_facebook_login_text}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_login_view_com_facebook_logout_text memorybox.memorybox:com_facebook_logout_text}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_login_view_com_facebook_tooltip_mode memorybox.memorybox:com_facebook_tooltip_mode}</code></td><td></td></tr>
            </table>
            @see #com_facebook_login_view_com_facebook_confirm_logout
            @see #com_facebook_login_view_com_facebook_login_text
@@ -9852,7 +9846,7 @@ containing a value of this type.
             0x7f010131, 0x7f010132, 0x7f010133, 0x7f010134
         };
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#com_facebook_confirm_logout}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#com_facebook_confirm_logout}
           attribute's value can be found in the {@link #com_facebook_login_view} array.
 
 
@@ -9862,11 +9856,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:com_facebook_confirm_logout
+          @attr name memorybox.memorybox:com_facebook_confirm_logout
         */
         public static final int com_facebook_login_view_com_facebook_confirm_logout = 0;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#com_facebook_login_text}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#com_facebook_login_text}
           attribute's value can be found in the {@link #com_facebook_login_view} array.
 
 
@@ -9876,11 +9870,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:com_facebook_login_text
+          @attr name memorybox.memorybox:com_facebook_login_text
         */
         public static final int com_facebook_login_view_com_facebook_login_text = 1;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#com_facebook_logout_text}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#com_facebook_logout_text}
           attribute's value can be found in the {@link #com_facebook_login_view} array.
 
 
@@ -9890,11 +9884,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:com_facebook_logout_text
+          @attr name memorybox.memorybox:com_facebook_logout_text
         */
         public static final int com_facebook_login_view_com_facebook_logout_text = 2;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#com_facebook_tooltip_mode}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#com_facebook_tooltip_mode}
           attribute's value can be found in the {@link #com_facebook_login_view} array.
 
 
@@ -9908,7 +9902,7 @@ containing a value of this type.
 <tr><td><code>display_always</code></td><td>1</td><td></td></tr>
 <tr><td><code>never_display</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name MemoryBox.MemoryBox:com_facebook_tooltip_mode
+          @attr name memorybox.memorybox:com_facebook_tooltip_mode
         */
         public static final int com_facebook_login_view_com_facebook_tooltip_mode = 3;
         /** Attributes that can be used with a com_facebook_profile_picture_view.
@@ -9917,8 +9911,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #com_facebook_profile_picture_view_com_facebook_is_cropped MemoryBox.MemoryBox:com_facebook_is_cropped}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_profile_picture_view_com_facebook_preset_size MemoryBox.MemoryBox:com_facebook_preset_size}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_profile_picture_view_com_facebook_is_cropped memorybox.memorybox:com_facebook_is_cropped}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_profile_picture_view_com_facebook_preset_size memorybox.memorybox:com_facebook_preset_size}</code></td><td></td></tr>
            </table>
            @see #com_facebook_profile_picture_view_com_facebook_is_cropped
            @see #com_facebook_profile_picture_view_com_facebook_preset_size
@@ -9927,7 +9921,7 @@ containing a value of this type.
             0x7f010135, 0x7f010136
         };
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#com_facebook_is_cropped}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#com_facebook_is_cropped}
           attribute's value can be found in the {@link #com_facebook_profile_picture_view} array.
 
 
@@ -9937,11 +9931,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name MemoryBox.MemoryBox:com_facebook_is_cropped
+          @attr name memorybox.memorybox:com_facebook_is_cropped
         */
         public static final int com_facebook_profile_picture_view_com_facebook_is_cropped = 1;
         /**
-          <p>This symbol is the offset where the {@link MemoryBox.MemoryBox.R.attr#com_facebook_preset_size}
+          <p>This symbol is the offset where the {@link memorybox.memorybox.R.attr#com_facebook_preset_size}
           attribute's value can be found in the {@link #com_facebook_profile_picture_view} array.
 
 
@@ -9955,7 +9949,7 @@ containing a value of this type.
 <tr><td><code>normal</code></td><td>-3</td><td></td></tr>
 <tr><td><code>large</code></td><td>-4</td><td></td></tr>
 </table>
-          @attr name MemoryBox.MemoryBox:com_facebook_preset_size
+          @attr name memorybox.memorybox:com_facebook_preset_size
         */
         public static final int com_facebook_profile_picture_view_com_facebook_preset_size = 0;
     };
