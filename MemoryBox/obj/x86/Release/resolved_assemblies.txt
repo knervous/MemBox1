@@ -1,0 +1,9 @@
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\obj\x86\Release\android\assets\Test1.dll
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\obj\x86\Release\android\assets\Mono.Android.dll
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\obj\x86\Release\android\assets\mscorlib.dll
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\obj\x86\Release\android\assets\System.Core.dll
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\obj\x86\Release\android\assets\System.dll
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\obj\x86\Release\android\assets\System.Xml.dll
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\obj\x86\Release\android\assets\System.Xml.Linq.dll
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\obj\x86\Release\android\assets\System.Runtime.Serialization.dll
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\obj\x86\Release\android\assets\System.ServiceModel.Internals.dll

@@ -1,0 +1,1 @@
+C:\Users\Paul\Source\Repos\MemBox1\Components\facebookandroid-4.10.1.0\samples\HelloFacebookSample\HelloFacebookSample\obj\Debug\HelloFacebookSample.csprojResolveAssemblyReference.cache

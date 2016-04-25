@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="Test1.Test1" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
+  <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="21" />
+  <application android:label="Test1" android:icon="@drawable/memboxps" android:name="mono.android.app.Application" android:allowBackup="true">
+    <activity android:name="MainActivity" android:label="Test1" />
+    <activity android:name="Login" android:label="Test1" />
+    <activity android:name="Boxes" android:label="Test1" />
+    <activity android:name="Memories" android:label="Test1" />
+    <activity android:label="test page" android:name="md527169e3eaf077771b849b7d54b464677.Login" />
+    <activity android:label="Activity2" android:name="md527169e3eaf077771b849b7d54b464677.Boxes" />
+    <activity android:label="Test1" android:name="md527169e3eaf077771b849b7d54b464677.MainActivity" />
+    <activity android:label="Memories" android:name="md527169e3eaf077771b849b7d54b464677.Memories" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="Test1.Test1.mono.MonoRuntimeProvider.__mono_init__" />
+    <activity android:label="Test1" android:name="test1.test1.TrialSplashScreen" android:theme="@style/Mono.Android.Theme.Splash" android:noHistory="true">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+  </application>
+</manifest>

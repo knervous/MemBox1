@@ -4,9 +4,12 @@ C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\android\assets\Bolts.Task
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\android\assets\Imgur.API.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\android\assets\Microsoft.WindowsAzure.Mobile.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\android\assets\Microsoft.WindowsAzure.Mobile.Ext.dll
+C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\android\assets\Microsoft.WindowsAzure.Mobile.SQLiteStore.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\android\assets\Mono.Android.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\android\assets\mscorlib.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\android\assets\Newtonsoft.Json.dll
+C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\android\assets\SQLitePCL.dll
+C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\android\assets\SQLitePCL.Ext.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\android\assets\Square.OkHttp.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\android\assets\Square.OkIO.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\android\assets\Square.Picasso.dll

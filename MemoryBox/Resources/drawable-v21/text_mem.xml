@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#c20586">
+  <item>
+    
+    <shape android:shape="oval">
+      <padding android:left="8dp" android:top="8dp"
+               android:right="8dp" android:bottom="8dp" />
+    
+    </shape>
+    
+  </item>
+  <item android:state_pressed="true"
+           android:drawable="@drawable/textMem"
+        />
+
+  <item android:state_focused="true"
+        android:drawable="@drawable/textMem" />
+
+  <item android:drawable="@drawable/textMem" />
+</ripple>

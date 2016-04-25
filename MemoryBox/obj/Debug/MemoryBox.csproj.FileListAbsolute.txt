@@ -47,7 +47,10 @@ C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Debug\Bolts.Tasks.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Debug\Imgur.API.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Debug\Microsoft.WindowsAzure.Mobile.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Debug\Microsoft.WindowsAzure.Mobile.Ext.dll
+C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Debug\Microsoft.WindowsAzure.Mobile.SQLiteStore.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Debug\SQLitePCL.dll
+C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Debug\SQLitePCL.Ext.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Debug\Square.OkHttp.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Debug\Square.OkIO.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Debug\Square.Picasso.dll
@@ -74,6 +77,7 @@ C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Debug\System.Net.Http.Extensions.xml
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Debug\System.Net.Http.Primitives.xml
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Debug\Xamarin.Insights.xml
+C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\MemoryBox.csprojResolveAssemblyReference.cache
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\MemoryBox.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\MemoryBox.pdb
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\android\bin\MemoryBox.MemoryBox.apk
@@ -128,6 +132,10 @@ C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\res\drawable\loader.gif
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\res\drawable\loader1.gif
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\R.cs.flag
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\uploadflags.txt
-C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\MemoryBox.csprojResolveAssemblyReference.cache
+C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\res\drawable\background_beach.jpg
+C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\res\drawable\background_farm.png
+C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\res\drawable\background_tree.png
+C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\res\drawable\background_winter.png
+C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\res\anim\rotate_center.xml
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Debug\MemoryBox.dll.mdb
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Debug\MemoryBox.dll.mdb

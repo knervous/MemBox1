@@ -28,7 +28,7 @@ namespace MemoryBox
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            Dialog.Window.Attributes.WindowAnimations = Resource.Style.Animation_AppCompat_DropDownUp;
+            
 
             // Create your fragment here
         }
@@ -39,7 +39,7 @@ namespace MemoryBox
         {
             base.OnCreateView(inflater, container, savedInstanceState);
             Dialog.Window.RequestFeature(WindowFeatures.NoTitle);
-            Dialog.Window.Attributes.WindowAnimations = 17432577;
+            Dialog.Window.Attributes.WindowAnimations = Resource.Style.Animation_AppCompat_DropDownUp;
 
             var view = inflater.Inflate(Resource.Layout.createMemBox, container, false);
 

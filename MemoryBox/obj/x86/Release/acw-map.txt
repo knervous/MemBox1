@@ -1,0 +1,16 @@
+Test1.Login, Test1;md527169e3eaf077771b849b7d54b464677.Login
+Test1.Login, Test1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md527169e3eaf077771b849b7d54b464677.Login
+Test1.Login;md527169e3eaf077771b849b7d54b464677.Login
+test1.Login;md527169e3eaf077771b849b7d54b464677.Login
+Test1.Boxes, Test1;md527169e3eaf077771b849b7d54b464677.Boxes
+Test1.Boxes, Test1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md527169e3eaf077771b849b7d54b464677.Boxes
+Test1.Boxes;md527169e3eaf077771b849b7d54b464677.Boxes
+test1.Boxes;md527169e3eaf077771b849b7d54b464677.Boxes
+Test1.MainActivity, Test1;md527169e3eaf077771b849b7d54b464677.MainActivity
+Test1.MainActivity, Test1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md527169e3eaf077771b849b7d54b464677.MainActivity
+Test1.MainActivity;md527169e3eaf077771b849b7d54b464677.MainActivity
+test1.MainActivity;md527169e3eaf077771b849b7d54b464677.MainActivity
+Test1.Memories, Test1;md527169e3eaf077771b849b7d54b464677.Memories
+Test1.Memories, Test1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md527169e3eaf077771b849b7d54b464677.Memories
+Test1.Memories;md527169e3eaf077771b849b7d54b464677.Memories
+test1.Memories;md527169e3eaf077771b849b7d54b464677.Memories

@@ -10,13 +10,18 @@ using System.Collections.Generic;
 using SupportFragment = Android.Support.V4.App.Fragment;
 using Newtonsoft.Json;
 using Microsoft.WindowsAzure.MobileServices.Sync;
+using System.Threading.Tasks;
+using Microsoft.WindowsAzure.MobileServices.SQLiteStore;
+using Newtonsoft.Json.Linq;
+using Android.Content.PM;
+using Android.Widget;
 
 namespace MemoryBox
 {
 
 
 
-    [Activity(MainLauncher = true)]
+    [Activity(MainLauncher = true, ScreenOrientation = ScreenOrientation.Portrait)]
     public class MainActivity : FragmentActivity, IDisposable, IFacebookCallback
 
 
@@ -27,24 +32,29 @@ namespace MemoryBox
         private MemoriesFragment mMemoriesFragment;
         private CreateMemBoxFragment createMemBoxFragment;
         private Stack<SupportFragment> stack;
-        const string applicationURL = @"https://testapppaul.azurewebsites.net";
-        const string localDbFilename = "localstore.db";
+        const string applicationURL = @"https://paulmemorybox.azurewebsites.net";
+        const string localDbFilename = "localstore1.db";
         private ICallbackManager callBackManager;
-        public static MobileServiceClient client = new MobileServiceClient(applicationURL);
-        private MemoryModel memoryModel;
+        public static MobileServiceClient client;
+        private MemoryModel memoryModelTemp;
         private IMobileServiceSyncTable<SerializedMemory> syncMemModel;
+        private IMobileServiceTable<SerializedMemory> table;
+        
 
         private async Task InitLocalStoreAsync()
         {
-            string path = System.IO.Path.Combine(System.Environment.GetFolderPath(System.Enviironment.SpecialFolder.Personal), localDbFilename);
+            string path = System.IO.Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), localDbFilename);
             if (!System.IO.File.Exists(path))
             {
                 System.IO.File.Create(path).Dispose();
             }
 
             var store = new MobileServiceSQLiteStore(path);
+            store.DefineTable<SerializedMemory>();
+
 
             await client.SyncContext.InitializeAsync(store);
+            
 
         }
 
@@ -59,90 +69,134 @@ namespace MemoryBox
             try
             {
                 var list = await syncMemModel.ToListAsync();
-                boxFragment.Adapter.Clear();
+                boxFragment.MemoryListViewAdapter.Clear();
                 JsonSerializerSettings settings = new JsonSerializerSettings();
                 settings.ObjectCreationHandling = ObjectCreationHandling.Replace;
                 foreach (SerializedMemory current in list)
                 {
-                    var temp = JsonConverter.DeserializeObject<MemoryModel>(current);
-                    boxFragment.Adapter.Add(temp);
+                    var temp = JsonConvert.DeserializeObject<MemoryModel>(current.MemoryBox, settings);
+                    temp.Id = current.Id;
+                    boxFragment.MemoryListViewAdapter.Add(temp);
                 }
             }
-            catch (Exception dungle) { Console.WriteLine(dungle); }
+            catch (Exception dungle) { Console.WriteLine(dungle.StackTrace); }
 
+        }
+
+        private async Task SyncAsync(bool pullData = false)
+        {
+            try
+            {
+                await client.SyncContext.PushAsync();
+
+                if (pullData) { await syncMemModel.PullAsync("allitems", syncMemModel.CreateQuery()); }
+            }
+            catch (Exception e) { Console.WriteLine(e.StackTrace); }
         }
 
 
 
-        protected async override void OnCreate(Bundle bundle)
+        protected override async void OnCreate(Bundle bundle)
         {
+
             base.OnCreate(bundle);
+            SetContentView(Resource.Layout.Main);
             Xamarin.Insights.Initialize(XamarinInsights.ApiKey, this);
             FacebookSdk.SdkInitialize(this.ApplicationContext);
             CurrentPlatform.Init();
-            await InitLocalStoreAsync();
+            client = new MobileServiceClient(applicationURL);
+            table = client.GetTable<SerializedMemory>();
+
             ActionBar.Hide();
-            SetContentView(Resource.Layout.Main);
+
             homeScreenFragment = new HomeScreenFragment();
             boxFragment = new BoxesFragment();
             mMemoriesFragment = new MemoriesFragment();
             currentFragment = homeScreenFragment;
+            createMemBoxFragment = new CreateMemBoxFragment();
             stack = new Stack<SupportFragment>();
+            syncMemModel = client.GetSyncTable<SerializedMemory>();
 
+            OnRefreshItemsSelected();
 
-            homeScreenFragment.facebookLogin += delegate
+            homeScreenFragment.facebookLogin += async delegate
             {
 
                 if (isLoggedIn())
-                    ShowFragment(boxFragment);
+                {
+                    Toast.MakeText(this, "Logging in via Facebook...", ToastLength.Short).Show();
+                    await ShowFragment(boxFragment);
+                    await InitLocalStoreAsync();
+                    await RefreshItemsFromTableAsync();
+
+                }
                 else
                     LoginManager.Instance.LogInWithReadPermissions(this, new List<string> { "public_profile", "user_friends", "email" });
             };
 
             boxFragment.createMemoryBox += delegate
             {
+                OnRefreshItemsSelected();
+                
                 Android.App.FragmentTransaction transaction = FragmentManager.BeginTransaction();
-                createMemBoxFragment = new CreateMemBoxFragment();
+
                 createMemBoxFragment.Show(transaction, "signup fragment");
-                createMemBoxFragment.CreateMemBox += delegate (object sender, CreateNewMemBoxArgs args)
+                createMemBoxFragment.CreateMemBox += async delegate (object sender, CreateNewMemBoxArgs args)
 
                 {
-                    var name = args.Text;
-                    boxFragment.Boxes.Add(new MemoryModel() { Name = name });
-                    var temp = new MemoryModel() { Name = name};
+                    var name = args.Text + " - " + Profile.CurrentProfile.Name;
+                    var temp = new MemoryModel() { Name = name, Owner = Profile.CurrentProfile.Name };
                     var serialized = JsonConvert.SerializeObject(temp);
-                    SerializedMemory mem = new SerializedMemory() { Data = serialized };
+                    SerializedMemory mem = new SerializedMemory() { MemoryBox = serialized };
+                    Toast.MakeText(this, "Creating MemoryBox! :)", ToastLength.Long).Show();
+                    createMemBoxFragment.Dismiss();
                     await syncMemModel.InsertAsync(mem);
                     await SyncAsync();
-
-                    createMemBoxFragment.Dismiss();
+                    OnRefreshItemsSelected();
+                    
                 };
 
 
             };
 
-            boxFragment.enterMemoryBox += delegate (object sender, EnterMemoryBoxEventArgs args)
+            boxFragment.enterMemoryBox += async delegate (object sender, EnterMemoryBoxEventArgs args)
             {
                 var serialized = JsonConvert.SerializeObject(boxFragment.CurrentBox);
-                var serial = new SerializedMemory() { Data = serialized };
-                JsonSerializerSettings settings = new JsonSerializerSettings();
-                settings.ObjectCreationHandling = ObjectCreationHandling.Replace;
-                boxFragment.CurrentBox = JsonConvert.DeserializeObject<MemoryModel>(serial.Data, settings);
+                memoryModelTemp = JsonConvert.DeserializeObject<MemoryModel>(serialized);
                 mMemoriesFragment = new MemoriesFragment(boxFragment.CurrentBox);
-                ShowFragment(mMemoriesFragment);
+                await ShowFragment(mMemoriesFragment);
+            };
+
+            boxFragment.deleteMemoryBox += async delegate (object sender, EventArgs args)
+            {
+                if(Profile.CurrentProfile.Name == boxFragment.CurrentBox.Owner || boxFragment.CurrentBox.Owner == "Paul Johnson")
+                {
+                    var serialized = JsonConvert.SerializeObject(boxFragment.CurrentBox);
+                    var mem = new SerializedMemory() { MemoryBox = serialized, Id = boxFragment.CurrentBox.Id };
+                    Toast.MakeText(this, "Deleting MemoryBox! :(", ToastLength.Short).Show();
+                    await syncMemModel.DeleteAsync(mem);
+                    await SyncAsync();
+                    await RefreshItemsFromTableAsync();
+                    OnRefreshItemsSelected();
+                }
+                else
+                {
+                    Toast.MakeText(this, "Only The Owner Can Delete A MemoryBox!", ToastLength.Short).Show();
+                }
+                
             };
 
 
 
 
             callBackManager = CallbackManagerFactory.Create();
-            ShowFragment(currentFragment);
-        }
+            await ShowFragment(currentFragment);
+            }
 
 
-        
 
-        public override void OnBackPressed()
+
+        public async override void OnBackPressed()
         {
             if (currentFragment == homeScreenFragment)
             {
@@ -152,8 +206,12 @@ namespace MemoryBox
 
             if (currentFragment == mMemoriesFragment)
             {
-
-
+                var serialized = JsonConvert.SerializeObject(mMemoriesFragment.CurrentMemory);
+                SerializedMemory memToDelete = new SerializedMemory() { MemoryBox = serialized, Id = memoryModelTemp.Id };
+                SerializedMemory mem = new SerializedMemory() { MemoryBox = serialized, Id = memoryModelTemp.Id };
+                Toast.MakeText(this, "Saving MemoryBox...", ToastLength.Short).Show();
+                await syncMemModel.UpdateAsync(mem);
+                OnRefreshItemsSelected();
                 var trans = SupportFragmentManager.BeginTransaction();
                 trans.Detach(mMemoriesFragment);
                 trans.Commit();
@@ -173,6 +231,8 @@ namespace MemoryBox
         }
 
 
+
+
         public void OnCancel()
         {
             Console.WriteLine("cancelled");
@@ -187,15 +247,15 @@ namespace MemoryBox
         public void OnSuccess(Java.Lang.Object result)
         {
             LoginResult loginResult = result as LoginResult;
-            ShowFragment(boxFragment);
-            Console.WriteLine("SUCCESS OPENING NEW");
+            //ShowFragment(boxFragment);
+            //Console.WriteLine("SUCCESS OPENING NEW");
         }
 
-        private void ShowFragment(SupportFragment fragment)
+        private async Task ShowFragment(SupportFragment fragment)
         {
             var trans = SupportFragmentManager.BeginTransaction();
-            if(!(fragment is HomeScreenFragment))
-            { 
+            if (!(fragment is HomeScreenFragment))
+            {
                 trans.SetCustomAnimations(Resource.Animation.slide_in, Resource.Animation.slide_out);
             }
             trans.Add(Resource.Id.titleScreen1, fragment, "CurrentFragment");
@@ -207,15 +267,7 @@ namespace MemoryBox
             currentFragment = fragment;
         }
 
-        private async Task SyncAsync(bool pullData = false)
-        {
-            try
-            {
-                await client.SyncContext.PushAsync();
-                if (pullData) { await syncMemModel.PullAsync("allitems", syncMemModel.CreateQuery()); }
-            }
-            catch (Exception e) { }
-        }
+
 
         protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
         {

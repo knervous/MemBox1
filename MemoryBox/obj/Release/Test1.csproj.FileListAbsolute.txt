@@ -1,0 +1,66 @@
+C:\Users\Paul\Documents\Visual Studio 2015\Projects\Test1\Test1\bin\Release\Test1.dll
+C:\Users\Paul\Documents\Visual Studio 2015\Projects\Test1\Test1\bin\Release\Test1.pdb
+C:\Users\Paul\Documents\Visual Studio 2015\Projects\Test1\Test1\bin\Release\Test1.Test1.apk
+C:\Users\Paul\Documents\Visual Studio 2015\Projects\Test1\Test1\bin\Release\Test1.Test1-Signed.apk
+C:\Users\Paul\Documents\Visual Studio 2015\Projects\Test1\Test1\obj\Release\res\drawable\monoandroidsplash.png
+C:\Users\Paul\Documents\Visual Studio 2015\Projects\Test1\Test1\obj\Release\res\values\styles.xml
+C:\Users\Paul\Documents\Visual Studio 2015\Projects\Test1\Test1\obj\Release\Test1.dll
+C:\Users\Paul\Documents\Visual Studio 2015\Projects\Test1\Test1\obj\Release\Test1.pdb
+C:\Users\Paul\Documents\Visual Studio 2015\Projects\Test1\Test1\obj\Release\android\bin\Test1.Test1.apk
+C:\Users\Paul\Documents\Visual Studio 2015\Projects\Test1\Test1\obj\Release\res\layout\main.xml
+C:\Users\Paul\Documents\Visual Studio 2015\Projects\Test1\Test1\obj\Release\res\values\strings.xml
+C:\Users\Paul\Documents\Visual Studio 2015\Projects\Test1\Test1\obj\Release\res\drawable\icon.png
+C:\Users\Paul\Documents\Visual Studio 2015\Projects\Test1\Test1\obj\Release\res\drawable\swissalps.jpg
+C:\Users\Paul\Documents\Visual Studio 2015\Projects\Test1\Test1\obj\Release\res\drawable-v21\round_button.xml
+C:\Users\Paul\Documents\Visual Studio 2015\Projects\Test1\Test1\obj\Release\res\drawable\memboxps.png
+C:\Users\Paul\Documents\Visual Studio 2015\Projects\Test1\Test1\obj\Release\R.cs.flag
+C:\Users\Paul\Documents\Visual Studio 2015\Projects\Test1\Test1\obj\Release\uploadflags.txt
+C:\Users\Paul\Documents\Visual Studio 2015\Projects\Test1\Test1\obj\Release\res\layout\login.xml
+C:\Users\Paul\Documents\Visual Studio 2015\Projects\Test1\Test1\obj\Release\res\layout\boxes.xml
+C:\Users\Paul\Documents\Visual Studio 2015\Projects\Test1\Test1\obj\Release\res\layout\memories.xml
+C:\Users\Paul\Documents\Visual Studio 2015\Projects\Test1\Test1\obj\Release\res\drawable-v21\voice_mem.xml
+C:\Users\Paul\Documents\Visual Studio 2015\Projects\Test1\Test1\obj\Release\res\drawable\textmem.png
+C:\Users\Paul\Documents\Visual Studio 2015\Projects\Test1\Test1\obj\Release\res\drawable\vidmem.png
+C:\Users\Paul\Documents\Visual Studio 2015\Projects\Test1\Test1\obj\Release\res\drawable\voicemem.png
+C:\Users\Paul\Documents\Visual Studio 2015\Projects\Test1\Test1\obj\Release\res\drawable\membackground.png
+C:\Users\Paul\Documents\Visual Studio 2015\Projects\Test1\Test1\obj\Release\res\drawable\loginframe.png
+C:\Users\Paul\Documents\Visual Studio 2015\Projects\Test1\Test1\obj\Release\res\drawable\cover.png
+C:\Users\Paul\Documents\Visual Studio 2015\Projects\Test1\Test1\obj\Release\Test1.csprojResolveAssemblyReference.cache
+C:\Users\Paul\Documents\Visual Studio 2015\Projects\Test1\Test1\obj\Release\Test1.dll.mdb
+C:\Users\Paul\Documents\Visual Studio 2015\Projects\Test1\Test1\bin\Release\Test1.dll.mdb
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\bin\Release\Test1.dll
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\bin\Release\Test1.pdb
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\bin\Release\Test1.Test1.apk
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\bin\Release\Test1.Test1-Signed.apk
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\obj\Release\res\drawable\monoandroidsplash.png
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\obj\Release\res\values\styles.xml
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\obj\Release\Test1.dll
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\obj\Release\Test1.pdb
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\obj\Release\android\bin\Test1.Test1.apk
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\obj\Release\res\layout\login.xml
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\obj\Release\res\layout\boxes.xml
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\obj\Release\res\layout\memories.xml
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\obj\Release\res\layout\main.xml
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\obj\Release\res\values\strings.xml
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\obj\Release\res\drawable\icon.png
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\obj\Release\res\drawable\swissalps.jpg
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\obj\Release\res\drawable-v21\voice_mem.xml
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\obj\Release\res\drawable\memboxps.png
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\obj\Release\res\drawable\textmem.png
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\obj\Release\res\drawable\vidmem.png
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\obj\Release\res\drawable\voicemem.png
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\obj\Release\res\drawable\membackground.png
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\obj\Release\res\drawable\cover.png
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\obj\Release\res\drawable-v21\round_button.xml
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\obj\Release\R.cs.flag
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\obj\Release\uploadflags.txt
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\obj\Release\res\drawable-v21\text_mem.xml
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\obj\Release\res\drawable\loginbutton5.png
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\obj\Release\res\drawable-v21\vid_mem.xml
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\obj\Release\res\drawable\coverblank.png
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\obj\Release\res\drawable\loginbutton6.png
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\obj\Release\res\raw\avril_14th.mp3
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\obj\Release\res\drawable\note.png
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\obj\Release\Test1.csprojResolveAssemblyReference.cache
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\obj\Release\Test1.dll.mdb
+C:\Users\Paul\Source\Repos\MemoryBox\Test1\Test1\bin\Release\Test1.dll.mdb

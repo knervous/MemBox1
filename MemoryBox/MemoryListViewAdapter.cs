@@ -12,16 +12,17 @@ using Android.Widget;
 
 namespace MemoryBox
 {
-    class MemoryListViewAdapter : BaseAdapter<MemoryModel>
+    public class MemoryListViewAdapter : BaseAdapter<MemoryModel>
     {
 
-        public List<MemoryModel> mMemories;
+        private List<MemoryModel> mMemories = new List<MemoryModel>();
         private Context mContext;
 
-        public MemoryListViewAdapter(Context context, List<MemoryModel> memories)
+
+
+        public MemoryListViewAdapter(Context context)
         {
             mContext = context;
-            mMemories = memories;
         }
 
         public override MemoryModel this[int position]
@@ -35,6 +36,12 @@ namespace MemoryBox
         public override int Count
         {
             get { return mMemories.Count; }
+        }
+
+        public List<MemoryModel> Memories
+        {
+            get { return mMemories; }
+            set { mMemories = value;  }
         }
 
         public override long GetItemId(int position)
@@ -53,6 +60,24 @@ namespace MemoryBox
             boxName.Text = mMemories[position].Name;
 
             return row;
+        }
+
+        public void Add (MemoryModel item)
+        {
+            mMemories.Add(item);
+            NotifyDataSetChanged();
+        }
+
+        public void Clear()
+        {
+            mMemories.Clear();
+            NotifyDataSetChanged();
+        }
+
+        public void Remove (MemoryModel item)
+        {
+            mMemories.Remove(item);
+            NotifyDataSetChanged();
         }
     }
 }

@@ -14,27 +14,21 @@ using Android.Support.V4.App;
 
 namespace MemoryBox
 {
-    [Activity()]
+    
     public class BoxesFragment : Android.Support.V4.App.Fragment
     {
-        public Button createMem;
-        public List<MemoryModel> boxes;
-        public MemoryModel currentModel;
-        public ListView boxListView;
-        public CreateMemBoxFragment createMemFragment;
-        public ArrayAdapter<string> listAdapter;
-        public MyProfileTracker profileTracker;
+        private Button createMem;
+        private List<MemoryModel> boxes;
+        private MemoryModel currentModel;
+        private ListView boxListView;
+        private CreateMemBoxFragment createMemFragment;
+        private ArrayAdapter<string> listAdapter;
         private MemoryListViewAdapter memoryListViewAdapter;
         public event EventHandler<CreateMemoryBoxEventArgs> createMemoryBox;
         public event EventHandler<EnterMemoryBoxEventArgs> enterMemoryBox;
+        public event EventHandler<EventArgs> deleteMemoryBox;
 
-        public MemoryListViewAdapter Adapter {
-
-            get{ return memoryListViewAdapter;}
-            set{ memoryListViewAdapter = value;}
-
-            }
-
+        
 
         public override void OnCreate(Bundle savedInstanceState)
         {
@@ -45,54 +39,39 @@ namespace MemoryBox
         {
             View view = inflater.Inflate(Resource.Layout.Boxes, container, false);
             createMem = view.FindViewById<Button>(Resource.Id.toMemories);
-            profileTracker = new MyProfileTracker();
-            profileTracker.mOnProfileChanged += delegate (object sender, OnProfileChangedEventArgs e)
-            {
- 
-            };
-            profileTracker.StartTracking();
-
-
-
             createMem.Click += delegate
             {
                 createMemoryBox.Invoke(this, new CreateMemoryBoxEventArgs());
                 
             };
 
-
-            boxes = new List<MemoryModel>();
             boxListView = view.FindViewById<ListView>(Resource.Id.memListView);
 
-            boxes.Add(new MemoryModel());
-            boxes.Add(new MemoryModel());
-            boxes.Add(new MemoryModel());
-            boxes[0].Name = "Mem Box 1";
-            boxes[1].Name = "Mem Box 2";
-            boxes[2].Name = "Mem Box 3";
 
 
-            memoryListViewAdapter = new MemoryListViewAdapter(view.Context, boxes);
+            memoryListViewAdapter = new MemoryListViewAdapter(view.Context);
             boxListView.Adapter = memoryListViewAdapter;
 
             boxListView.ItemClick += BoxListView_ItemClick;
+            boxListView.ItemLongClick += BoxListView_ItemLongClick;
+
 
             return view;
         }
 
+        private void BoxListView_ItemLongClick(object sender, AdapterView.ItemLongClickEventArgs e)
+        {
+            currentModel = memoryListViewAdapter.Memories[e.Position];
+            deleteMemoryBox.Invoke(this, new EventArgs());
+        }
+
         private void BoxListView_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
         {
-            if(currentModel==null)
-                currentModel = boxes[e.Position];
             
+            currentModel = memoryListViewAdapter.Memories[e.Position];
             enterMemoryBox.Invoke(this, new EnterMemoryBoxEventArgs());
         }
 
-        public List<MemoryModel> Boxes
-        {
-            get { return boxes;  }
-            set { boxes = value;  }
-        }
 
         public MemoryModel CurrentBox
         {
@@ -100,9 +79,15 @@ namespace MemoryBox
             set { currentModel = value; }
         }
 
+        public MemoryListViewAdapter MemoryListViewAdapter
+        {
+            get { return memoryListViewAdapter; }
+            set { memoryListViewAdapter = value; }
+        }
+
         public override void OnPause()
         {
-            profileTracker.StopTracking();
+            
             base.OnPause();
 
         }
@@ -114,7 +99,7 @@ namespace MemoryBox
 
         public override void OnDetach()
         {
-            profileTracker.StopTracking();
+     
             base.OnDetach();
         }
 

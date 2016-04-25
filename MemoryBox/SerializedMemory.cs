@@ -1,11 +1,15 @@
-using NewtonSoft.Json;
+
+using Newtonsoft.Json;
 
 namespace MemoryBox
+
 {
     class SerializedMemory
     {
-        [JsonProperty(PropertyName = "MemoryBox")]
-        public string Data { get; set; }
+        public string Id { get; set; }
+
+        [JsonProperty(PropertyName = "memorybox")]
+        public string MemoryBox { get; set; }
 
     }
 }
