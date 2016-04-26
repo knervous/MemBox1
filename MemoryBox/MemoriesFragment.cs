@@ -63,13 +63,13 @@ namespace MemoryBox
                 fl.SetBackgroundResource(Resource.Drawable.background_beach);
                 break;
                 case 2:
-                    fl.SetBackgroundResource(Resource.Drawable.background_farm);
+                    fl.SetBackgroundResource(Resource.Drawable.background_farm1);
                     break;
                 case 3:
                     fl.SetBackgroundResource(Resource.Drawable.background_tree);
                     break;
                 case 4:
-                    fl.SetBackgroundResource(Resource.Drawable.background_winter);
+                    fl.SetBackgroundResource(Resource.Drawable.background_winter1);
                     break;
                 case 5:
                     // KEEP BG RESOURCE

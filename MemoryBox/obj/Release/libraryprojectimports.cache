@@ -2,7 +2,6 @@
 <Paths>
   <Jars></Jars>
   <ResolvedResourceDirectories>
-    <ResolvedResourceDirectory>C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\__library_projects__\Bolts.AppLinks\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\__library_projects__\Microsoft.WindowsAzure.Mobile.Ext\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\__library_projects__\SQLitePCL.Ext\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\__library_projects__\Xamarin.Facebook.AudienceNetwork\library_project_imports\res</ResolvedResourceDirectory>
@@ -10,7 +9,6 @@
     <ResolvedResourceDirectory>C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\__library_projects__\Xamarin.Insights\library_project_imports\res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
-    <ResolvedAssetDirectory>C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\__library_projects__\Bolts.AppLinks\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\__library_projects__\Microsoft.WindowsAzure.Mobile.Ext\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\__library_projects__\SQLitePCL.Ext\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\__library_projects__\Xamarin.Facebook.AudienceNetwork\library_project_imports\assets</ResolvedAssetDirectory>
@@ -19,7 +17,6 @@
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
-    <ResolvedResourceDirectoryStamp>C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\__library_projects__\Bolts.AppLinks.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\__library_projects__\Microsoft.WindowsAzure.Mobile.Ext.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\__library_projects__\SQLitePCL.Ext.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\__library_projects__\Xamarin.Facebook.AudienceNetwork.stamp</ResolvedResourceDirectoryStamp>

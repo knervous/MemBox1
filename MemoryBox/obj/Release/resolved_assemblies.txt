@@ -1,5 +1,4 @@
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\android\assets\MemoryBox.dll
-C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\android\assets\Bolts.AppLinks.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\android\assets\Bolts.Tasks.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\android\assets\Microsoft.WindowsAzure.Mobile.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\android\assets\Microsoft.WindowsAzure.Mobile.Ext.dll
@@ -32,4 +31,5 @@ C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\android\assets\Xamarin.
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\android\assets\Xamarin.GooglePlayServices.Basement.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\android\assets\Xamarin.Insights.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\android\assets\System.Runtime.Serialization.dll
+C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\android\assets\Bolts.AppLinks.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\android\assets\System.ServiceModel.dll

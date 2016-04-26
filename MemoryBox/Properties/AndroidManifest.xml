@@ -7,9 +7,6 @@
 	<application android:label="MemoryBox" android:icon="@drawable/memBoxPS">
 		<meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id" />
 		<activity android:name="MainActivity" android:label="MemoryBox" />
-		<activity android:name="Login" android:label="MemoryBox" />
-		<activity android:name="Boxes" android:label="MemoryBox" />
-		<activity android:name="Memories" android:label="MemoryBox" />
 		<activity android:name="com.facebook.FacebookActivity" android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:label="@string/ApplicationName" />
 	</application>
 </manifest>

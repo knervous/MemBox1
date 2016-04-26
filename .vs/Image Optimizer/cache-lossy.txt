@@ -1,0 +1,2 @@
+C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\Resources\drawable\microphone.png|2686
+C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\Resources\drawable\microphone1.png|2147

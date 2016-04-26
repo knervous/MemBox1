@@ -18,6 +18,7 @@ namespace MemoryBox
     public class BoxesFragment : Android.Support.V4.App.Fragment
     {
         private Button createMem;
+        private Button refreshMem;
         private List<MemoryModel> boxes;
         private MemoryModel currentModel;
         private ListView boxListView;
@@ -27,6 +28,7 @@ namespace MemoryBox
         public event EventHandler<CreateMemoryBoxEventArgs> createMemoryBox;
         public event EventHandler<EnterMemoryBoxEventArgs> enterMemoryBox;
         public event EventHandler<EventArgs> deleteMemoryBox;
+        public event EventHandler<EventArgs> refreshMemoryBox;
 
         
 
@@ -46,12 +48,16 @@ namespace MemoryBox
             };
 
             boxListView = view.FindViewById<ListView>(Resource.Id.memListView);
+            refreshMem = view.FindViewById<Button>(Resource.Id.refreshButton);
 
+            refreshMem.Click += delegate
+            {
+                refreshMemoryBox.Invoke(this, new EventArgs());
+            };
 
 
             memoryListViewAdapter = new MemoryListViewAdapter(view.Context);
             boxListView.Adapter = memoryListViewAdapter;
-
             boxListView.ItemClick += BoxListView_ItemClick;
             boxListView.ItemLongClick += BoxListView_ItemLongClick;
 

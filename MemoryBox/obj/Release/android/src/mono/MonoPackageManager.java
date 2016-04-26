@@ -80,7 +80,6 @@ public class MonoPackageManager {
 class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		"MemoryBox.dll",
-		"Bolts.AppLinks.dll",
 		"Bolts.Tasks.dll",
 		"Microsoft.WindowsAzure.Mobile.dll",
 		"Microsoft.WindowsAzure.Mobile.Ext.dll",
@@ -106,6 +105,7 @@ class MonoPackageManager_Resources {
 		"Xamarin.GooglePlayServices.AppIndexing.dll",
 		"Xamarin.GooglePlayServices.Basement.dll",
 		"Xamarin.Insights.dll",
+		"Bolts.AppLinks.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

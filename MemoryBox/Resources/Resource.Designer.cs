@@ -2080,13 +2080,13 @@ namespace MemoryBox
 			public const int background_beach = 2130837578;
 			
 			// aapt resource value: 0x7f02004b
-			public const int background_farm = 2130837579;
+			public const int background_farm1 = 2130837579;
 			
 			// aapt resource value: 0x7f02004c
 			public const int background_tree = 2130837580;
 			
 			// aapt resource value: 0x7f02004d
-			public const int background_winter = 2130837581;
+			public const int background_winter1 = 2130837581;
 			
 			// aapt resource value: 0x7f02004e
 			public const int com_facebook_auth_dialog_background = 2130837582;
@@ -2188,79 +2188,76 @@ namespace MemoryBox
 			public const int edit_text_style = 2130837614;
 			
 			// aapt resource value: 0x7f02006f
-			public const int Icon = 2130837615;
+			public const int memBackground = 2130837615;
 			
 			// aapt resource value: 0x7f020070
-			public const int memBackground = 2130837616;
+			public const int memBox = 2130837616;
 			
 			// aapt resource value: 0x7f020071
-			public const int memBox = 2130837617;
+			public const int memBoxPS = 2130837617;
 			
 			// aapt resource value: 0x7f020072
-			public const int memBoxPS = 2130837618;
+			public const int messenger_bubble_large_blue = 2130837618;
 			
 			// aapt resource value: 0x7f020073
-			public const int messenger_bubble_large_blue = 2130837619;
+			public const int messenger_bubble_large_white = 2130837619;
 			
 			// aapt resource value: 0x7f020074
-			public const int messenger_bubble_large_white = 2130837620;
+			public const int messenger_bubble_small_blue = 2130837620;
 			
 			// aapt resource value: 0x7f020075
-			public const int messenger_bubble_small_blue = 2130837621;
+			public const int messenger_bubble_small_white = 2130837621;
 			
 			// aapt resource value: 0x7f020076
-			public const int messenger_bubble_small_white = 2130837622;
+			public const int messenger_button_blue_bg_round = 2130837622;
 			
 			// aapt resource value: 0x7f020077
-			public const int messenger_button_blue_bg_round = 2130837623;
+			public const int messenger_button_blue_bg_selector = 2130837623;
 			
 			// aapt resource value: 0x7f020078
-			public const int messenger_button_blue_bg_selector = 2130837624;
+			public const int messenger_button_send_round_shadow = 2130837624;
 			
 			// aapt resource value: 0x7f020079
-			public const int messenger_button_send_round_shadow = 2130837625;
+			public const int messenger_button_white_bg_round = 2130837625;
 			
 			// aapt resource value: 0x7f02007a
-			public const int messenger_button_white_bg_round = 2130837626;
+			public const int messenger_button_white_bg_selector = 2130837626;
 			
 			// aapt resource value: 0x7f02007b
-			public const int messenger_button_white_bg_selector = 2130837627;
+			public const int microphone = 2130837627;
 			
 			// aapt resource value: 0x7f02007c
-			public const int microphone = 2130837628;
+			public const int microphone1 = 2130837628;
 			
 			// aapt resource value: 0x7f02007d
-			public const int microphone1 = 2130837629;
-			
-			// aapt resource value: 0x7f02007e
-			public const int note = 2130837630;
-			
-			// aapt resource value: 0x7f020087
-			public const int notification_template_icon_bg = 2130837639;
-			
-			// aapt resource value: 0x7f02007f
-			public const int round_button = 2130837631;
-			
-			// aapt resource value: 0x7f020080
-			public const int text_mem = 2130837632;
-			
-			// aapt resource value: 0x7f020081
-			public const int textMem = 2130837633;
-			
-			// aapt resource value: 0x7f020082
-			public const int username = 2130837634;
-			
-			// aapt resource value: 0x7f020083
-			public const int vid_mem = 2130837635;
-			
-			// aapt resource value: 0x7f020084
-			public const int vidMem = 2130837636;
-			
-			// aapt resource value: 0x7f020085
-			public const int voice_mem = 2130837637;
+			public const int note = 2130837629;
 			
 			// aapt resource value: 0x7f020086
-			public const int voiceMem = 2130837638;
+			public const int notification_template_icon_bg = 2130837638;
+			
+			// aapt resource value: 0x7f02007e
+			public const int round_button = 2130837630;
+			
+			// aapt resource value: 0x7f02007f
+			public const int text_mem = 2130837631;
+			
+			// aapt resource value: 0x7f020080
+			public const int textMem = 2130837632;
+			
+			// aapt resource value: 0x7f020081
+			public const int username = 2130837633;
+			
+			// aapt resource value: 0x7f020082
+			public const int vid_mem = 2130837634;
+			
+			// aapt resource value: 0x7f020083
+			public const int vidMem = 2130837635;
+			
+			// aapt resource value: 0x7f020084
+			public const int voice_mem = 2130837636;
+			
+			// aapt resource value: 0x7f020085
+			public const int voiceMem = 2130837637;
 			
 			static Drawable()
 			{
@@ -2275,20 +2272,20 @@ namespace MemoryBox
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0b00ad
-			public const int CreatePicButton = 2131427501;
-			
-			// aapt resource value: 0x7f0b00ac
-			public const int CreateTextButton = 2131427500;
-			
 			// aapt resource value: 0x7f0b00ae
-			public const int CreateVoiceButton = 2131427502;
+			public const int CreatePicButton = 2131427502;
+			
+			// aapt resource value: 0x7f0b00ad
+			public const int CreateTextButton = 2131427501;
 			
 			// aapt resource value: 0x7f0b00af
-			public const int MemBoxDisplay = 2131427503;
+			public const int CreateVoiceButton = 2131427503;
 			
-			// aapt resource value: 0x7f0b00b1
-			public const int action0 = 2131427505;
+			// aapt resource value: 0x7f0b00b0
+			public const int MemBoxDisplay = 2131427504;
+			
+			// aapt resource value: 0x7f0b00b2
+			public const int action0 = 2131427506;
 			
 			// aapt resource value: 0x7f0b0068
 			public const int action_bar = 2131427432;
@@ -2314,8 +2311,8 @@ namespace MemoryBox
 			// aapt resource value: 0x7f0b0069
 			public const int action_context_bar = 2131427433;
 			
-			// aapt resource value: 0x7f0b00b5
-			public const int action_divider = 2131427509;
+			// aapt resource value: 0x7f0b00b6
+			public const int action_divider = 2131427510;
 			
 			// aapt resource value: 0x7f0b0003
 			public const int action_menu_divider = 2131427331;
@@ -2365,29 +2362,29 @@ namespace MemoryBox
 			// aapt resource value: 0x7f0b0052
 			public const int buttonPanel = 2131427410;
 			
-			// aapt resource value: 0x7f0b007c
-			public const int callPicCreated = 2131427452;
-			
-			// aapt resource value: 0x7f0b007e
-			public const int callPicText = 2131427454;
-			
 			// aapt resource value: 0x7f0b007d
-			public const int callPicURL = 2131427453;
-			
-			// aapt resource value: 0x7f0b0081
-			public const int callText = 2131427457;
-			
-			// aapt resource value: 0x7f0b0080
-			public const int callTextCreated = 2131427456;
+			public const int callPicCreated = 2131427453;
 			
 			// aapt resource value: 0x7f0b007f
-			public const int callTextTitle = 2131427455;
+			public const int callPicText = 2131427455;
 			
-			// aapt resource value: 0x7f0b00b2
-			public const int cancel_action = 2131427506;
+			// aapt resource value: 0x7f0b007e
+			public const int callPicURL = 2131427454;
 			
-			// aapt resource value: 0x7f0b0087
-			public const int cancel_button = 2131427463;
+			// aapt resource value: 0x7f0b0082
+			public const int callText = 2131427458;
+			
+			// aapt resource value: 0x7f0b0081
+			public const int callTextCreated = 2131427457;
+			
+			// aapt resource value: 0x7f0b0080
+			public const int callTextTitle = 2131427456;
+			
+			// aapt resource value: 0x7f0b00b3
+			public const int cancel_action = 2131427507;
+			
+			// aapt resource value: 0x7f0b0088
+			public const int cancel_button = 2131427464;
 			
 			// aapt resource value: 0x7f0b002d
 			public const int center = 2131427373;
@@ -2401,8 +2398,8 @@ namespace MemoryBox
 			// aapt resource value: 0x7f0b0060
 			public const int checkbox = 2131427424;
 			
-			// aapt resource value: 0x7f0b00b8
-			public const int chronometer = 2131427512;
+			// aapt resource value: 0x7f0b00b9
+			public const int chronometer = 2131427513;
 			
 			// aapt resource value: 0x7f0b0035
 			public const int clip_horizontal = 2131427381;
@@ -2413,38 +2410,38 @@ namespace MemoryBox
 			// aapt resource value: 0x7f0b0021
 			public const int collapseActionView = 2131427361;
 			
-			// aapt resource value: 0x7f0b0089
-			public const int com_facebook_body_frame = 2131427465;
-			
-			// aapt resource value: 0x7f0b008b
-			public const int com_facebook_button_xout = 2131427467;
-			
-			// aapt resource value: 0x7f0b0084
-			public const int com_facebook_device_auth_instructions = 2131427460;
-			
-			// aapt resource value: 0x7f0b0082
-			public const int com_facebook_fragment_container = 2131427458;
-			
-			// aapt resource value: 0x7f0b0088
-			public const int com_facebook_login_activity_progress_bar = 2131427464;
-			
-			// aapt resource value: 0x7f0b008d
-			public const int com_facebook_tooltip_bubble_view_bottom_pointer = 2131427469;
+			// aapt resource value: 0x7f0b008a
+			public const int com_facebook_body_frame = 2131427466;
 			
 			// aapt resource value: 0x7f0b008c
-			public const int com_facebook_tooltip_bubble_view_text_body = 2131427468;
-			
-			// aapt resource value: 0x7f0b008a
-			public const int com_facebook_tooltip_bubble_view_top_pointer = 2131427466;
+			public const int com_facebook_button_xout = 2131427468;
 			
 			// aapt resource value: 0x7f0b0085
-			public const int confirmation_code = 2131427461;
+			public const int com_facebook_device_auth_instructions = 2131427461;
+			
+			// aapt resource value: 0x7f0b0083
+			public const int com_facebook_fragment_container = 2131427459;
+			
+			// aapt resource value: 0x7f0b0089
+			public const int com_facebook_login_activity_progress_bar = 2131427465;
+			
+			// aapt resource value: 0x7f0b008e
+			public const int com_facebook_tooltip_bubble_view_bottom_pointer = 2131427470;
+			
+			// aapt resource value: 0x7f0b008d
+			public const int com_facebook_tooltip_bubble_view_text_body = 2131427469;
+			
+			// aapt resource value: 0x7f0b008b
+			public const int com_facebook_tooltip_bubble_view_top_pointer = 2131427467;
+			
+			// aapt resource value: 0x7f0b0086
+			public const int confirmation_code = 2131427462;
 			
 			// aapt resource value: 0x7f0b0058
 			public const int contentPanel = 2131427416;
 			
-			// aapt resource value: 0x7f0b0092
-			public const int createPicLayout = 2131427474;
+			// aapt resource value: 0x7f0b0093
+			public const int createPicLayout = 2131427475;
 			
 			// aapt resource value: 0x7f0b005e
 			public const int custom = 2131427422;
@@ -2458,20 +2455,20 @@ namespace MemoryBox
 			// aapt resource value: 0x7f0b004e
 			public const int default_activity_button = 2131427406;
 			
-			// aapt resource value: 0x7f0b009a
-			public const int design_bottom_sheet = 2131427482;
+			// aapt resource value: 0x7f0b009b
+			public const int design_bottom_sheet = 2131427483;
+			
+			// aapt resource value: 0x7f0b00a2
+			public const int design_menu_item_action_area = 2131427490;
 			
 			// aapt resource value: 0x7f0b00a1
-			public const int design_menu_item_action_area = 2131427489;
+			public const int design_menu_item_action_area_stub = 2131427489;
 			
 			// aapt resource value: 0x7f0b00a0
-			public const int design_menu_item_action_area_stub = 2131427488;
+			public const int design_menu_item_text = 2131427488;
 			
 			// aapt resource value: 0x7f0b009f
-			public const int design_menu_item_text = 2131427487;
-			
-			// aapt resource value: 0x7f0b009e
-			public const int design_navigation_view = 2131427486;
+			public const int design_navigation_view = 2131427487;
 			
 			// aapt resource value: 0x7f0b0011
 			public const int disableHome = 2131427345;
@@ -2485,8 +2482,8 @@ namespace MemoryBox
 			// aapt resource value: 0x7f0b001e
 			public const int end = 2131427358;
 			
-			// aapt resource value: 0x7f0b00bd
-			public const int end_padder = 2131427517;
+			// aapt resource value: 0x7f0b00be
+			public const int end_padder = 2131427518;
 			
 			// aapt resource value: 0x7f0b0025
 			public const int enterAlways = 2131427365;
@@ -2494,17 +2491,17 @@ namespace MemoryBox
 			// aapt resource value: 0x7f0b0026
 			public const int enterAlwaysCollapsed = 2131427366;
 			
-			// aapt resource value: 0x7f0b0095
-			public const int enterPicButton = 2131427477;
+			// aapt resource value: 0x7f0b0096
+			public const int enterPicButton = 2131427478;
 			
-			// aapt resource value: 0x7f0b0094
-			public const int enterPicText = 2131427476;
+			// aapt resource value: 0x7f0b0095
+			public const int enterPicText = 2131427477;
+			
+			// aapt resource value: 0x7f0b0098
+			public const int enterTextText = 2131427480;
 			
 			// aapt resource value: 0x7f0b0097
-			public const int enterTextText = 2131427479;
-			
-			// aapt resource value: 0x7f0b0096
-			public const int enterTextTitle = 2131427478;
+			public const int enterTextTitle = 2131427479;
 			
 			// aapt resource value: 0x7f0b0027
 			public const int exitUntilCollapsed = 2131427367;
@@ -2542,17 +2539,17 @@ namespace MemoryBox
 			// aapt resource value: 0x7f0b004d
 			public const int image = 2131427405;
 			
-			// aapt resource value: 0x7f0b00bc
-			public const int info = 2131427516;
+			// aapt resource value: 0x7f0b00bd
+			public const int info = 2131427517;
 			
-			// aapt resource value: 0x7f0b00a5
-			public const int infoButton = 2131427493;
+			// aapt resource value: 0x7f0b00a6
+			public const int infoButton = 2131427494;
 			
 			// aapt resource value: 0x7f0b0042
 			public const int inline = 2131427394;
 			
-			// aapt resource value: 0x7f0b0090
-			public const int inputMemBoxName = 2131427472;
+			// aapt resource value: 0x7f0b0091
+			public const int inputMemBoxName = 2131427473;
 			
 			// aapt resource value: 0x7f0b0000
 			public const int item_touch_helper_previous_elevation = 2131427328;
@@ -2563,35 +2560,35 @@ namespace MemoryBox
 			// aapt resource value: 0x7f0b0031
 			public const int left = 2131427377;
 			
-			// aapt resource value: 0x7f0b00b6
-			public const int line1 = 2131427510;
+			// aapt resource value: 0x7f0b00b7
+			public const int line1 = 2131427511;
 			
-			// aapt resource value: 0x7f0b00ba
-			public const int line3 = 2131427514;
+			// aapt resource value: 0x7f0b00bb
+			public const int line3 = 2131427515;
 			
 			// aapt resource value: 0x7f0b000e
 			public const int listMode = 2131427342;
 			
-			// aapt resource value: 0x7f0b0079
-			public const int listView2 = 2131427449;
+			// aapt resource value: 0x7f0b007a
+			public const int listView2 = 2131427450;
 			
 			// aapt resource value: 0x7f0b004f
 			public const int list_item = 2131427407;
 			
-			// aapt resource value: 0x7f0b008f
-			public const int loggedInAs = 2131427471;
+			// aapt resource value: 0x7f0b0090
+			public const int loggedInAs = 2131427472;
 			
-			// aapt resource value: 0x7f0b00b4
-			public const int media_actions = 2131427508;
+			// aapt resource value: 0x7f0b00b5
+			public const int media_actions = 2131427509;
 			
-			// aapt resource value: 0x7f0b00ab
-			public const int memFrame = 2131427499;
+			// aapt resource value: 0x7f0b00ac
+			public const int memFrame = 2131427500;
 			
-			// aapt resource value: 0x7f0b0078
-			public const int memListView = 2131427448;
+			// aapt resource value: 0x7f0b0079
+			public const int memListView = 2131427449;
 			
-			// aapt resource value: 0x7f0b00b0
-			public const int messenger_send_button = 2131427504;
+			// aapt resource value: 0x7f0b00b1
+			public const int messenger_send_button = 2131427505;
 			
 			// aapt resource value: 0x7f0b001f
 			public const int middle = 2131427359;
@@ -2602,11 +2599,11 @@ namespace MemoryBox
 			// aapt resource value: 0x7f0b0018
 			public const int multiply = 2131427352;
 			
-			// aapt resource value: 0x7f0b00a4
-			public const int musicHeader = 2131427492;
+			// aapt resource value: 0x7f0b00a5
+			public const int musicHeader = 2131427493;
 			
-			// aapt resource value: 0x7f0b009d
-			public const int navigation_header_container = 2131427485;
+			// aapt resource value: 0x7f0b009e
+			public const int navigation_header_container = 2131427486;
 			
 			// aapt resource value: 0x7f0b0023
 			public const int never = 2131427363;
@@ -2632,20 +2629,20 @@ namespace MemoryBox
 			// aapt resource value: 0x7f0b0054
 			public const int parentPanel = 2131427412;
 			
-			// aapt resource value: 0x7f0b007a
-			public const int picZoom = 2131427450;
+			// aapt resource value: 0x7f0b007b
+			public const int picZoom = 2131427451;
 			
 			// aapt resource value: 0x7f0b002b
 			public const int pin = 2131427371;
 			
-			// aapt resource value: 0x7f0b008e
-			public const int profilepic1 = 2131427470;
+			// aapt resource value: 0x7f0b008f
+			public const int profilepic1 = 2131427471;
 			
-			// aapt resource value: 0x7f0b0093
-			public const int progressBar1 = 2131427475;
+			// aapt resource value: 0x7f0b0094
+			public const int progressBar1 = 2131427476;
 			
-			// aapt resource value: 0x7f0b0086
-			public const int progress_bar = 2131427462;
+			// aapt resource value: 0x7f0b0087
+			public const int progress_bar = 2131427463;
 			
 			// aapt resource value: 0x7f0b0006
 			public const int progress_circular = 2131427334;
@@ -2655,6 +2652,9 @@ namespace MemoryBox
 			
 			// aapt resource value: 0x7f0b0062
 			public const int radio = 2131427426;
+			
+			// aapt resource value: 0x7f0b0078
+			public const int refreshButton = 2131427448;
 			
 			// aapt resource value: 0x7f0b0032
 			public const int right = 2131427378;
@@ -2725,11 +2725,11 @@ namespace MemoryBox
 			// aapt resource value: 0x7f0b0047
 			public const int small = 2131427399;
 			
-			// aapt resource value: 0x7f0b009c
-			public const int snackbar_action = 2131427484;
+			// aapt resource value: 0x7f0b009d
+			public const int snackbar_action = 2131427485;
 			
-			// aapt resource value: 0x7f0b009b
-			public const int snackbar_text = 2131427483;
+			// aapt resource value: 0x7f0b009c
+			public const int snackbar_text = 2131427484;
 			
 			// aapt resource value: 0x7f0b0029
 			public const int snap = 2131427369;
@@ -2755,14 +2755,14 @@ namespace MemoryBox
 			// aapt resource value: 0x7f0b0033
 			public const int start = 2131427379;
 			
-			// aapt resource value: 0x7f0b00b3
-			public const int status_bar_latest_event_content = 2131427507;
+			// aapt resource value: 0x7f0b00b4
+			public const int status_bar_latest_event_content = 2131427508;
 			
-			// aapt resource value: 0x7f0b0091
-			public const int submitNewMemBox = 2131427473;
+			// aapt resource value: 0x7f0b0092
+			public const int submitNewMemBox = 2131427474;
 			
-			// aapt resource value: 0x7f0b0098
-			public const int submitTextMemory = 2131427480;
+			// aapt resource value: 0x7f0b0099
+			public const int submitTextMemory = 2131427481;
 			
 			// aapt resource value: 0x7f0b0073
 			public const int submit_area = 2131427443;
@@ -2770,41 +2770,41 @@ namespace MemoryBox
 			// aapt resource value: 0x7f0b0010
 			public const int tabMode = 2131427344;
 			
-			// aapt resource value: 0x7f0b00bb
-			public const int text = 2131427515;
+			// aapt resource value: 0x7f0b00bc
+			public const int text = 2131427516;
 			
-			// aapt resource value: 0x7f0b00b9
-			public const int text2 = 2131427513;
+			// aapt resource value: 0x7f0b00ba
+			public const int text2 = 2131427514;
 			
 			// aapt resource value: 0x7f0b005b
 			public const int textSpacerNoButtons = 2131427419;
 			
-			// aapt resource value: 0x7f0b0083
-			public const int textView = 2131427459;
-			
-			// aapt resource value: 0x7f0b00a6
-			public const int textView1 = 2131427494;
+			// aapt resource value: 0x7f0b0084
+			public const int textView = 2131427460;
 			
 			// aapt resource value: 0x7f0b00a7
-			public const int textView2 = 2131427495;
+			public const int textView1 = 2131427495;
 			
 			// aapt resource value: 0x7f0b00a8
-			public const int textView3 = 2131427496;
+			public const int textView2 = 2131427496;
 			
 			// aapt resource value: 0x7f0b00a9
-			public const int textView4 = 2131427497;
+			public const int textView3 = 2131427497;
 			
-			// aapt resource value: 0x7f0b00b7
-			public const int time = 2131427511;
+			// aapt resource value: 0x7f0b00aa
+			public const int textView4 = 2131427498;
+			
+			// aapt resource value: 0x7f0b00b8
+			public const int time = 2131427512;
 			
 			// aapt resource value: 0x7f0b0051
 			public const int title = 2131427409;
 			
-			// aapt resource value: 0x7f0b00a2
-			public const int titleScreen = 2131427490;
+			// aapt resource value: 0x7f0b00a3
+			public const int titleScreen = 2131427491;
 			
-			// aapt resource value: 0x7f0b00aa
-			public const int titleScreen1 = 2131427498;
+			// aapt resource value: 0x7f0b00ab
+			public const int titleScreen1 = 2131427499;
 			
 			// aapt resource value: 0x7f0b0056
 			public const int title_template = 2131427414;
@@ -2812,8 +2812,8 @@ namespace MemoryBox
 			// aapt resource value: 0x7f0b0077
 			public const int toMemories = 2131427447;
 			
-			// aapt resource value: 0x7f0b00a3
-			public const int toggleMusic = 2131427491;
+			// aapt resource value: 0x7f0b00a4
+			public const int toggleMusic = 2131427492;
 			
 			// aapt resource value: 0x7f0b0034
 			public const int top = 2131427380;
@@ -2821,8 +2821,8 @@ namespace MemoryBox
 			// aapt resource value: 0x7f0b0055
 			public const int topPanel = 2131427413;
 			
-			// aapt resource value: 0x7f0b0099
-			public const int touch_outside = 2131427481;
+			// aapt resource value: 0x7f0b009a
+			public const int touch_outside = 2131427482;
 			
 			// aapt resource value: 0x7f0b003e
 			public const int unknown = 2131427390;
@@ -2833,8 +2833,8 @@ namespace MemoryBox
 			// aapt resource value: 0x7f0b0016
 			public const int useLogo = 2131427350;
 			
-			// aapt resource value: 0x7f0b007b
-			public const int viewPic = 2131427451;
+			// aapt resource value: 0x7f0b007c
+			public const int viewPic = 2131427452;
 			
 			// aapt resource value: 0x7f0b000a
 			public const int view_offset_helper = 2131427338;

@@ -7,7 +7,16 @@
         android:text="Create new MemoryBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/toMemories" />
+        android:id="@+id/toMemories"
+        android:background="@android:drawable/btn_default"
+        android:textColor="#000000" />
+    <Button
+        android:text="Refresh List"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/refreshButton"
+        android:background="@android:drawable/btn_default"
+        android:textColor="#000000" />
     <ListView
         android:minWidth="25px"
         android:minHeight="25px"

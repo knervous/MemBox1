@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Sdk>
-  <AndroidApiLevel>19</AndroidApiLevel>
-  <AndroidApiLevelName>19</AndroidApiLevelName>
+  <AndroidApiLevel>21</AndroidApiLevel>
+  <AndroidApiLevelName>21</AndroidApiLevelName>
   <AndroidNdkPath>C:\Users\Paul\Documents\Android\ndk\android-ndk-r10e</AndroidNdkPath>
   <AndroidSdkBuildToolsPath>C:\Users\Paul\AppData\Local\Android\android-sdk\build-tools\23.0.1</AndroidSdkBuildToolsPath>
   <AndroidSdkBuildToolsBinPath>C:\Users\Paul\AppData\Local\Android\android-sdk\build-tools\23.0.1</AndroidSdkBuildToolsBinPath>
@@ -12,9 +12,9 @@
   <ReferenceAssemblyPaths>
     <ReferenceAssemblyPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\</ReferenceAssemblyPath>
   </ReferenceAssemblyPaths>
-  <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
+  <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
   <ZipAlignPath>C:\Users\Paul\AppData\Local\Android\android-sdk\build-tools\23.0.1</ZipAlignPath>
   <MonoAndroidIncludePath />
-  <SupportedApiLevel>19</SupportedApiLevel>
+  <SupportedApiLevel>21</SupportedApiLevel>
   <AndroidSequencePointsMode>Normal</AndroidSequencePointsMode>
 </Sdk>

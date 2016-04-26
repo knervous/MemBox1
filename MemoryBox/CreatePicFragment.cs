@@ -154,7 +154,11 @@ namespace MemoryBox
 
         private byte[] LoadImage(Intent data)
         {
-            Bitmap bitmap = BitmapFactory.DecodeStream(rs.OpenInputStream(data.Data));
+            BitmapFactory.Options options = new BitmapFactory.Options();
+            options.InSampleSize = 8;
+            //options.InJustDecodeBounds = true;
+            options.InPreferredConfig = Bitmap.Config.Rgb565;
+            Bitmap bitmap = BitmapFactory.DecodeStream(rs.OpenInputStream(data.Data), null, options);
             byte[] bitmapData;
             using (var stream = new MemoryStream())
             {

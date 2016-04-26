@@ -41,9 +41,7 @@ C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Release\MemoryBox.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Release\MemoryBox.pdb
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Release\memorybox.memorybox.apk
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Release\memorybox.memorybox-Signed.apk
-C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Release\Bolts.AppLinks.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Release\Bolts.Tasks.dll
-C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Release\Imgur.API.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Release\Microsoft.WindowsAzure.Mobile.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Release\Microsoft.WindowsAzure.Mobile.Ext.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Release\Microsoft.WindowsAzure.Mobile.SQLiteStore.dll
@@ -69,7 +67,6 @@ C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Release\Xamarin.GooglePlayServi
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Release\Xamarin.GooglePlayServices.AppIndexing.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Release\Xamarin.GooglePlayServices.Basement.dll
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Release\Xamarin.Insights.dll
-C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Release\Imgur.API.xml
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Release\Microsoft.WindowsAzure.Mobile.xml
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Release\Microsoft.WindowsAzure.Mobile.Ext.xml
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Release\Newtonsoft.Json.xml
@@ -100,7 +97,6 @@ C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\res\drawable-v21\text_m
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\res\drawable-v21\vid_mem.xml
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\res\raw\avril_14th.mp3
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\res\drawable\coverblank.png
-C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\res\drawable\icon.png
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\res\drawable\membackground.png
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\res\drawable\membox.png
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\res\drawable\memboxps.png
@@ -118,11 +114,12 @@ C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\res\anim\slide_out.xml
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\res\drawable\edit_text_style.xml
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\res\anim\slide_up1.xml
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\res\drawable\background_beach.jpg
-C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\res\drawable\background_farm.png
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\res\drawable\background_tree.png
-C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\res\drawable\background_winter.png
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\res\anim\rotate_center.xml
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\R.cs.flag
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\uploadflags.txt
+C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\res\drawable\background_farm1.jpg
+C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\MemoryBox.csprojResolveAssemblyReference.cache
+C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\res\drawable\background_winter1.jpg
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\obj\Release\MemoryBox.dll.mdb
 C:\Users\Paul\Source\Repos\MemBox1\MemoryBox\bin\Release\MemoryBox.dll.mdb

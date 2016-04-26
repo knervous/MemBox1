@@ -52,9 +52,8 @@ namespace MemoryBox
             var store = new MobileServiceSQLiteStore(path);
             store.DefineTable<SerializedMemory>();
 
-
-            await client.SyncContext.InitializeAsync(store);
             
+            await client.SyncContext.InitializeAsync(store);
 
         }
 
@@ -125,9 +124,9 @@ namespace MemoryBox
                 if (isLoggedIn())
                 {
                     Toast.MakeText(this, "Logging in via Facebook...", ToastLength.Short).Show();
-                    await ShowFragment(boxFragment);
                     await InitLocalStoreAsync();
-                    await RefreshItemsFromTableAsync();
+                    await ShowFragment(boxFragment);
+
 
                 }
                 else
@@ -136,10 +135,10 @@ namespace MemoryBox
 
             boxFragment.createMemoryBox += delegate
             {
-                OnRefreshItemsSelected();
+                
                 
                 Android.App.FragmentTransaction transaction = FragmentManager.BeginTransaction();
-
+                createMemBoxFragment = new CreateMemBoxFragment();
                 createMemBoxFragment.Show(transaction, "signup fragment");
                 createMemBoxFragment.CreateMemBox += async delegate (object sender, CreateNewMemBoxArgs args)
 
@@ -149,14 +148,19 @@ namespace MemoryBox
                     var serialized = JsonConvert.SerializeObject(temp);
                     SerializedMemory mem = new SerializedMemory() { MemoryBox = serialized };
                     Toast.MakeText(this, "Creating MemoryBox! :)", ToastLength.Long).Show();
-                    createMemBoxFragment.Dismiss();
                     await syncMemModel.InsertAsync(mem);
                     await SyncAsync();
+                    createMemBoxFragment.Dismiss();
                     OnRefreshItemsSelected();
-                    
                 };
 
 
+            };
+
+            boxFragment.refreshMemoryBox += delegate
+            {
+                OnRefreshItemsSelected();
+                Toast.MakeText(this, "Syncing Local and Server Databases, Please Wait!", ToastLength.Long).Show();
             };
 
             boxFragment.enterMemoryBox += async delegate (object sender, EnterMemoryBoxEventArgs args)
